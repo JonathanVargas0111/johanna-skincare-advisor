@@ -1,0 +1,31 @@
+{
+    "name": "Johanna V. Arias - Asesora en Cuidado de la Piel",
+    "short_name": "Johanna V. Arias",
+    "description": "Transforma tu piel con asesoría experta en cuidado natural. Consultas personalizadas y tratamientos naturales.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#DD5882",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "es-CO",
+    "categories": [
+        "health",
+        "lifestyle",
+        "beauty"
+    ],
+    "icons": [
+        {
+            "src": "/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
