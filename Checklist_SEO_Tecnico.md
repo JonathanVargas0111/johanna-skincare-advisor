@@ -1,12 +1,12 @@
-# 🚀 Checklist SEO Técnico Avanzado - Base para Proyectos Next.js
+# 🚀 Checklist SEO Técnico - Template Base
 
-**Versión:** 2.0 - Optimizado para Alta Calidad (Estándar Nandark)
-**Última actualización:** Noviembre 2025
+**Versión:** 2.0 - Template para Nuevos Proyectos
 **Framework:** Next.js 16+ con App Router
+**Última actualización:** Noviembre 2025
 
 ---
 
-## 🎯 Filosofía SEO - Calidad Primero (Inspirado en Nandark)
+## 🎯 Filosofía SEO - Calidad Primero
 
 > "El SEO moderno no es sobre manipular algoritmos, sino sobre crear experiencias excepcionales que los algoritmos recompensan naturalmente."
 
@@ -18,6 +18,144 @@
 5. **Data-Driven**: Mide, analiza, mejora continuamente
 
 ---
+
+## 📊 Checklist SEO Técnico Completo
+
+### 🔴 **CRÍTICO** - Debe estar 100% implementado antes del lanzamiento
+
+#### **1. Arquitectura Técnica Next.js**
+- [ ] **App Router** configurado correctamente
+- [ ] **Static Site Generation (SSG)** para páginas públicas
+- [ ] **Server-Side Rendering (SSR)** solo donde sea necesario
+- [ ] **Incremental Static Regeneration (ISR)** para contenido dinámico
+- [ ] **API Routes** optimizadas (no blocking)
+- [ ] **Middleware** implementado para redirects y headers
+- [ ] **Error boundaries** configurados
+- [ ] **Loading states** implementados
+
+#### **2. Core Web Vitals (CWV)**
+- [ ] **Largest Contentful Paint (LCP)** <2.5s
+- [ ] **First Input Delay (FID)** <100ms
+- [ ] **Cumulative Layout Shift (CLS)** <0.1
+
+#### **3. HTTPS y Seguridad**
+- [ ] **Certificado SSL válido**
+- [ ] **HTTP/2 o HTTP/3** habilitado
+- [ ] **Security headers** configurados
+- [ ] **No mixed content**
+
+#### **4. URLs y Arquitectura**
+- [ ] **URLs limpias y descriptivas**
+- [ ] **Canonical URLs** en todas las páginas
+- [ ] **Redirects 301** para URLs cambiadas
+- [ ] **No trailing slashes** inconsistentes
+
+#### **5. Datos Estructurados (JSON-LD)**
+- [ ] **Schema Organization** en homepage
+- [ ] **Schema Article** en blog posts
+- [ ] **Schema Service** en páginas de servicios
+- [ ] **Schema ContactPage** en contacto
+- [ ] **Schema AboutPage** en about
+- [ ] **Schema Blog** en página de blog
+- [ ] **Validación** en Schema.org testing tool
+
+### 🟡 **ALTO** - Implementar en primera iteración
+
+#### **6. Meta Tags y Headers**
+- [ ] **Title tags** únicos (50-60 caracteres)
+- [ ] **Meta descriptions** únicas (140-160 caracteres)
+- [ ] **Open Graph** completo
+- [ ] **Twitter Cards** configurado
+- [ ] **Meta robots** avanzado
+- [ ] **Viewport meta tag** correcto
+
+#### **7. Contenido y Estructura HTML**
+- [ ] **Un H1 único** por página
+- [ ] **Jerarquía lógica** H1→H2→H3→H4
+- [ ] **Contenido semántico**
+- [ ] **Alt text descriptivo** en imágenes
+- [ ] **Heading hierarchy** sin saltos
+
+#### **8. Enlaces y Navegación**
+- [ ] **Enlaces internos** contextuales
+- [ ] **Anchor text** descriptivo
+- [ ] **No broken links**
+- [ ] **Breadcrumbs** implementados
+
+#### **9. Mobile-First y Responsive**
+- [ ] **Mobile-first CSS** approach
+- [ ] **Viewport configurado** correctamente
+- [ ] **Touch targets** mínimos 44px
+- [ ] **Horizontal scrolling** eliminado
+
+#### **10. Performance Técnica**
+- [ ] **Imágenes optimizadas**
+- [ ] **CSS minificado** y crítico inline
+- [ ] **JavaScript deferido**
+- [ ] **Font loading** optimizado
+
+### 🟢 **MEDIO** - Implementar en segunda iteración
+
+#### **11. Accesibilidad (WCAG 2.1 AA)**
+- [ ] **Color contrast** ratio >4.5:1
+- [ ] **Keyboard navigation** completa
+- [ ] **Screen reader** compatible
+- [ ] **Focus indicators** visibles
+
+#### **12. Internacionalización (i18n)**
+- [ ] **Hreflang tags** si aplica multi-idioma
+- [ ] **Language meta tags** correctos
+
+#### **13. Analytics y Medición**
+- [ ] **Google Analytics 4** configurado
+- [ ] **Google Search Console** verificado
+- [ ] **Core Web Vitals** tracking
+
+#### **14. Contenido Dinámico**
+- [ ] **CMS headless** integrado
+- [ ] **Content preview** funcional
+- [ ] **SEO preview tools** integrados
+
+### 🔵 **BAJO** - Mejoras continuas post-lanzamiento
+
+#### **15. SEO Avanzado**
+- [ ] **Internal linking** strategy
+- [ ] **Content clusters** implementados
+- [ ] **User intent** mapping
+
+#### **16. Social Media y Sharing**
+- [ ] **Social meta tags** completos
+- [ ] **Open Graph images** optimizadas
+
+#### **17. Monitoreo y Alertas**
+- [ ] **Uptime monitoring** configurado
+- [ ] **SEO rank tracking** implementado
+
+#### **18. Legal y Compliance**
+- [ ] **Privacy Policy** actualizada
+- [ ] **GDPR compliance** verificada
+
+---
+
+## 📈 KPIs de Éxito
+
+- **Organic Traffic Growth**: +30% MoM
+- **Keyword Rankings**: Top 10 para palabras clave principales
+- **Core Web Vitals**: Score >90
+- **Conversion Rate**: >2% desde organic
+
+---
+
+## 🔧 Herramientas Recomendadas
+
+- **Google Search Console** - Indexación y errores
+- **Google PageSpeed Insights** - Performance
+- **Screaming Frog** - Análisis técnico completo
+- **Ahrefs/Semrush** - Análisis de competencia
+
+---
+
+*Template base para proyectos Next.js - Actualizar según necesidades específicas*
 
 ## 📊 Checklist SEO Técnico Completo
 

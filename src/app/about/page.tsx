@@ -1,209 +1,95 @@
 import type { Metadata } from 'next';
-import { Header } from '../../components/organisms/Header';
-import { StatsCard } from '../../components/molecules/StatsCard';
-import { PhilosophyCard } from '../../components/molecules/PhilosophyCard';
 
 export const metadata: Metadata = {
-    title: 'Sobre Johanna V. Arias - Asesora Certificada en Cuidado de la Piel',
-    description: 'Conoce la historia de Johanna V. Arias, asesora certificada con más de 10 años de experiencia en cuidado natural de la piel. Filosofía, experiencia y compromiso con resultados naturales.',
-    keywords: ['Johanna Arias', 'asesora piel', 'experiencia skincare', 'cuidado natural piel', 'experta dermatología natural'],
+    title: 'Sobre Mí - Johanna V. Arias',
+    description: 'Conoce a Johanna V. Arias, asesora certificada en cuidado de la piel con más de 10 años de experiencia. Descubre su filosofía holística y su enfoque personalizado para transformar tu piel.',
+    keywords: ['Johanna V. Arias', 'asesora piel', 'skincare experta', 'filosofía skincare', 'cuidado de la piel natural'],
     openGraph: {
-        title: 'Sobre Johanna V. Arias - Asesora en Cuidado Natural de la Piel',
-        description: 'Más de 10 años transformando vidas a través del cuidado natural de la piel.',
+        title: 'Sobre Mí - Johanna V. Arias',
+        description: 'Conoce a Johanna V. Arias, asesora certificada en cuidado de la piel con más de 10 años de experiencia. Descubre su filosofía holística y su enfoque personalizado para transformar tu piel.',
         url: 'https://johannavarias.com/about',
         type: 'profile',
+        images: [
+            {
+                url: '/og-image.jpg', // Replace with a specific image for the about page if available
+                width: 1200,
+                height: 630,
+                alt: 'Johanna V. Arias - Asesora en Cuidado de la Piel',
+            },
+        ],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Sobre Johanna V. Arias',
-        description: 'Asesora certificada con más de 10 años de experiencia en cuidado natural de la piel.',
+        title: 'Sobre Mí - Johanna V. Arias',
+        description: 'Conoce a Johanna V. Arias, asesora certificada en cuidado de la piel con más de 10 años de experiencia. Descubre su filosofía holística y su enfoque personalizado para transformar tu piel.',
+        images: ['/og-image.jpg'], // Replace with a specific image for the about page if available
+        creator: '@johannavarias',
+    },
+    alternates: {
+        canonical: 'https://johannavarias.com/about',
     },
 };
 
-export default function About() {
+export default function AboutPage() {
+    const content = `
+    <h1>Sobre Mí</h1>
+
+    <h2>Mi Misión: Tu Piel, Mi Pasión</h2>
+
+    <p>Hola, soy Johanna V. Arias. Mi misión es simple: ayudarte a sentirte increíble en tu propia piel. No se trata de perseguir un ideal de belleza inalcanzable, sino de descubrir la salud y la vitalidad que tu piel ya posee. Creo en un cuidado de la piel que es a la vez un acto de amor propio y una ciencia.</p>
+
+    <h2>Mi Historia: De la Frustración a la Fascinación</h2>
+
+    <p>Como muchas de ustedes, mi viaje en el mundo del skincare comenzó con una frustración personal. Durante años, luché con mi propia piel, probando innumerables productos y siguiendo consejos contradictorios que solo me dejaban más confundida. Fue entonces cuando decidí tomar el control y sumergirme en el estudio de la piel: su biología, su química y, lo más importante, su conexión con nuestro bienestar general.</p>
+
+    <p>Esa frustración se transformó en una fascinación que me ha llevado a dedicar más de 10 años a entender las complejidades de la piel. Ahora, mi mayor alegría es compartir ese conocimiento contigo.</p>
+
+    <h2>Mi Filosofía: Un Enfoque Holístico y Personalizado</h2>
+
+    <p>No creo en las soluciones mágicas ni en las tendencias pasajeras. Mi filosofía se basa en tres pilares fundamentales:</p>
+
+    <ol>
+        <li><strong>Cuidado Basado en la Ciencia:</strong> Utilizo mi conocimiento técnico para analizar tu piel y recomendar ingredientes y rutinas que tienen un respaldo científico.</li>
+        <li><strong>El Poder de lo Natural:</strong> Priorizo los ingredientes naturales y sostenibles que trabajan en armonía con tu piel, no en su contra.</li>
+        <li><strong>Bienestar Integral:</strong> Tu piel es un reflejo de tu estilo de vida. Por eso, mis asesorías van más allá de los productos, abarcando la nutrición, el manejo del estrés y los hábitos diarios.</li>
+    </ol>
+
+    <h2>Mis Credenciales: 10+ Años de Experiencia</h2>
+
+    <ul>
+        <li><strong>Asesora Certificada en Cuidado de la Piel:</strong> Con una década de experiencia práctica y cientos de clientas satisfechas.</li>
+        <li><strong>Especialista en Ingredientes Naturales:</strong> Formación continua en la aplicación de extractos botánicos y aceites esenciales para el cuidado de la piel.</li>
+        <li><strong>Experta en Análisis de Piel con Tecnología IA:</strong> Utilizo herramientas de inteligencia artificial para un diagnóstico más preciso y recomendaciones efectivas.</li>
+    </ul>
+
+    <h2>¿Lista para Empezar tu Viaje?</h2>
+
+    <p>Si estás lista para dejar de adivinar y empezar a ver resultados reales y duraderos, estoy aquí para guiarte. Juntas, crearemos un plan que no solo transforme tu piel, sino también tu confianza.</p>
+
+    <p><a href="#contact" class="px-8 py-4 text-lg font-semibold text-white transition-colors bg-pink-500 rounded-full hover:bg-pink-600">Agenda tu Sesión Gratuita</a></p>
+  `;
+
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "Sobre Mí - Johanna V. Arias",
+        "description": "Conoce a Johanna V. Arias, asesora certificada en cuidado de la piel con más de 10 años de experiencia. Descubre su filosofía holística y su enfoque personalizado para transformar tu piel.",
+        "url": "https://johannavarias.com/about",
+        "publisher": {
+            "@type": "Person",
+            "name": "Johanna V. Arias"
+        }
+    };
+
     return (
         <div className="min-h-screen bg-white">
-            {/* JSON-LD Structured Data for Person/AboutPage */}
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "AboutPage",
-                        "name": "Sobre Johanna V. Arias",
-                        "description": "Conoce la historia de Johanna V. Arias, asesora certificada con más de 10 años de experiencia en cuidado natural de la piel.",
-                        "url": "https://johannavarias.com/about",
-                        "mainEntity": {
-                            "@type": "Person",
-                            "name": "Johanna V. Arias",
-                            "jobTitle": "Asesora Certificada en Cuidado de la Piel",
-                            "description": "Profesional con más de 10 años de experiencia en cuidado natural de la piel, especializada en soluciones personalizadas y tratamientos naturales.",
-                            "knowsAbout": [
-                                "Cuidado Natural de la Piel",
-                                "Skincare Personalizado",
-                                "Tratamientos Naturales",
-                                "Rutinas de Belleza",
-                                "Dermatología Natural"
-                            ],
-                            "hasOccupation": {
-                                "@type": "Occupation",
-                                "name": "Asesora de Piel",
-                                "occupationLocation": {
-                                    "@type": "Country",
-                                    "name": "Colombia"
-                                }
-                            }
-                        },
-                        "publisher": {
-                            "@type": "Organization",
-                            "name": "Johanna V. Arias",
-                            "url": "https://johannavarias.com"
-                        }
-                    })
-                }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-
-            <Header />
-
-            {/* Hero Section */}
-            <section className="flex items-center justify-center min-h-screen bg-linear-to-br from-rose-50 via-pink-50 to-white">
-                <div className="max-w-4xl px-4 mx-auto text-center">
-                    {/* Badge */}
-                    <div className="inline-block px-4 py-2 mb-6 text-sm font-medium text-pink-700 bg-pink-100 rounded-full">
-                        Sobre Mí
-                    </div>
-
-                    {/* Main Title */}
-                    <h1 className="mb-6 text-4xl font-bold leading-tight text-gray-900 md:text-6xl lg:text-7xl">
-                        Johanna V. Arias
-                    </h1>
-
-                    {/* Subtitle */}
-                    <p className="max-w-2xl mx-auto mb-4 text-lg text-gray-600 md:text-xl">
-                        Asesora Certificada en Cuidado Natural de la Piel
-                    </p>
-
-                    {/* Description */}
-                    <p className="max-w-3xl mx-auto mb-10 text-base leading-relaxed text-gray-600 md:text-lg">
-                        Con más de 10 años de experiencia transformando vidas a través del cuidado natural de la piel.
-                        Mi pasión es ayudar a cada persona a descubrir su mejor versión.
-                    </p>
-
-                    {/* CTA Buttons */}
-                    <div className="flex flex-col justify-center gap-4 mb-16 sm:flex-row">
-                        <button className="px-8 py-4 text-lg font-semibold text-white transition-colors bg-pink-500 rounded-full hover:bg-pink-600">
-                            Agenda tu Consulta
-                        </button>
-                        <button className="px-8 py-4 text-lg font-semibold text-pink-600 transition-all border-2 border-pink-500 rounded-full hover:bg-pink-500 hover:text-white">
-                            Ver Servicios
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            {/* About Section */}
-            <section className="py-20 bg-gray-50">
-                <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
-                        {/* Text Content */}
-                        <div>
-                            <h2 className="mb-6 text-3xl font-bold text-gray-900 md:text-4xl">
-                                Mi Historia
-                            </h2>
-                            <div className="space-y-6 text-gray-600">
-                                <p>
-                                    Mi viaje en el mundo del cuidado de la piel comenzó hace más de una década,
-                                    cuando descubrí la poderosa conexión entre la salud de nuestra piel y nuestro
-                                    bienestar general. Lo que empezó como una curiosidad personal se convirtió
-                                    en una pasión profesional.
-                                </p>
-                                <p>
-                                    Durante años estudié y experimenté con diferentes enfoques, desde tratamientos
-                                    convencionales hasta métodos naturales y holísticos. Mi experiencia me ha
-                                    enseñado que cada piel es única y merece un enfoque personalizado.
-                                </p>
-                                <p>
-                                    Hoy, tengo el privilegio de ayudar a cientos de personas a transformar su
-                                    relación con su piel, logrando resultados naturales y duraderos que van
-                                    más allá de la superficie.
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* Stats */}
-                        <div className="grid grid-cols-2 gap-6">
-                            <StatsCard number="10+" label="Años de Experiencia" />
-                            <StatsCard number="500+" label="Clientes Satisfechos" />
-                            <StatsCard number="98%" label="Tasa de Satisfacción" />
-                            <StatsCard number="50+" label="Productos Naturales" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Philosophy Section */}
-            <section className="py-20 bg-white">
-                <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div className="mb-16 text-center">
-                        <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
-                            Mi Filosofía
-                        </h2>
-                        <p className="max-w-2xl mx-auto text-lg text-gray-600">
-                            Creo en el poder transformador del cuidado natural y consciente
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-                        {/* Philosophy 1 */}
-                        <PhilosophyCard
-                            icon={
-                                <svg className="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                                </svg>
-                            }
-                            title="Cuidado Natural"
-                            description="Priorizo ingredientes naturales y tratamientos suaves que respetan la inteligencia natural de tu piel."
-                        />
-
-                        {/* Philosophy 2 */}
-                        <PhilosophyCard
-                            icon={
-                                <svg className="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                </svg>
-                            }
-                            title="Enfoque Personalizado"
-                            description="Cada persona es única. Mi asesoría se adapta a tu tipo de piel, estilo de vida y objetivos específicos."
-                        />
-
-                        {/* Philosophy 3 */}
-                        <PhilosophyCard
-                            icon={
-                                <svg className="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                </svg>
-                            }
-                            title="Resultados Duraderos"
-                            description="Mi objetivo no es solo mejorar tu apariencia, sino enseñarte a mantener una piel saludable a largo plazo."
-                        />
-                    </div>
-                </div>
-            </section>
-
-            {/* CTA Section */}
-            <section className="py-20 bg-linear-to-br from-pink-50 to-rose-50">
-                <div className="max-w-4xl px-4 mx-auto text-center sm:px-6 lg:px-8">
-                    <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
-                        ¿Lista para comenzar tu transformación?
-                    </h2>
-                    <p className="mb-8 text-lg text-gray-600">
-                        Agenda tu consulta gratuita y descubre cómo puedo ayudarte a lograr la piel que siempre has deseado.
-                    </p>
-                    <button className="px-8 py-4 text-lg font-semibold text-white transition-colors bg-pink-500 rounded-full hover:bg-pink-600">
-                        Agenda tu Consulta Gratuita
-                    </button>
-                </div>
-            </section>
+            <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
+            </div>
         </div>
     );
 }

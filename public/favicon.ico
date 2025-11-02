@@ -1,0 +1,12 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="16" fill="#fce7f3"/>
+
+  <!-- JVA initials -->
+  <text x="16" y="22" text-anchor="middle" font-family="serif" font-size="14" font-weight="600" fill="#ec4899">
+    JVA
+  </text>
+
+  <!-- Small leaf accent -->
+  <path d="M22 10 Q24 8 25 10 Q24 12 22 10" fill="#10b981" opacity="0.8"/>
+</svg>

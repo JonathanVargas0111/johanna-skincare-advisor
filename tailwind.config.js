@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+import typography from '@tailwindcss/typography';
+
+export default {
     content: [
         './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
         './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,20 +10,16 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                primary: '#A8DADC', // Verde menta
-                secondary: '#F4A261', // Rosa suave
-                neutral: '#F7F3E9', // Beige claro
-                accent: '#2A9D8F', // Verde oscuro
-                support: '#FFFFFF', // Blanco
-                gray: '#D3D3D3', // Gris claro
+                primary: '#ec4899', // pink-500
+                secondary: '#6b7280', // gray-500
             },
             fontFamily: {
-                primary: ['Playfair Display', 'serif'],
-                secondary: ['Roboto', 'sans-serif'],
+                playfair: ['Playfair Display', 'serif'],
+                roboto: ['Roboto', 'sans-serif'],
             },
         },
     },
     plugins: [
-        require('@tailwindcss/typography'),
+        typography,
     ],
 }

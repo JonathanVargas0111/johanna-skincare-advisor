@@ -145,11 +145,11 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="p-8 bg-pink-50 rounded-xl">
-              <p className="mb-4 text-lg text-gray-600 font-roboto">"Johanna cambió mi piel por completo. Su enfoque personalizado y sus recomendaciones de productos naturales fueron un antes y un después. ¡Mi piel nunca ha estado tan radiante!"</p>
+              <p className="mb-4 text-lg text-gray-600 font-roboto">&ldquo;Johanna cambió mi piel por completo. Su enfoque personalizado y sus recomendaciones de productos naturales fueron un antes y un después. ¡Mi piel nunca ha estado tan radiante!&rdquo;</p>
               <p className="font-semibold text-gray-900">- Ana G.</p>
             </div>
             <div className="p-8 bg-pink-50 rounded-xl">
-              <p className="mb-4 text-lg text-gray-600 font-roboto">"Estaba cansada de gastar dinero en productos que no funcionaban. La asesoría de Johanna me dio claridad y una rutina que realmente funciona. ¡La recomiendo al 100%!"</p>
+              <p className="mb-4 text-lg text-gray-600 font-roboto">&ldquo;Estaba cansada de gastar dinero en productos que no funcionaban. La asesoría de Johanna me dio claridad y una rutina que realmente funciona. ¡La recomiendo al 100%!&rdquo;</p>
               <p className="font-semibold text-gray-900">- Laura M.</p>
             </div>
           </div>

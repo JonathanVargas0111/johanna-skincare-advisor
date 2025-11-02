@@ -1,0 +1,33 @@
+<svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with subtle gradient -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fce7f3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="200" height="80" fill="url(#logoGradient)" rx="8"/>
+
+  <!-- Logo elements -->
+  <!-- Stylized rose -->
+  <g transform="translate(20, 25)">
+    <circle cx="0" cy="0" r="8" fill="#ec4899"/>
+    <circle cx="-5" cy="-3" r="6" fill="#ec4899" opacity="0.9"/>
+    <circle cx="5" cy="-3" r="6" fill="#ec4899" opacity="0.9"/>
+    <circle cx="0" cy="-6" r="5" fill="#ec4899" opacity="0.8"/>
+    <circle cx="0" cy="0" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- JVA Text -->
+  <text x="50" y="30" font-family="serif" font-size="24" font-weight="600" fill="#ec4899">
+    Johanna V. Arias
+  </text>
+
+  <text x="50" y="50" font-family="sans-serif" font-size="12" font-weight="300" fill="#6b7280">
+    Asesora de Piel
+  </text>
+
+  <!-- Decorative leaf -->
+  <path d="M170 20 Q175 15 178 20 Q175 25 170 20" fill="#10b981" opacity="0.8"/>
+</svg>

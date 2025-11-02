@@ -11,16 +11,18 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({ currentPath }) => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const pathname = usePathname();
-    const [currentHash, setCurrentHash] = useState('');
+    const [currentHash, setCurrentHash] = useState(() => {
+        if (typeof window !== 'undefined') {
+            return window.location.hash;
+        }
+        return '';
+    });
 
     useEffect(() => {
         // Detectar el hash actual
         const handleHashChange = () => {
             setCurrentHash(window.location.hash);
         };
-
-        // Establecer el hash inicial
-        setCurrentHash(window.location.hash);
 
         // Escuchar cambios en el hash
         window.addEventListener('hashchange', handleHashChange);
