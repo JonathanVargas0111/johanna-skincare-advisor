@@ -22,6 +22,67 @@ export const metadata: Metadata = {
 export default function Services() {
     return (
         <div className="min-h-screen bg-white">
+            {/* JSON-LD Structured Data for Services */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Servicios de Asesoría en Cuidado de la Piel",
+                        "description": "Consultas personalizadas, planes de tratamiento y seguimiento experto en cuidado natural de la piel.",
+                        "url": "https://johannavarias.com/services",
+                        "provider": {
+                            "@type": "Person",
+                            "name": "Johanna V. Arias",
+                            "jobTitle": "Asesora Certificada en Cuidado de la Piel"
+                        },
+                        "serviceType": "Asesoría en Cuidado de la Piel",
+                        "areaServed": {
+                            "@type": "Country",
+                            "name": "Colombia"
+                        },
+                        "offers": [
+                            {
+                                "@type": "Offer",
+                                "name": "Consulta Personalizada",
+                                "description": "Evaluación completa de tu piel y recomendaciones personalizadas"
+                            },
+                            {
+                                "@type": "Offer",
+                                "name": "Plan de Tratamiento",
+                                "description": "Rutina completa adaptada a tus necesidades específicas"
+                            },
+                            {
+                                "@type": "Offer",
+                                "name": "Seguimiento y Ajustes",
+                                "description": "Monitoreo continuo y modificaciones según evolución"
+                            }
+                        ],
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "Servicios de Skincare",
+                            "itemListElement": [
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Asesoría Inicial"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Tratamientos Personalizados"
+                                    }
+                                }
+                            ]
+                        }
+                    })
+                }}
+            />
+
             <Header />
 
             {/* Hero Section */}

@@ -23,6 +23,46 @@ export const metadata: Metadata = {
 export default function About() {
     return (
         <div className="min-h-screen bg-white">
+            {/* JSON-LD Structured Data for Person/AboutPage */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "AboutPage",
+                        "name": "Sobre Johanna V. Arias",
+                        "description": "Conoce la historia de Johanna V. Arias, asesora certificada con más de 10 años de experiencia en cuidado natural de la piel.",
+                        "url": "https://johannavarias.com/about",
+                        "mainEntity": {
+                            "@type": "Person",
+                            "name": "Johanna V. Arias",
+                            "jobTitle": "Asesora Certificada en Cuidado de la Piel",
+                            "description": "Profesional con más de 10 años de experiencia en cuidado natural de la piel, especializada en soluciones personalizadas y tratamientos naturales.",
+                            "knowsAbout": [
+                                "Cuidado Natural de la Piel",
+                                "Skincare Personalizado",
+                                "Tratamientos Naturales",
+                                "Rutinas de Belleza",
+                                "Dermatología Natural"
+                            ],
+                            "hasOccupation": {
+                                "@type": "Occupation",
+                                "name": "Asesora de Piel",
+                                "occupationLocation": {
+                                    "@type": "Country",
+                                    "name": "Colombia"
+                                }
+                            }
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Johanna V. Arias",
+                            "url": "https://johannavarias.com"
+                        }
+                    })
+                }}
+            />
+
             <Header />
 
             {/* Hero Section */}

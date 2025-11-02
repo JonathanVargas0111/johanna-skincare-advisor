@@ -4,6 +4,38 @@ import { Header } from '../components/organisms/Header';
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
+      {/* JSON-LD Structured Data for Organization */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Johanna V. Arias - Asesora de Piel",
+            "url": "https://johannavarias.com",
+            "logo": "https://johannavarias.com/logo.png",
+            "description": "Asesora certificada en cuidado natural de la piel con más de 10 años de experiencia. Soluciones personalizadas y naturales para cada tipo de piel.",
+            "founder": {
+              "@type": "Person",
+              "name": "Johanna V. Arias",
+              "jobTitle": "Asesora Certificada en Cuidado de la Piel"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+57-XXX-XXX-XXXX",
+              "contactType": "customer service",
+              "availableLanguage": "Spanish"
+            },
+            "sameAs": [
+              "https://www.instagram.com/johannavarias",
+              "https://www.facebook.com/johannavarias"
+            ],
+            "serviceType": "Asesoría en Cuidado de la Piel",
+            "areaServed": "Colombia"
+          })
+        }}
+      />
+
       <Header />
 
       {/* Hero Section */}
@@ -32,12 +64,12 @@ export default function Home() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col justify-center gap-4 mb-16 sm:flex-row">
-            <button className="px-8 py-4 text-lg font-semibold text-white transition-colors bg-pink-500 rounded-full hover:bg-pink-600">
+            <a href="#contact" className="px-8 py-4 text-lg font-semibold text-white transition-colors bg-pink-500 rounded-full hover:bg-pink-600">
               Agenda tu Sesión Gratuita
-            </button>
-            <button className="px-8 py-4 text-lg font-semibold text-pink-600 transition-all border-2 border-pink-500 rounded-full hover:bg-pink-500 hover:text-white">
+            </a>
+            <a href="#services" className="px-8 py-4 text-lg font-semibold text-pink-600 transition-all border-2 border-pink-500 rounded-full hover:bg-pink-500 hover:text-white">
               Ver Servicios
-            </button>
+            </a>
           </div>
 
           {/* Stats */}
@@ -58,87 +90,79 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-20 bg-gray-50">
+      {/* Why Choose Me Section */}
+      <section id="why-choose-me" className="py-20 bg-white">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="mb-12 text-3xl font-bold text-gray-900 md:text-4xl font-playfair">¿Por Qué Elegirme?</h2>
+          </div>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div className="p-8 text-center">
+              <h3 className="mb-4 text-2xl font-semibold text-gray-900 font-roboto">10+ Años de Experiencia</h3>
+              <p className="text-gray-600">He ayudado a cientos de mujeres a transformar su piel y su confianza con un enfoque probado y personalizado.</p>
+            </div>
+            <div className="p-8 text-center">
+              <h3 className="mb-4 text-2xl font-semibold text-gray-900 font-roboto">Enfoque en Ingredientes Naturales</h3>
+              <p className="text-gray-600">Creo en el poder de la naturaleza. Mis recomendaciones se basan en ingredientes puros, efectivos y sostenibles.</p>
+            </div>
+            <div className="p-8 text-center">
+              <h3 className="mb-4 text-2xl font-semibold text-gray-900 font-roboto">Análisis con Tecnología IA</h3>
+              <p className="text-gray-600">Utilizo herramientas de inteligencia artificial para analizar tu piel y ofrecerte las recomendaciones más precisas y efectivas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Services Section */}
+      <section id="services" className="py-20 bg-linear-to-br from-rose-50 via-white to-amber-50">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
-              Servicios Personalizados
-            </h2>
-            <p className="max-w-2xl mx-auto text-lg text-gray-600">
-              Transforma tu piel con asesoría experta adaptada a tus necesidades únicas
-            </p>
+            <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl font-playfair">Servicios Destacados</h2>
+            <p className="max-w-2xl mx-auto text-lg text-gray-600 font-roboto">Soluciones personalizadas para cada necesidad de tu piel.</p>
           </div>
-
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            {/* Service 1 */}
-            <div className="p-8 transition-shadow bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md">
-              <div className="flex items-center justify-center w-12 h-12 mb-6 bg-pink-100 rounded-lg">
-                <svg className="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </div>
-              <h3 className="mb-4 text-xl font-semibold text-gray-900">Consulta Personalizada</h3>
-              <p className="mb-6 leading-relaxed text-gray-600">
-                Evaluación completa de tu tipo de piel, análisis profundo de problemas específicos y un plan de acción diseñado exclusivamente para ti.
-              </p>
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className="text-sm text-gray-500">Duración</div>
-                  <div className="font-semibold text-gray-900">60 minutos</div>
-                </div>
-                <div className="text-right">
-                  <div className="text-sm text-gray-500">Inversión</div>
-                  <div className="text-2xl font-bold text-pink-600">$75</div>
-                </div>
-              </div>
+            <div className="p-8 text-center bg-white border border-gray-100 shadow-sm rounded-xl">
+              <h3 className="mb-4 text-xl font-semibold text-gray-900 font-roboto">Consulta Personalizada</h3>
+              <p className="text-gray-600">Una inmersión profunda en tu piel y estilo de vida para crear un plan de acción único para ti.</p>
             </div>
+            <div className="p-8 text-center bg-white border border-gray-100 shadow-sm rounded-xl">
+              <h3 className="mb-4 text-xl font-semibold text-gray-900 font-roboto">Rutinas de Skincare a Medida</h3>
+              <p className="text-gray-600">Recibe una rutina de mañana y noche, paso a paso, con los productos ideales para tu tipo de piel.</p>
+            </div>
+            <div className="p-8 text-center bg-white border border-gray-100 shadow-sm rounded-xl">
+              <h3 className="mb-4 text-xl font-semibold text-gray-900 font-roboto">Recomendaciones de Productos</h3>
+              <p className="text-gray-600">Ahorra tiempo y dinero con una lista curada de los mejores productos naturales para tu piel y presupuesto.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Service 2 */}
-            <div className="p-8 transition-shadow bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md">
-              <div className="flex items-center justify-center w-12 h-12 mb-6 rounded-lg bg-amber-100">
-                <svg className="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                </svg>
-              </div>
-              <h3 className="mb-4 text-xl font-semibold text-gray-900">Rutinas Diarias</h3>
-              <p className="mb-6 leading-relaxed text-gray-600">
-                Guías prácticas y fáciles de seguir para tu rutina matutina y nocturna, con productos recomendados específicamente para tu piel.
-              </p>
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className="text-sm text-gray-500">Duración</div>
-                  <div className="font-semibold text-gray-900">Ilimitado</div>
-                </div>
-                <div className="text-right">
-                  <div className="text-sm text-gray-500">Inversión</div>
-                  <div className="text-2xl font-bold text-pink-600">$45</div>
-                </div>
-              </div>
+      {/* Testimonials Section */}
+      <section id="testimonials" className="py-20 bg-white">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="mb-12 text-3xl font-bold text-gray-900 md:text-4xl font-playfair">Lo que Dicen Mis Clientes</h2>
+          </div>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="p-8 bg-pink-50 rounded-xl">
+              <p className="mb-4 text-lg text-gray-600 font-roboto">"Johanna cambió mi piel por completo. Su enfoque personalizado y sus recomendaciones de productos naturales fueron un antes y un después. ¡Mi piel nunca ha estado tan radiante!"</p>
+              <p className="font-semibold text-gray-900">- Ana G.</p>
             </div>
+            <div className="p-8 bg-pink-50 rounded-xl">
+              <p className="mb-4 text-lg text-gray-600 font-roboto">"Estaba cansada de gastar dinero en productos que no funcionaban. La asesoría de Johanna me dio claridad y una rutina que realmente funciona. ¡La recomiendo al 100%!"</p>
+              <p className="font-semibold text-gray-900">- Laura M.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Service 3 */}
-            <div className="p-8 transition-shadow bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md">
-              <div className="flex items-center justify-center w-12 h-12 mb-6 bg-pink-100 rounded-lg">
-                <svg className="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                </svg>
-              </div>
-              <h3 className="mb-4 text-xl font-semibold text-gray-900">Recomendaciones Premium</h3>
-              <p className="mb-6 leading-relaxed text-gray-600">
-                Productos naturales certificados, ingredientes de calidad premium y marcas confiables seleccionadas por expertos.
-              </p>
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className="text-sm text-gray-500">Duración</div>
-                  <div className="font-semibold text-gray-900">Experta</div>
-                </div>
-                <div className="text-right">
-                  <div className="text-sm text-gray-500">Inversión</div>
-                  <div className="text-2xl font-bold text-pink-600">$60</div>
-                </div>
-              </div>
-            </div>
+      {/* About Me Section */}
+      <section id="about" className="py-20 bg-linear-to-br from-rose-50 via-white to-amber-50">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl font-playfair">Sobre Mí</h2>
+            <p className="max-w-2xl mx-auto mb-8 text-lg text-gray-600 font-roboto">Hola, soy Johanna V. Arias, y mi pasión es ayudarte a descubrir la mejor versión de tu piel. Con más de 10 años de experiencia en el mundo del skincare y una profunda creencia en el poder de lo natural, he desarrollado un método que combina la sabiduría tradicional con la última tecnología para ofrecerte resultados que puedes ver y sentir.</p>
+            <a href="/about" className="font-semibold text-pink-600 hover:text-pink-700 font-montserrat">Conoce más sobre mi filosofía</a>
           </div>
         </div>
       </section>
@@ -146,15 +170,28 @@ export default function Home() {
       {/* Blog Section */}
       <BlogList />
 
+      {/* Final CTA Section */}
+      <section id="contact" className="py-20 bg-white">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl font-playfair">¿Lista para Empezar tu Transformación?</h2>
+            <p className="max-w-2xl mx-auto mb-8 text-lg text-gray-600 font-roboto">Tu viaje hacia una piel más sana y radiante comienza con un solo paso. Agenda tu sesión gratuita y descubre el plan perfecto para ti.</p>
+            <a href="#contact" className="px-8 py-4 text-lg font-semibold text-white transition-colors bg-pink-500 rounded-full hover:bg-pink-600 font-montserrat">
+              Agenda tu Sesión Gratuita
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-12 text-white bg-gray-900">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="mb-4 text-2xl font-bold text-white">
+            <div className="mb-4 text-2xl font-bold text-white font-playfair">
               Johanna V. Arias
             </div>
-            <p className="max-w-md mx-auto mb-6 text-gray-400">
-              Asesora certificada en cuidado de la piel natural. Transformando rutinas de skincare desde hace más de 10 años.
+            <p className="max-w-md mx-auto mb-6 text-gray-400 font-roboto">
+              Tu piel, nuestra pasión. Resultados naturales, confianza eterna.
             </p>
             <div className="flex justify-center space-x-6">
               <a href="#" className="text-gray-400 transition-colors hover:text-pink-400">

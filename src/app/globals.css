@@ -24,3 +24,111 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Article Content Styles - Similar to Nandark */
+.article-content {
+  max-width: none;
+}
+
+.article-content h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #111827;
+  line-height: 1.1;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.article-content h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.1;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #d1d5db;
+  padding-bottom: 1rem;
+}
+
+.article-content h3 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.2;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.article-content p {
+  font-size: 1.25rem;
+  color: #374151;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.article-content li {
+  font-size: 1.25rem;
+  color: #374151;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.article-content strong {
+  color: #111827;
+  font-weight: 700;
+}
+
+.article-content a {
+  color: #db2777;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.article-content a:hover {
+  text-decoration: underline;
+  color: #be185d;
+}
+
+.article-content blockquote {
+  border-left: 8px solid #db2777;
+  background-color: #fdf2f8;
+  padding: 2rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  margin: 3rem 0;
+  color: #1f2937;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+.article-content ul,
+.article-content ol {
+  margin: 2rem 0;
+}
+
+.article-content ul li,
+.article-content ol li {
+  margin-bottom: 1.5rem;
+}
+
+.article-content code {
+  background-color: #f3f4f6;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  color: #111827;
+  font-size: 1rem;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-weight: 600;
+}
+
+.article-content pre {
+  background-color: #111827;
+  color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  font-size: 1rem;
+}

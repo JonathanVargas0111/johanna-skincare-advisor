@@ -23,6 +23,44 @@ export const metadata: Metadata = {
 export default function Contact() {
     return (
         <div className="min-h-screen bg-white">
+            {/* JSON-LD Structured Data for ContactPage */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "ContactPage",
+                        "name": "Contacto - Johanna V. Arias",
+                        "description": "Página de contacto para agendar consultas de asesoría en cuidado natural de la piel.",
+                        "url": "https://johannavarias.com/contact",
+                        "mainEntity": {
+                            "@type": "Person",
+                            "name": "Johanna V. Arias",
+                            "jobTitle": "Asesora Certificada en Cuidado de la Piel",
+                            "contactPoint": {
+                                "@type": "ContactPoint",
+                                "contactType": "customer service",
+                                "availableLanguage": "Spanish",
+                                "description": "Agenda tu consulta gratuita de asesoría en cuidado de la piel"
+                            }
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Johanna V. Arias",
+                            "url": "https://johannavarias.com"
+                        },
+                        "potentialAction": {
+                            "@type": "CommunicateAction",
+                            "target": {
+                                "@type": "EntryPoint",
+                                "urlTemplate": "https://johannavarias.com/contact",
+                                "inLanguage": "es"
+                            }
+                        }
+                    })
+                }}
+            />
+
             <Header />
 
             {/* Hero Section */}
