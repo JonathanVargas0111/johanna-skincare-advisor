@@ -1,4 +1,7 @@
 import type { Metadata } from 'next';
+import { Header } from '../../components/organisms/Header';
+import { ContactForm } from '../../components/organisms/ContactForm';
+import { ContactInfo } from '../../components/organisms/ContactInfo';
 
 export const metadata: Metadata = {
     title: 'Contacto - Johanna V. Arias',
@@ -11,7 +14,7 @@ export const metadata: Metadata = {
         type: 'website',
         images: [
             {
-                url: '/og-image.jpg', // Replace with a specific image for the contact page if available
+                url: '/og-image.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'Contacto Johanna V. Arias',
@@ -22,7 +25,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Contacto - Johanna V. Arias',
         description: 'Ponte en contacto con Johanna V. Arias para agendar tu consulta, hacer preguntas o saludar. ¡Tu piel radiante te espera!',
-        images: ['/og-image.jpg'], // Replace with a specific image for the contact page if available
+        images: ['/og-image.jpg'],
         creator: '@johannavarias',
     },
     alternates: {
@@ -31,56 +34,6 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-    const content = `
-    <h1>Hablemos</h1>
-
-    <h2>¿Lista para Empezar tu Viaje hacia una Piel Radiante?</h2>
-
-    <p>Me encantaría escucharte. Ya sea que tengas una pregunta sobre mis servicios, quieras agendar tu consulta inicial, o simplemente quieras saludar, este es el lugar para hacerlo. Completa el formulario a continuación y me pondré en contacto contigo lo antes posible.</p>
-
-    <hr />
-
-    <h3>Formulario de Contacto</h3>
-
-    <form className="space-y-4">
-        <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">Nombre Completo</label>
-            <input type="text" id="name" name="name" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm" />
-        </div>
-        <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Correo Electrónico</label>
-            <input type="email" id="email" name="email" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm" />
-        </div>
-        <div>
-            <label htmlFor="subject" className="block text-sm font-medium text-gray-700">Asunto</label>
-            <input type="text" id="subject" name="subject" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm" />
-        </div>
-        <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700">Mensaje</label>
-            <textarea id="message" name="message" rows={4} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"></textarea>
-        </div>
-        <button type="submit" className="px-8 py-4 text-lg font-semibold text-white transition-colors bg-pink-500 rounded-full hover:bg-pink-600">Enviar Mensaje</button>
-    </form>
-
-    <hr />
-
-    <h3>Otras Formas de Conectar</h3>
-
-    <p><strong>Correo Electrónico:</strong><br />Para consultas directas, puedes escribirme a: <a href="mailto:johanna.v.arias@email.com" class="text-pink-600 hover:underline">johanna.v.arias@email.com</a></p>
-
-    <p><strong>Redes Sociales:</strong><br />Sígueme en mis redes para tips diarios, inspiración y más:</p>
-
-    <ul>
-        <li><a href="https://instagram.com/johannavarias" target="_blank" rel="noopener noreferrer" class="text-pink-600 hover:underline">Instagram</a></li>
-        <li><a href="https://pinterest.com/johannavarias" target="_blank" rel="noopener noreferrer" class="text-pink-600 hover:underline">Pinterest</a></li>
-        <li><a href="https://tiktok.com/@johannavarias" target="_blank" rel="noopener noreferrer" class="text-pink-600 hover:underline">TikTok</a></li>
-    </ul>
-
-    <h3>¿Qué Esperar Después de Contactarme?</h3>
-
-    <p>Mi objetivo es responder a todos los mensajes en un plazo de 24 a 48 horas hábiles. ¡Gracias por tu paciencia!</p>
-  `;
-
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "ContactPage",
@@ -117,9 +70,55 @@ export default function ContactPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
-            </div>
+
+            <Header />
+
+            {/* Hero Section */}
+            <section className="pt-24 pb-16 bg-linear-to-br from-rose-50 via-pink-50 to-white">
+                <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div className="text-center">
+                        <div className="inline-block px-4 py-2 mb-6 text-sm font-medium text-pink-700 bg-pink-100 rounded-full">
+                            Hablemos
+                        </div>
+                        <h1 className="mb-6 text-4xl font-bold leading-tight text-gray-900 md:text-6xl">
+                            ¿Lista para Empezar?
+                        </h1>
+                        <p className="max-w-3xl mx-auto text-xl leading-relaxed text-gray-600">
+                            Me encantaría escucharte. Completa el formulario y me pondré en contacto contigo lo antes posible.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Contact Section */}
+            <section className="py-16">
+                <div className="px-4 mx-auto max-w-6xl sm:px-6 lg:px-8">
+                    <div className="grid gap-12 lg:grid-cols-2">
+                        {/* Contact Form */}
+                        <div>
+                            <h2 className="mb-6 text-3xl font-bold text-gray-900">Envíame un Mensaje</h2>
+                            <p className="mb-8 text-lg text-gray-600">
+                                Ya sea que tengas una pregunta sobre mis servicios, quieras agendar tu consulta inicial, o simplemente quieras saludar, este es el lugar para hacerlo.
+                            </p>
+                            <ContactForm />
+                        </div>
+
+                        {/* Contact Info */}
+                        <div>
+                            <h2 className="mb-6 text-3xl font-bold text-gray-900">Información de Contacto</h2>
+                            <ContactInfo />
+
+                            {/* Additional Info */}
+                            <div className="mt-8 p-6 bg-pink-50 rounded-lg">
+                                <h3 className="text-lg font-semibold text-pink-800 mb-2">Tiempo de Respuesta</h3>
+                                <p className="text-pink-700">
+                                    Mi objetivo es responder a todos los mensajes en un plazo de 24 a 48 horas hábiles. ¡Gracias por tu paciencia!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }
