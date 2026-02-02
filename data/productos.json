@@ -1,0 +1,110 @@
+[
+  {
+    "nombre": "Crema Anti-Acné Profunda",
+    "precio_publico": 45000,
+    "beneficios_principales": "Reduce espinillas y controla el exceso de sebo",
+    "categoria": "Acné"
+  },
+  {
+    "nombre": "Gel Purificante Facial",
+    "precio_publico": 35000,
+    "beneficios_principales": "Limpia poros obstruidos y previene brotes",
+    "categoria": "Acné"
+  },
+  {
+    "nombre": "Mascarilla Matificante",
+    "precio_publico": 40000,
+    "beneficios_principales": "Absorbe grasa y controla brillo",
+    "categoria": "Acné"
+  },
+  {
+    "nombre": "Tratamiento Spot para Acné",
+    "precio_publico": 25000,
+    "beneficios_principales": "Seca granos rápidamente sin irritar",
+    "categoria": "Acné"
+  },
+  {
+    "nombre": "Crema Antibacterial",
+    "precio_publico": 38000,
+    "beneficios_principales": "Elimina bacterias causantes del acné",
+    "categoria": "Acné"
+  },
+  {
+    "nombre": "Crema Despigmentante Clara",
+    "precio_publico": 55000,
+    "beneficios_principales": "Aclara manchas oscuras y unifica tono",
+    "categoria": "Manchas"
+  },
+  {
+    "nombre": "Serum Iluminador",
+    "precio_publico": 65000,
+    "beneficios_principales": "Reduce hiperpigmentación y mejora luminosidad",
+    "categoria": "Manchas"
+  },
+  {
+    "nombre": "Mascarilla Blanqueadora",
+    "precio_publico": 42000,
+    "beneficios_principales": "Aclara manchas solares y de edad",
+    "categoria": "Manchas"
+  },
+  {
+    "nombre": "Crema Anti-Manchas Diurna",
+    "precio_publico": 48000,
+    "beneficios_principales": "Protege y trata manchas con SPF",
+    "categoria": "Manchas"
+  },
+  {
+    "nombre": "Tratamiento Concentrado para Manchas",
+    "precio_publico": 70000,
+    "beneficios_principales": "Corrige imperfecciones profundas",
+    "categoria": "Manchas"
+  },
+  {
+    "nombre": "Crema Hidratante Intensiva",
+    "precio_publico": 36000,
+    "beneficios_principales": "Restaura humedad y suaviza la piel",
+    "categoria": "Hidratación"
+  },
+  {
+    "nombre": "Serum Hidratante con Ácido Hialurónico",
+    "precio_publico": 52000,
+    "beneficios_principales": "Retiene agua y mejora elasticidad",
+    "categoria": "Hidratación"
+  },
+  {
+    "nombre": "Mascarilla Hidratante Nocturna",
+    "precio_publico": 32000,
+    "beneficios_principales": "Nutre en profundidad durante la noche",
+    "categoria": "Hidratación"
+  },
+  {
+    "nombre": "Loción Corporal Hidratante",
+    "precio_publico": 28000,
+    "beneficios_principales": "Hidrata piel seca del cuerpo",
+    "categoria": "Hidratación"
+  },
+  {
+    "nombre": "Crema para Manos Hidratante",
+    "precio_publico": 22000,
+    "beneficios_principales": "Suaviza y protege manos agrietadas",
+    "categoria": "Hidratación"
+  },
+  {
+    "nombre": "Crema de Baba de Caracol",
+    "precio_publico": 62000,
+    "beneficios_principales": "Regenera la piel, atenúa cicatrices y manchas.",
+    "categoria": "Manchas"
+  },
+  {
+    "nombre": "Jabón de Carbón Activado",
+    "precio_publico": 38000,
+    "beneficios_principales": "Limpieza profunda, elimina impurezas y puntos negros.",
+    "categoria": "Acné"
+  },
+  {
+    "nombre": "Desodorante de Piedra de Alumbre",
+    "precio_publico": 25000,
+    "beneficios_principales": "Protección natural sin químicos, no irrita la piel.",
+    "categoria": "Cuidado Corporal"
+  }
+]
