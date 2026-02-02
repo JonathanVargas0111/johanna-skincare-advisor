@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Johanna V. Arias - Asesora Certificada en Cuidado Natural de la Piel",
-  description: "Transforma tu piel con asesoría experta en cuidado natural. Más de 10 años de experiencia. Consultas personalizadas, tratamientos naturales y rutinas adaptadas a tu tipo de piel.",
-  keywords: ["cuidado de la piel", "skincare natural", "asesora piel", "tratamientos faciales", "rutina skincare", "piel radiante", "productos naturales"],
+  title: "Distribuidora Autorizada Sheló Nabel en Colombia - Johanna Skincare",
+  description: "Distribuidora Autorizada Sheló Nabel en Colombia. Asesoría experta en cuidado natural de la piel con productos Sheló Nabel. Catálogo 2025. Johanna Skincare.",
+  keywords: ["cuidado de la piel", "skincare natural", "asesora piel", "tratamientos faciales", "rutina skincare", "piel radiante", "productos naturales", "sheló nabel", "distribuidora autorizada", "colombia"],
   authors: [{ name: "Johanna V. Arias" }],
   creator: "Johanna V. Arias",
   publisher: "Johanna V. Arias",
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: "Johanna V. Arias - Asesora en Cuidado Natural de la Piel",
-    description: "Transforma tu piel con asesoría experta. Más de 10 años de experiencia en tratamientos naturales y personalizados.",
+    title: "Distribuidora Autorizada Sheló Nabel en Colombia - Johanna Skincare",
+    description: "Distribuidora Autorizada Sheló Nabel en Colombia. Asesoría experta en cuidado natural de la piel con productos Sheló Nabel. Catálogo 2025. Johanna Skincare.",
     url: "https://johannavarias.com",
     siteName: "Johanna V. Arias",
     locale: "es_CO",
@@ -42,14 +42,14 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Johanna V. Arias - Asesora en Cuidado de la Piel",
+        alt: "Distribuidora Autorizada Sheló Nabel en Colombia - Johanna Skincare",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Johanna V. Arias - Asesora en Cuidado Natural de la Piel",
-    description: "Transforma tu piel con asesoría experta. Más de 10 años de experiencia.",
+    title: "Distribuidora Autorizada Sheló Nabel en Colombia - Johanna Skincare",
+    description: "Distribuidora Autorizada Sheló Nabel en Colombia. Asesoría experta en cuidado natural de la piel con productos Sheló Nabel. Catálogo 2025. Johanna Skincare.",
     images: ["/og-image.jpg"],
     creator: "@johannavarias",
   },

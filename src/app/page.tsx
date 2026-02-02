@@ -1,7 +1,24 @@
 import { BlogList } from '../components/organisms/BlogList';
 import { Header } from '../components/organisms/Header';
+import DuoPielPerfecta from '../components/organisms/DuoPielPerfecta';
+import ProductGrid from '../components/ProductGrid';
+import Faq from '../components/organisms/Faq';
+import fs from 'fs/promises';
+import path from 'path';
 
-export default function Home() {
+interface Producto {
+  nombre: string;
+  precio_publico: number;
+  beneficios_principales: string;
+  categoria: string;
+  imagen?: string;
+}
+
+export default async function Home() {
+  const filePath = path.join(process.cwd(), '..', 'data', 'productos.json');
+  const jsonData = await fs.readFile(filePath, 'utf-8');
+  const productos: Producto[] = JSON.parse(jsonData);
+
   return (
     <div className="min-h-screen bg-white">
       {/* JSON-LD Structured Data for Organization */}
@@ -137,6 +154,10 @@ export default function Home() {
         </div>
       </section>
 
+      <DuoPielPerfecta />
+
+      <ProductGrid productos={productos} />
+
       {/* Testimonials Section */}
       <section id="testimonials" className="py-20 bg-white">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -170,6 +191,8 @@ export default function Home() {
       {/* Blog Section */}
       <BlogList />
 
+      <Faq />
+
       {/* Final CTA Section */}
       <section id="contact" className="py-20 bg-white">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -187,3 +210,4 @@ export default function Home() {
     </div>
   );
 }
+
