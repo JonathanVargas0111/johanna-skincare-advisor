@@ -65,28 +65,28 @@ export const Header: React.FC<HeaderProps> = ({ currentPath }) => {
 
     return (
         <>
-            <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+            <header className="sticky top-0 z-50 glass-nav">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex items-center justify-between h-16">
+                    <div className="flex items-center justify-between h-20">
                         {/* Logo */}
                         <Link
                             href="/"
-                            className="text-2xl font-bold text-gray-900 transition-transform duration-200 hover:scale-105"
+                            className="text-2xl font-bold tracking-tighter text-gray-900 font-playfair transition-transform duration-300 hover:scale-105"
                             onClick={closeMobileMenu}
                         >
                             Johanna V. Arias
                         </Link>
 
                         {/* Desktop Navigation */}
-                        <nav className="hidden lg:flex items-center space-x-8">
+                        <nav className="hidden lg:flex items-center space-x-10">
                             {navigation.map((item) => (
                                 <Link
                                     key={item.href}
                                     href={item.href}
                                     onClick={() => handleLinkClick(item.href)}
-                                    className={`font-medium transition-colors duration-200 ${isActiveLink(item.href)
-                                        ? 'text-pink-600 bg-pink-50 px-3 py-2 rounded-lg'
-                                        : 'text-gray-600 hover:text-pink-600'
+                                    className={`text-sm font-semibold tracking-wide uppercase transition-all duration-300 ${isActiveLink(item.href)
+                                        ? 'text-pink-600'
+                                        : 'text-gray-500 hover:text-gray-900 border-b-2 border-transparent hover:border-pink-200'
                                         }`}
                                 >
                                     {item.label}
@@ -96,9 +96,14 @@ export const Header: React.FC<HeaderProps> = ({ currentPath }) => {
 
                         {/* CTA Button - Desktop */}
                         <div className="hidden lg:block">
-                            <button className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full font-semibold text-sm transition-colors duration-200 shadow-lg hover:shadow-xl">
+                            <a
+                                href="https://wa.me/573001234567?text=Hola%20Johanna,%20quiero%20agendar%20una%20sesión%20de%20skincare"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-gray-900 hover:bg-black text-white px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-premium hover:shadow-2xl hover:-translate-y-0.5"
+                            >
                                 Agenda tu Sesión
-                            </button>
+                            </a>
                         </div>
 
                         {/* Mobile Menu Button */}
@@ -179,12 +184,15 @@ export const Header: React.FC<HeaderProps> = ({ currentPath }) => {
 
                     {/* Mobile CTA */}
                     <div className="p-6 border-t border-gray-200">
-                        <button
-                            className="w-full bg-pink-500 hover:bg-pink-600 text-white px-6 py-4 rounded-full font-semibold text-base transition-colors duration-200 shadow-lg hover:shadow-xl"
+                        <a
+                            href="https://wa.me/573001234567?text=Hola%20Johanna,%20quiero%20agendar%20una%20sesión%20de%20skincare"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full bg-pink-500 hover:bg-pink-600 text-white px-6 py-4 rounded-full font-semibold text-base transition-colors duration-200 shadow-lg hover:shadow-xl inline-flex justify-center items-center"
                             onClick={closeMobileMenu}
                         >
                             Agenda tu Sesión
-                        </button>
+                        </a>
 
                         {/* Contact Info */}
                         <div className="mt-6 text-center">
