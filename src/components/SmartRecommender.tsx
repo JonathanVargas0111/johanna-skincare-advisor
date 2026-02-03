@@ -19,11 +19,11 @@ const SmartRecommender = () => {
             const lowerQuery = query.toLowerCase();
 
             if (lowerQuery.includes('mancha') || lowerQuery.includes('aclarar')) {
-                response = "Dada la naturaleza de tu consulta, te sugiero iniciar con la Crema de Concha Nácar de Sheló para un aclarado botánico profundo, y sellar con la alta tecnología del Suero Corrector de Mary Kay. Johanna puede diseñar el protocolo exacto de aplicación para ti.";
+                response = "Como especialista en tratamiento de manchas, te recomiendo iniciar una evaluación personalizada para determinar el tipo de hiperpigmentación. El Método Johanna combina aclarado botánico con Concha Nácar (Sheló) y corrección científica con Suero C+E (Mary Kay) para resultados visibles en 15 días. Contáctame vía WhatsApp para diseñar tu protocolo exclusivo.";
             } else if (lowerQuery.includes('limpieza') || lowerQuery.includes('grasa') || lowerQuery.includes('poros')) {
-                response = "Para una purificación de nivel spa, el Jabón de Carbón de Sheló es el paso 1 ideal, seguido por la Microexfoliación de Mary Kay para pulir tu piel. ¿Te gustaría que Johanna coordine tu rutina?";
+                response = "Para piel grasa o poros dilatados, mi recomendación experta es el Protocolo Detox: purificación con Carbón Activado (Sheló) + refinamiento con Microexfoliación (Mary Kay). Ideal para el clima tropical colombiano. Te guío paso a paso vía WhatsApp para maximizar resultados.";
             } else {
-                response = "Basado en el Cerebro Johanna, una sinergia personalizada es el camino hacia tus objetivos. Johanna V. Arias evaluará tu caso de forma exclusiva tras una breve consulta vía WhatsApp.";
+                response = "Como experta en transformación de piel, cada caso requiere un análisis personalizado. El Método Johanna combina ingredientes botánicos con tecnología avanzada para crear protocolos exclusivos adaptados a tu piel y al clima colombiano. Iniciemos tu consulta vía WhatsApp para diseñar tu solución sinérgica.";
             }
 
             setResult(response);
@@ -34,13 +34,13 @@ const SmartRecommender = () => {
     return (
         <section id="recommender" className="py-32 bg-linear-to-b from-white to-rose-50/50 overflow-hidden">
             <div className="px-4 mx-auto max-w-5xl sm:px-6 lg:px-8">
-                <div className="relative p-16 rounded-[4rem] glass-card reveal-up">
+                <div className="relative p-16 rounded-[4rem] glass-card reveal-up shadow-xl ring-1 ring-gray-100/50">
                     {/* Abstract Decorative Elements */}
                     <div className="absolute top-0 right-0 w-64 h-64 bg-pink-100/30 rounded-full blur-[100px] -z-10 animate-pulse"></div>
                     <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber-50/30 rounded-full blur-[100px] -z-10 animate-pulse delay-700"></div>
 
                     <div className="relative z-10 text-center mb-16">
-                        <div className="inline-flex items-center justify-center w-20 h-20 mb-8 bg-gray-900 rounded-3xl text-white shadow-premium">
+                        <div className="inline-flex items-center justify-center w-20 h-20 mb-8 bg-gray-900 rounded-3xl text-white shadow-premium ring-1 ring-white/10">
                             <ShieldCheck size={36} strokeWidth={1.5} />
                         </div>
                         <h2 className="mb-6 text-5xl font-bold text-gray-900 md:text-6xl font-playfair tracking-tighter">Concierge Inteligente</h2>
@@ -49,7 +49,7 @@ const SmartRecommender = () => {
                         </p>
                     </div>
 
-                    <form onSubmit={handleSearch} className="relative z-10 mb-12 overflow-hidden rounded-[2rem] border border-gray-100 focus-within:border-pink-200 transition-all shadow-premium bg-white">
+                    <form onSubmit={handleSearch} className="relative z-10 mb-12 overflow-hidden rounded-[2rem] border border-gray-100 focus-within:border-pink-200 focus-within:ring-1 focus-within:ring-pink-200 transition-all duration-300 ease-in-out shadow-premium bg-white">
                         <div className="flex flex-col sm:flex-row items-center">
                             <input
                                 type="text"
@@ -62,7 +62,7 @@ const SmartRecommender = () => {
                                 <button
                                     type="submit"
                                     disabled={loading}
-                                    className="w-full sm:w-auto h-16 px-10 bg-gray-900 text-white rounded-2xl font-bold flex items-center justify-center gap-3 hover:bg-black transition-all duration-300 disabled:opacity-50 tracking-widest text-xs uppercase"
+                                    className="w-full sm:w-auto h-16 px-10 bg-gray-900 text-white rounded-2xl font-bold flex items-center justify-center gap-3 hover:bg-black transition-all duration-300 ease-in-out disabled:opacity-50 tracking-[0.2em] text-[10px] uppercase shadow-xl ring-1 ring-white/10"
                                 >
                                     {loading ? <Sparkles className="animate-spin text-pink-400" size={18} /> : <Send size={18} />}
                                     <span>{loading ? 'Consultando...' : 'Obtener Protocolo'}</span>
@@ -72,7 +72,7 @@ const SmartRecommender = () => {
                     </form>
 
                     {result && (
-                        <div className="relative z-10 p-10 rounded-[2.5rem] bg-white border border-gray-50 shadow-premium animate-reveal-up">
+                        <div className="relative z-10 p-10 rounded-[2.5rem] bg-white border border-gray-50 shadow-premium animate-reveal-up ring-1 ring-gray-100">
                             <div className="flex flex-col md:flex-row items-start gap-8">
                                 <div className="flex-shrink-0 w-12 h-12 bg-pink-50 rounded-xl flex items-center justify-center text-pink-500">
                                     <Sparkles size={28} />

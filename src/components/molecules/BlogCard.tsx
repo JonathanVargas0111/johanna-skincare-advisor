@@ -9,38 +9,34 @@ interface BlogCardProps {
 
 export const BlogCard: React.FC<BlogCardProps> = ({ title, excerpt, date, slug }) => {
     return (
-        <article className="overflow-hidden transition-all duration-300 bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-lg group">
-            <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                    <div className="w-2 h-2 bg-pink-500 rounded-full"></div>
-                    <span className="text-sm font-medium text-gray-500">{date}</span>
+        <article className="group relative bg-white rounded-[2rem] p-8 shadow-xl ring-1 ring-gray-100 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl overflow-hidden">
+            {/* Decorative background accent */}
+            <div className="absolute -top-10 -right-10 w-32 h-32 bg-pink-50 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+            <div className="relative z-10 flex flex-col h-full">
+                <div className="flex items-center gap-3 mb-6">
+                    <span className="w-1.5 h-1.5 bg-pink-500 rounded-full animate-pulse"></span>
+                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400">{date}</span>
                 </div>
 
-                <h3 className="mb-3 text-xl font-bold leading-tight text-gray-900 transition-colors duration-200 group-hover:text-pink-600">
+                <h3 className="mb-6 text-2xl font-bold leading-tight text-gray-900 font-playfair tracking-tighter transition-colors group-hover:text-pink-600">
                     {title}
                 </h3>
 
-                <p className="mb-4 leading-relaxed text-gray-600 line-clamp-3">
+                <p className="mb-8 leading-relaxed text-gray-500 font-light text-sm font-roboto line-clamp-3">
                     {excerpt}
                 </p>
 
-                <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                        <div className="flex items-center justify-center w-8 h-8 rounded-full bg-linear-to-br from-pink-500 to-rose-500">
-                            <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                            </svg>
-                        </div>
-                        <span className="text-sm text-gray-500">Artículo</span>
-                    </div>
+                <div className="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
+                    <span className="text-[9px] font-black uppercase tracking-widest text-gray-300">Artículo de Autor</span>
 
                     <a
                         href={`/blog/${slug}`}
-                        className="inline-flex items-center gap-2 text-sm font-semibold text-pink-600 transition-colors duration-200 transform hover:text-pink-700 group-hover:translate-x-1"
+                        className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-pink-600 transition-all duration-300 ease-in-out hover:gap-4 group-hover:text-pink-700"
                     >
                         Leer más
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                     </a>
                 </div>

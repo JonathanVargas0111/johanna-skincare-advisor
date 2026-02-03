@@ -65,16 +65,21 @@ export const Header: React.FC<HeaderProps> = ({ currentPath }) => {
 
     return (
         <>
-            <header className="sticky top-0 z-50 glass-nav">
+            <header className="sticky top-0 z-50 glass-nav border-b border-gray-100 ring-1 ring-white/5">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-20">
                         {/* Logo */}
                         <Link
                             href="/"
-                            className="text-2xl font-bold tracking-tighter text-gray-900 font-playfair transition-transform duration-300 hover:scale-105"
+                            className="flex flex-col items-start group"
                             onClick={closeMobileMenu}
                         >
-                            Johanna V. Arias
+                            <div className="text-2xl font-bold tracking-tighter text-gray-900 font-playfair transition-all duration-300 ease-in-out group-hover:scale-105 active:scale-95">
+                                Johanna V. <span className="text-pink-600">Arias</span>
+                            </div>
+                            <p className="text-[8px] uppercase tracking-[0.25em] text-gray-400 font-black mt-0.5 group-hover:text-pink-600 transition-colors">
+                                Experta en Transformación de Piel
+                            </p>
                         </Link>
 
                         {/* Desktop Navigation */}
@@ -84,12 +89,13 @@ export const Header: React.FC<HeaderProps> = ({ currentPath }) => {
                                     key={item.href}
                                     href={item.href}
                                     onClick={() => handleLinkClick(item.href)}
-                                    className={`text-sm font-semibold tracking-wide uppercase transition-all duration-300 ${isActiveLink(item.href)
+                                    className={`text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300 ease-in-out relative group ${isActiveLink(item.href)
                                         ? 'text-pink-600'
-                                        : 'text-gray-500 hover:text-gray-900 border-b-2 border-transparent hover:border-pink-200'
+                                        : 'text-gray-400 hover:text-gray-900'
                                         }`}
                                 >
                                     {item.label}
+                                    <span className={`absolute -bottom-1 left-0 h-0.5 bg-pink-600 transition-all duration-300 ease-in-out ${isActiveLink(item.href) ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
                                 </Link>
                             ))}
                         </nav>
@@ -100,7 +106,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPath }) => {
                                 href="https://wa.me/573001234567?text=Hola%20Johanna,%20quiero%20agendar%20una%20sesión%20de%20skincare"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-gray-900 hover:bg-black text-white px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-premium hover:shadow-2xl hover:-translate-y-0.5"
+                                className="inline-flex items-center justify-center bg-gray-900 hover:bg-black text-white px-8 py-3 rounded-2xl font-bold text-[10px] uppercase tracking-[0.2em] transition-all duration-300 ease-in-out shadow-premium hover:shadow-2xl hover:-translate-y-0.5 active:scale-95 ring-1 ring-white/10"
                             >
                                 Agenda tu Sesión
                             </a>

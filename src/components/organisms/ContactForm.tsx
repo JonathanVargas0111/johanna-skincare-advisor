@@ -34,14 +34,14 @@ export const ContactForm: React.FC = () => {
     };
 
     return (
-        <div>
-            <h2 className="mb-6 text-3xl font-bold text-gray-900">
+        <div className="reveal-up">
+            <h2 className="mb-10 text-4xl font-bold text-gray-900 font-playfair tracking-tighter">
                 Envía tu Consulta
             </h2>
-            <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <form onSubmit={handleSubmit} className="space-y-8">
+                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
                     <div>
-                        <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-700">
+                        <label htmlFor="name" className="block mb-3 text-[10px] font-black uppercase tracking-widest text-gray-400">
                             Nombre Completo *
                         </label>
                         <input
@@ -51,12 +51,12 @@ export const ContactForm: React.FC = () => {
                             value={formData.name}
                             onChange={handleChange}
                             required
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                            className="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-pink-500 focus:bg-white focus:border-transparent transition-all duration-300 ease-in-out outline-none text-gray-800 placeholder-gray-300 font-light"
                             placeholder="Tu nombre"
                         />
                     </div>
                     <div>
-                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-700">
+                        <label htmlFor="email" className="block mb-3 text-[10px] font-black uppercase tracking-widest text-gray-400">
                             Correo Electrónico *
                         </label>
                         <input
@@ -66,14 +66,14 @@ export const ContactForm: React.FC = () => {
                             value={formData.email}
                             onChange={handleChange}
                             required
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                            className="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-pink-500 focus:bg-white focus:border-transparent transition-all duration-300 ease-in-out outline-none text-gray-800 placeholder-gray-300 font-light"
                             placeholder="tu@email.com"
                         />
                     </div>
                 </div>
 
                 <div>
-                    <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-700">
+                    <label htmlFor="phone" className="block mb-3 text-[10px] font-black uppercase tracking-widest text-gray-400">
                         Teléfono
                     </label>
                     <input
@@ -82,14 +82,14 @@ export const ContactForm: React.FC = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                        className="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-pink-500 focus:bg-white focus:border-transparent transition-all duration-300 ease-in-out outline-none text-gray-800 placeholder-gray-300 font-light"
                         placeholder="+57 300 123 4567"
                     />
                 </div>
 
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
                     <div>
-                        <label htmlFor="skinType" className="block mb-2 text-sm font-medium text-gray-700">
+                        <label htmlFor="skinType" className="block mb-3 text-[10px] font-black uppercase tracking-widest text-gray-400">
                             Tipo de Piel
                         </label>
                         <select
@@ -97,7 +97,7 @@ export const ContactForm: React.FC = () => {
                             name="skinType"
                             value={formData.skinType}
                             onChange={handleChange}
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                            className="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-pink-500 focus:bg-white focus:border-transparent transition-all duration-300 ease-in-out outline-none text-gray-800 appearance-none font-light"
                         >
                             <option value="">Selecciona tu tipo de piel</option>
                             <option value="seca">Seca</option>
@@ -108,7 +108,7 @@ export const ContactForm: React.FC = () => {
                         </select>
                     </div>
                     <div>
-                        <label htmlFor="concerns" className="block mb-2 text-sm font-medium text-gray-700">
+                        <label htmlFor="concerns" className="block mb-3 text-[10px] font-black uppercase tracking-widest text-gray-400">
                             Preocupaciones Principales
                         </label>
                         <select
@@ -116,7 +116,7 @@ export const ContactForm: React.FC = () => {
                             name="concerns"
                             value={formData.concerns}
                             onChange={handleChange}
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                            className="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-pink-500 focus:bg-white focus:border-transparent transition-all duration-300 ease-in-out outline-none text-gray-800 appearance-none font-light"
                         >
                             <option value="">¿Qué te preocupa?</option>
                             <option value="acne">Acné</option>
@@ -130,7 +130,7 @@ export const ContactForm: React.FC = () => {
                 </div>
 
                 <div>
-                    <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-700">
+                    <label htmlFor="message" className="block mb-3 text-[10px] font-black uppercase tracking-widest text-gray-400">
                         Mensaje *
                     </label>
                     <textarea
@@ -140,16 +140,16 @@ export const ContactForm: React.FC = () => {
                         onChange={handleChange}
                         required
                         rows={5}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                        className="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-pink-500 focus:bg-white focus:border-transparent transition-all duration-300 ease-in-out outline-none text-gray-800 placeholder-gray-300 font-light resize-none"
                         placeholder="Cuéntame sobre tus preocupaciones con la piel..."
                     />
                 </div>
 
                 <button
                     type="submit"
-                    className="w-full px-8 py-4 text-lg font-semibold text-white transition-colors bg-pink-500 rounded-full hover:bg-pink-600"
+                    className="w-full px-10 py-6 text-[11px] font-black uppercase tracking-[0.3em] text-white transition-all duration-300 ease-in-out bg-gray-900 rounded-2xl hover:bg-black hover:-translate-y-1 shadow-2xl active:scale-95 ring-1 ring-white/10"
                 >
-                    Enviar Consulta
+                    Enviar Consulta Privada
                 </button>
             </form>
         </div>
