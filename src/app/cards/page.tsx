@@ -109,9 +109,9 @@ END:VCARD`;
 
                         <a
                             href={`${siteConfig.whatsappLink}?text=Hola%20Johanna,%20vi%20tu%20tarjeta%20digital%20y%20quiero%20más%20información`}
-                            className="w-full py-5 bg-emerald-600 text-white rounded-2xl font-bold text-xs uppercase tracking-[0.3em] flex items-center justify-center gap-3 shadow-lg hover:bg-emerald-700 transition-all active:scale-95"
+                            className="w-full py-5 bg-[#25D366] text-white rounded-2xl font-bold text-xs uppercase tracking-[0.3em] flex items-center justify-center gap-3 shadow-lg hover:opacity-90 transition-all active:scale-95"
                         >
-                            <MessageCircle size={18} />
+                            <MessageCircle size={18} fill="currentColor" />
                             WhatsApp Directo
                         </a>
                     </div>
