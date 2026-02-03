@@ -1,8 +1,9 @@
 import { getAllPosts } from '../lib/posts';
 import { MetadataRoute } from 'next';
+import { siteConfig } from '../config/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://johannavarias.com';
+    const baseUrl = siteConfig.domain;
 
     // Static pages
     const staticPages = [

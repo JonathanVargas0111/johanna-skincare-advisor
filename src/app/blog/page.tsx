@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import React from 'react';
 import { BlogList } from '../../components/organisms/BlogList';
+import { siteConfig } from '../../config/site';
 
 export const metadata: Metadata = {
     title: 'Blog de Cuidado de la Piel | Johanna V. Arias',
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Blog de Cuidado de la Piel | Johanna V. Arias',
         description: 'Consejos expertos sobre cuidado natural de la piel y rutinas para una piel radiante.',
-        url: 'https://johannavarias.com/blog',
+        url: `${siteConfig.domain}/blog`,
         type: 'website',
     },
     twitter: {

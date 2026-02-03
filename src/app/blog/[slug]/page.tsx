@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getPostBySlug, getAllPosts } from '../../../lib/posts';
 import type { Metadata } from 'next';
+import { siteConfig } from '../../../config/site';
 
 interface BlogPostPageProps {
     params: Promise<{
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
         };
     }
 
-    const baseUrl = 'https://johannavarias.com';
+    const baseUrl = siteConfig.domain;
     const postUrl = `${baseUrl}/blog/${slug}`;
 
     return {
@@ -72,7 +73,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         notFound();
     }
 
-    const baseUrl = 'https://johannavarias.com';
+    const baseUrl = siteConfig.domain;
     const postUrl = `${baseUrl}/blog/${slug}`;
 
     return (
