@@ -11,5 +11,6 @@ export const siteConfig = {
     socials: {
         instagram: "https://www.instagram.com/johannavargasmk/",
         facebook: "#"
-    }
+    },
+    googleAnalyticsId: "G-XXXXXXXXXX" // Reemplazar con el ID real de GA4
 };

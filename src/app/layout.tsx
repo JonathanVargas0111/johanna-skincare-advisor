@@ -15,62 +15,10 @@ const geistMono = Geist_Mono({
 });
 
 import { siteConfig } from "../config/site";
+import { constructMetadata } from "../lib/metadata";
+import Footer from "../components/organisms/Footer";
 
-export const metadata: Metadata = {
-  title: siteConfig.titleFull,
-  description: siteConfig.description,
-  keywords: ["transformación de piel colombia", "tratamiento manchas colombia", "especialista acné", "consultoría facial bogotá", "método johanna", "skincare clima tropical", "experta en piel", "envíos colombia", "sheló nabel colombia", "mary kay colombia"],
-  authors: [{ name: siteConfig.name }],
-  creator: siteConfig.name,
-  publisher: siteConfig.name,
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  metadataBase: new URL(siteConfig.domain),
-  alternates: {
-    canonical: '/',
-  },
-  openGraph: {
-    title: siteConfig.titleFull,
-    description: siteConfig.description,
-    url: siteConfig.domain,
-    siteName: siteConfig.name,
-    locale: "es_CO",
-    type: "website",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: `${siteConfig.name} - Experta en Transformación de Piel en Colombia`,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: siteConfig.titleFull,
-    description: siteConfig.description,
-    images: ["/og-image.jpg"],
-    creator: "@johannavarias",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  verification: {
-    google: 'your-google-site-verification-code',
-  },
-  category: 'health & beauty',
-}; import Footer from "../components/organisms/Footer";
+export const metadata = constructMetadata();
 
 export default function RootLayout({
   children,
@@ -104,9 +52,9 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": ["Person", "ProfessionalService"],
-              "name": "Johanna V. Arias",
+              "name": siteConfig.name,
               "jobTitle": "Experta en Transformación de Piel",
-              "description": "Especialista en consultoría facial y tratamiento de manchas y acné usando el Método Johanna - sinergia entre botica natural (Sheló) y tecnología cosmética avanzada (Mary Kay)",
+              "description": siteConfig.description,
               "areaServed": {
                 "@type": "Country",
                 "name": "Colombia"
@@ -118,11 +66,12 @@ export default function RootLayout({
                 "addressLocality": "Bogotá",
                 "addressCountry": "CO"
               },
-              "url": "https://johannaskincare.com",
-              "image": "https://johannaskincare.com/og-image.jpg",
+              "url": siteConfig.domain,
+              "image": `${siteConfig.domain}/og-image.jpg`,
               "sameAs": [
-                "https://wa.me/573124567890"
-              ]
+                siteConfig.whatsappLink,
+                siteConfig.socials?.instagram
+              ].filter(Boolean)
             })
           }}
         />
