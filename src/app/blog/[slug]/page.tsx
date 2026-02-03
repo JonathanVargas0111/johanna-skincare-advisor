@@ -114,143 +114,148 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 }}
             />
 
-            {/* Header */}
-            <header className="bg-white border-b border-gray-100 shadow-sm">
-                <div className="max-w-4xl px-4 py-6 mx-auto sm:px-6 lg:px-8">
+            {/* Header / Breadcrumb - High Authority Feel */}
+            <div className="sticky top-0 z-50 bg-white/60 backdrop-blur-xl border-b border-gray-100/50">
+                <div className="max-w-5xl px-4 py-4 mx-auto sm:px-6 lg:px-8 flex items-center justify-between">
                     <Link
                         href="/blog"
-                        className="inline-flex items-center gap-2 font-medium text-pink-600 transition-colors duration-200 hover:text-pink-700"
+                        className="group flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 hover:text-pink-600 transition-colors"
                     >
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                        <svg className="w-3 h-3 transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" />
                         </svg>
-                        Volver al Blog
+                        Volver al Journal
                     </Link>
+                    <div className="hidden md:block text-[10px] font-bold text-gray-300 tracking-widest uppercase">
+                        Protocolos de Transformación Híbrida
+                    </div>
                 </div>
-            </header>
+            </div>
 
-            {/* Hero Section */}
-            <section className="relative py-24 overflow-hidden bg-linear-to-br from-rose-50 via-pink-50 to-purple-50">
-                <div className="absolute inset-0 opacity-30" style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f9a8d4' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-                }}></div>
-                <div className="relative max-w-4xl px-4 mx-auto sm:px-6 lg:px-8">
-                    <div className="text-center">
-                        {/* Breadcrumb */}
-                        <nav className="mb-8">
-                            <ol className="flex items-center justify-center space-x-2 text-sm text-gray-600">
-                                <li><Link href="/" className="hover:text-pink-600">Inicio</Link></li>
-                                <li>/</li>
-                                <li><Link href="/blog" className="hover:text-pink-600">Blog</Link></li>
-                                <li>/</li>
-                                <li className="font-medium text-gray-900">Artículo</li>
-                            </ol>
-                        </nav>
-
-                        {/* Date Badge */}
-                        <div className="inline-flex items-center gap-3 px-4 py-2 mb-8 border border-pink-200 rounded-full bg-white/80 backdrop-blur-sm">
-                            <div className="w-2 h-2 bg-pink-500 rounded-full animate-pulse"></div>
-                            <span className="text-sm font-medium text-gray-700">{post.date}</span>
-                            <div className="w-2 h-2 bg-pink-500 rounded-full animate-pulse"></div>
+            {/* Hero Section - Immersive Luxury */}
+            <section className="relative py-24 md:py-32 overflow-hidden bg-white">
+                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-rose-50/40 rounded-full blur-[120px] -mr-64 -mt-64"></div>
+                <div className="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+                    <div className="max-w-4xl">
+                        {/* Status Badge */}
+                        <div className="inline-flex items-center gap-3 px-4 py-2 mb-10 bg-linear-to-r from-pink-50/50 to-rose-50/50 border border-pink-100/30 rounded-full">
+                            <span className="relative flex h-2 w-2">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
+                            </span>
+                            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-600">Publicado el {post.date}</span>
                         </div>
 
                         {/* Title */}
-                        <h1 className="mb-8 text-4xl font-bold leading-tight text-gray-900 md:text-5xl lg:text-6xl">
+                        <h1 className="mb-10 text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] text-gray-900 font-playfair tracking-tight">
                             {post.title}
                         </h1>
 
-                        {/* Author */}
-                        <div className="flex items-center justify-center gap-4 mb-8">
-                            <div className="flex items-center gap-3">
-                                <div className="flex items-center justify-center w-16 h-16 rounded-full shadow-lg bg-linear-to-br from-pink-500 to-rose-500">
-                                    <span className="text-lg font-bold text-white">JV</span>
+                        <div className="flex flex-col md:flex-row md:items-center gap-8 mb-12">
+                            {/* Author Card - Luxury Styled */}
+                            <div className="flex items-center gap-5 p-1 pr-6 bg-gray-50/30 rounded-full border border-gray-100/50 w-fit">
+                                <div className="relative">
+                                    <div className="absolute inset-0 bg-pink-500 blur-md opacity-20 animate-pulse rounded-full"></div>
+                                    <div className="relative flex items-center justify-center w-14 h-14 rounded-full bg-gray-900 shadow-xl overflow-hidden ring-2 ring-white">
+                                        <span className="text-sm font-bold text-white tracking-widest">JV</span>
+                                    </div>
                                 </div>
-                                <div className="text-left">
-                                    <div className="text-lg font-bold text-gray-900">Johanna V. Arias</div>
-                                    <div className="text-sm text-gray-600">Asesora Certificada en Cuidado de la Piel</div>
-                                    <div className="mt-1 text-xs text-gray-500">Más de 10 años de experiencia</div>
+                                <div>
+                                    <div className="text-sm font-bold text-gray-900">Johanna V. Arias</div>
+                                    <div className="text-[10px] font-medium text-pink-500 uppercase tracking-widest">Skin Coach & Experta</div>
+                                </div>
+                            </div>
+
+                            {/* Social Share Minimalist */}
+                            <div className="flex items-center gap-4 border-l border-gray-100 pl-8">
+                                <span className="text-[9px] font-black uppercase tracking-[0.25em] text-gray-300">Compartir</span>
+                                <div className="flex gap-2">
+                                    <a href={`https://api.whatsapp.com/send?text=${encodeURIComponent(post.title)}%20${postUrl}`} target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center hover:bg-green-50 hover:border-green-200 transition-colors">
+                                        <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 2c-5.517 0-9.969 4.451-9.969 9.969 0 1.766.463 3.42 1.272 4.881l-1.341 4.89 5.01-1.314c1.413.771 3.021 1.212 4.73 1.212 5.518 0 9.969-4.451 9.969-9.969 0-5.518-4.451-9.969-9.969-9.969zm4.903 14.188c-.213.606-1.077 1.156-1.488 1.231-.412.075-.826.138-2.613-.591-2.103-.859-3.414-2.969-3.519-3.109-.105-.14-1.127-1.491-1.127-2.844 0-1.353.705-2.016.953-2.29.248-.274.542-.343.722-.343s.361.002.518.009c.162.007.382-.062.597.457.215.519.736 1.791.801 1.921s.104.288.019.458-.124.288-.248.423-.255.302-.361.402-.124.21-.053.332c.071.121.315.519.676.84.464.412.855.54 1.05.632s.316.091.437-.052c.121-.143.518-.604.657-.811s.277-.174.464-.105.1.344.344.464c.243.121 1.554.736 1.821.85s.445.189.511.299.1.552-.113 1.158z" /></svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-
-                        {/* Excerpt */}
-                        {post.excerpt && (
-                            <div className="max-w-3xl mx-auto">
-                                <p className="text-xl font-medium leading-relaxed text-gray-700">
-                                    {post.excerpt}
-                                </p>
-                                <div className="flex items-center justify-center gap-2 mt-6">
-                                    <div className="w-12 h-px bg-linear-to-r from-transparent via-pink-300 to-transparent"></div>
-                                    <span className="font-medium text-pink-600">✨</span>
-                                    <div className="w-12 h-px bg-linear-to-r from-transparent via-pink-300 to-transparent"></div>
-                                </div>
-                            </div>
-                        )}
                     </div>
                 </div>
             </section>
 
-            {/* Article */}
-            <article className="max-w-4xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-                {/* Article Content */}
-                <div
-                    className="article-content"
-                    dangerouslySetInnerHTML={{ __html: post.content }}
-                />
-
-                {/* Share Section */}
-                <div className="pt-8 mt-12 border-t border-gray-200">
-                    <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
-                        <div className="text-center sm:text-left">
-                            <h3 className="mb-2 text-lg font-semibold text-gray-900">Comparte este artículo</h3>
-                            <p className="text-gray-600">Ayuda a otros a descubrir consejos para el cuidado de la piel</p>
+            {/* Main Content Area */}
+            <main className="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8 pb-32">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                    {/* Progress Sidebar - Desktop Only */}
+                    <aside className="hidden lg:block lg:col-span-3 sticky top-32 h-fit">
+                        <div className="space-y-8">
+                            <div>
+                                <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-900 mb-4">Sobre esta Consulta</h4>
+                                <p className="text-xs text-gray-400 leading-relaxed italic">
+                                    "Cada artículo es el resumen de años de práctica clínica y botánica natural."
+                                </p>
+                            </div>
+                            <div className="pt-8 border-t border-gray-100">
+                                <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-900 mb-6">Sinergia Híbrida</h4>
+                                <div className="space-y-4">
+                                    <div className="flex items-center gap-3">
+                                        <div className="w-6 h-6 rounded-full bg-pink-50 flex items-center justify-center text-pink-500 text-[10px] font-bold">01</div>
+                                        <span className="text-[10px] uppercase font-bold text-gray-400 tracking-widest">Botica Sheló</span>
+                                    </div>
+                                    <div className="flex items-center gap-3">
+                                        <div className="w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 text-[10px] font-bold">02</div>
+                                        <span className="text-[10px] uppercase font-bold text-gray-400 tracking-widest">Ciencia Mary Kay</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div className="flex gap-3">
-                            <a href={`https://www.facebook.com/sharer/sharer.php?u=${postUrl}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 transition-colors bg-blue-800 rounded-full hover:bg-blue-900">
-                                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
-                                </svg>
-                            </a>
-                            <a href={`https://twitter.com/intent/tweet?url=${postUrl}&text=${encodeURIComponent(post.title)}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 transition-colors bg-blue-600 rounded-full hover:bg-blue-700">
-                                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-                                </svg>
-                            </a>
-                            <a href={`https://api.whatsapp.com/send?text=${encodeURIComponent(post.title)}%20${postUrl}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 transition-colors bg-green-600 rounded-full hover:bg-green-700">
-                                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.0189 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" />
-                                </svg>
-                            </a>
+                    </aside>
+
+                    {/* Article Content */}
+                    <div className="lg:col-span-9">
+                        <article className="prose prose-lg max-w-none">
+                            <div
+                                className="article-content font-roboto font-light leading-relaxed text-gray-600 space-y-8 prose-h2:font-playfair prose-h2:text-3xl prose-h2:text-gray-900 prose-h2:tracking-tight prose-blockquote:border-l-pink-500 prose-blockquote:bg-pink-50/50 prose-blockquote:p-8 prose-blockquote:rounded-r-2xl prose-blockquote:not-italic prose-blockquote:text-xl prose-blockquote:font-playfair prose-strong:text-gray-900 prose-strong:font-bold prose-a:text-pink-600 prose-a:no-underline hover:prose-a:underline"
+                                dangerouslySetInnerHTML={{ __html: post.content }}
+                            />
+                        </article>
+
+                        {/* Final Signature */}
+                        <div className="mt-24 pt-12 border-t border-gray-100 flex flex-col items-center text-center">
+                            <div className="text-3xl font-playfair italic text-gray-900 mb-4 font-bold">Johanna V. Arias</div>
+                            <p className="text-sm text-gray-400 font-medium uppercase tracking-[0.2em]">Tu Skin Coach de Confianza en Colombia</p>
+                        </div>
+
+                        {/* High Conversion CTA - Premium Glass */}
+                        <div className="mt-20">
+                            <div className="relative group">
+                                <div className="absolute -inset-1 bg-linear-to-r from-pink-500 to-rose-500 rounded-[2.5rem] blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                                <div className="relative bg-white border border-pink-100/50 rounded-[2rem] p-10 md:p-16 overflow-hidden shadow-2xl">
+                                    <div className="absolute top-0 right-0 w-64 h-64 bg-rose-50 rounded-full blur-3xl -mr-32 -mt-32 opacity-50"></div>
+
+                                    <div className="relative z-10 text-center">
+                                        <div className="inline-block px-4 py-1.5 bg-pink-50 rounded-full text-[9px] font-black text-pink-600 uppercase tracking-[0.3em] mb-8">Protocolo Exclusivo</div>
+                                        <h3 className="text-3xl md:text-5xl font-bold text-gray-900 font-playfair tracking-tight mb-8 leading-tight">
+                                            ¿Quieres que analice <br /><span className="italic text-pink-600">tu piel</span> personalmente?
+                                        </h3>
+                                        <p className="max-w-xl mx-auto mb-10 text-gray-500 text-lg font-light leading-relaxed">
+                                            No sigas rutinas genéricas. Escríbeme ahora y diseñaré tu protocolo de Sinergia Híbrida 100% a medida.
+                                        </p>
+
+                                        <a
+                                            href="https://wa.me/573133747275?text=Hola%20Johanna,%20leí%20tu%20artículo%20sobre%20piel%20madura%20y%20quiero%20empezar%20mi%20transformación"
+                                            className="group relative inline-flex items-center justify-center px-10 py-5 overflow-hidden font-bold transition-all duration-300 bg-gray-900 rounded-2xl hover:bg-black shadow-2xl hover:-translate-y-1 active:scale-95"
+                                        >
+                                            <span className="relative z-10 text-[11px] uppercase tracking-[0.3em] text-white flex items-center gap-3">
+                                                Comenzar mi Consultoría Gratis
+                                                <svg className="w-5 h-5 animate-bounce-x" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                                            </span>
+                                            <div className="absolute inset-0 w-full h-full bg-linear-to-r from-pink-600 to-rose-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                {/* CTA Section */}
-                <div className="pt-12 mt-12 border-t border-gray-200">
-                    <div className="p-8 text-center bg-linear-to-br from-rose-50 to-pink-50 rounded-2xl">
-                        <h3 className="mb-4 text-2xl font-bold text-gray-900">
-                            ¿Listo para transformar tu piel?
-                        </h3>
-                        <p className="mb-6 text-lg text-gray-600">
-                            Agenda tu consulta personalizada y descubre el plan perfecto para tu tipo de piel.
-                        </p>
-                        <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-                            <Link
-                                href="/contact"
-                                className="px-8 py-4 font-semibold text-white transition-colors duration-200 bg-pink-500 rounded-full hover:bg-pink-600"
-                            >
-                                Agendar Consulta
-                            </Link>
-                            <Link
-                                href="/services"
-                                className="px-8 py-4 font-semibold text-pink-600 transition-colors duration-200 border border-pink-500 rounded-full hover:bg-pink-50"
-                            >
-                                Ver Servicios
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </article>
+            </main>
         </div>
     );
 }

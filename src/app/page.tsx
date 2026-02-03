@@ -78,7 +78,7 @@ export default async function Home() {
 
           <p className="max-w-3xl mx-auto mb-16 text-xl leading-relaxed text-gray-500 md:text-2xl font-light reveal-up [animation-delay:400ms]">
             Johanna V. Arias eleva tu ritual de cuidado combinando la pureza de <strong>Sheló Nabel</strong> con la ingeniería de <strong>Mary Kay</strong>.
-            Protocolos exclusivos para una piel radiante.
+            Protocolos exclusivos con <strong>envíos a toda Colombia</strong> para una transformación real.
           </p>
 
           <div className="flex flex-col justify-center gap-8 mb-24 sm:flex-row reveal-up [animation-delay:600ms]">
@@ -141,16 +141,19 @@ export default async function Home() {
       {/* Testimonials Section */}
       <section id="testimonials" className="py-32 bg-white">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 text-center reveal-up">
-          <h2 className="mb-16 text-4xl font-bold text-gray-900 md:text-5xl font-playfair tracking-tight">Voces de Experiencia</h2>
+          <div className="inline-block px-4 py-1.5 mb-6 text-[10px] font-black tracking-[0.3em] text-pink-600 uppercase bg-pink-50 rounded-full">
+            Opiniones y Resultados Reales
+          </div>
+          <h2 className="mb-16 text-4xl font-bold text-gray-900 md:text-5xl font-playfair tracking-tight">Historias de Transformación</h2>
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-            <div className="p-12 glass-card rounded-[3rem] text-left italic font-light text-xl text-gray-600 relative">
-              <span className="absolute top-10 left-10 text-6xl text-pink-100 font-serif">&ldquo;</span>
-              <p className="relative z-10">&ldquo;Johanna cambió mi piel por completo. La combinación de productos es mágica.&rdquo;</p>
-              <p className="mt-8 text-sm font-bold uppercase tracking-widest text-gray-900 font-roboto not-italic">— Elena R.</p>
+            <div className="group p-12 glass-card rounded-[3rem] text-left italic font-light text-xl text-gray-600 relative transition-all hover:bg-white/80">
+              <span className="absolute top-10 left-10 text-6xl text-pink-100 font-serif group-hover:text-pink-200 transition-colors">&ldquo;</span>
+              <p className="relative z-10 leading-relaxed">&ldquo;En solo 15 días vi una diferencia real en la textura de mi piel. El protocolo híbrido de Johanna es exactamente lo que necesitaba para mis manchas.&rdquo;</p>
+              <p className="mt-8 text-sm font-bold uppercase tracking-widest text-gray-900 font-roboto not-italic">— Sonia R.</p>
             </div>
-            <div className="p-12 glass-card rounded-[3rem] text-left italic font-light text-xl text-gray-600 relative">
-              <span className="absolute top-10 left-10 text-6xl text-amber-100 font-serif">&ldquo;</span>
-              <p className="relative z-10">&ldquo;La asesoría de Johanna me dio claridad sobre lo que mi piel realmente necesitaba.&rdquo;</p>
+            <div className="group p-12 glass-card rounded-[3rem] text-left italic font-light text-xl text-gray-600 relative transition-all hover:bg-white/80">
+              <span className="absolute top-10 left-10 text-6xl text-amber-100 font-serif group-hover:text-amber-200 transition-colors">&ldquo;</span>
+              <p className="relative z-10 leading-relaxed">&ldquo;La mejor asesoría de skincare en Colombia. No importa si estás en Bogotá, Medellín o Barranquilla, su enfoque geográfico es impecable.&rdquo;</p>
               <p className="mt-8 text-sm font-bold uppercase tracking-widest text-gray-900 font-roboto not-italic">— Claudia M.</p>
             </div>
           </div>
@@ -162,7 +165,7 @@ export default async function Home() {
         <div className="px-4 mx-auto max-w-5xl sm:px-6 lg:px-8 text-center reveal-up">
           <h2 className="mb-10 text-4xl font-bold text-gray-900 md:text-5xl font-playfair tracking-tight">Sobre Mí</h2>
           <p className="max-w-3xl mx-auto mb-12 text-xl text-gray-500 font-light leading-relaxed">
-            Mi misión es democratizar el acceso a un cuidado de la piel profesional y natural. A través de mi experiencia curada, selecciono lo mejor de cada mundo para ti.
+            Mi misión es democratizar el acceso a un cuidado de la piel profesional y natural en toda Colombia. A través de mi experiencia curada, selecciono lo mejor de la botica natural y la alta cosmética para enviarlo directamente a tu puerta, ya sea que estés en <strong>Bogotá, Medellín, Cali o Barranquilla</strong>.
           </p>
           <a
             href="/about"

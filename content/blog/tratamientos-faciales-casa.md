@@ -1,39 +1,49 @@
 ---
 title: "Spa de Autor en Casa: Tu Sesión de Transformación Semanal"
-publishDate: "2025-11-01"
+publishDate: "2026-02-03"
 author: "Johanna V. Arias"
 description: "Transforma tu hogar en una clínica de belleza con este ritual paso a paso del Método Johanna. Purifica con Sheló y restaura con Mary Kay."
-tags: ["spa en casa", "facial casero", "tratamientos faciales", "autocuidado", "método johanna", "colombia"]
+tags: ["skincare colombia", "spa en casa", "facial casero", "tratamientos faciales", "autocuidado", "método johanna"]
 ---
 
 # Spa de Autor en Casa: Tu Sesión de Transformación Semanal
 
-A veces, tu piel necesita más que la rutina diaria. Necesita una **intervención profunda**. No necesitas salir de casa para recibir un tratamiento de lujo; con los productos correctos y la técnica de autor, puedes resetear tu piel en 45 minutos.
+A veces, tu piel necesita más que la rutina diaria. Necesita una **intervención profunda**. No necesitas salir de casa para recibir un tratamiento de lujo; con los productos correctos y mi guía de autor, puedes resetear tu piel en solo 45 minutos.
 
-## Paso 1: El Detox Botánico
+> "I use the best of Mexican nature (Sheló) with American science (Mary Kay) so you don't overspend and see changes." — Johanna V. Arias
 
-Antes de cualquier activo potente, debemos retirar la "máscara" de contaminación.
+## Paso 1: El Detox con Botica Pura
 
-* Usa el **Jabón de Carbón Activado de Sheló**. Masajea suavemente durante 60 segundos. Sus micropartículas botánicas actúan como un imán para las impurezas de los poros.
+Antes de aplicar cualquier activo de alta gama, debemos retirar la "máscara" de contaminación y sebo.
 
-## Paso 2: La Microexfoliación de Precisión
+* Usa el **Jabón de Carbón Activado de Sheló** ($18.000 COP). Masajea durante 60 segundos. Sus partículas actúan como un imán para las impurezas incrustadas en los poros por el clima colombiano.
 
-Una vez limpia, debemos retirar las células muertas para que los sueros penetren de verdad.
+## Paso 2: Renovación Mecánica
 
-* Utiliza un exfoliante físico suave de Mary Kay para pulir la textura de la piel, especialmente en nariz y mentón.
+Para que los sueros penetren a la dermis, debemos retirar las células muertas.
 
-## Paso 3: Nutrición con Tecnología Clínica
+* Utiliza el **Gel Exfoliante de Nuez de Sheló** ($30.000 - $35.000 COP) para pulir suavemente la textura, especialmente en la "Zona T".
 
-Ahora que la piel está receptiva, aplicamos la "joya de la corona":
+## Paso 3: Inyección de Alta Tecnología
 
-* **Protocolo Iluminador:** Aplica 3 gotas del **Suero de Vitamina C + E TimeWise® de Mary Kay** ($124.900 COP). Masajea con movimientos ascendentes para estimular el drenaje linfático.
+Ahora que la piel está receptiva, aplicamos nuestra joya clínica:
 
-## Paso 4: Sellado y Calma
+* **Protocolo Iluminador:** Aplica el **Suero de Vitamina C + E TimeWise® de Mary Kay** ($124.900 COP). Este paso es innegociable para combatir la oxidación celular provocada por el sol mediterráneo de nuestras tierras.
 
-Finalizamos con una crema rica en extractos de Sheló (como Aloe o Caléndula) para calmar y sellar la hidratación.
+## Paso 4: Cierre con Frío y Calma
 
-## El Consejo de Johanna
+Finalizamos con el producto estrella para relajar el rostro y sellar la hidratación:
 
-Realiza este ritual los domingos por la noche. Prepararás tu piel para la semana y le darás un respiro del estrés cotidiano.
+* Aplica **Hielo Mineral de Sheló** ($35.000 COP) en puntos de tensión o una mascarilla hidratante. Sentirás cómo tu rostro "suspira" de alivio.
 
-**¿Quieres que diseñe un ritual de SPA específico para tus necesidades? [Escríbeme y lo creamos juntas](https://wa.me/573133747275?text=Hola%20Johanna,%20quiero%20mi%20Ritual%20de%20SPA%20Personalizado)**
+## El Consejo Johanna
+
+Realiza este ritual los domingos por la noche. No solo prepararás tu piel para la semana, sino que le otorgarás a tu mente un momento de paz necesario. Una piel hermosa empieza con una mente tranquila.
+
+---
+
+### ¿Quieres que diseñe un ritual de SPA exclusivo para tus necesidades?
+
+Escríbeme ahora y diseñemos juntas tu sesión de transformación en casa.
+
+[Hola Johanna, leí tu artículo sobre el SPA en casa y quiero mi ritual personalizado](https://wa.me/573133747275?text=Hola%20Johanna,%20leí%20tu%20artículo%20sobre%20el%20SPA%20en%20casa%20y%20quiero%20mi%20ritual%20personalizado)
