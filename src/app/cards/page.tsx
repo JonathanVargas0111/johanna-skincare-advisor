@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { siteConfig } from '../../config/site';
 import {
     MessageCircle,
@@ -109,6 +110,9 @@ END:VCARD`;
 
                         <a
                             href={`${siteConfig.whatsappLink}?text=Hola%20Johanna,%20vi%20tu%20tarjeta%20digital%20y%20quiero%20más%20información`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Contactar a Johanna por WhatsApp"
                             className="w-full py-5 bg-[#25D366] text-white rounded-2xl font-bold text-xs uppercase tracking-[0.3em] flex items-center justify-center gap-3 shadow-lg hover:opacity-90 transition-all active:scale-95"
                         >
                             <MessageCircle size={18} fill="currentColor" />
@@ -121,16 +125,19 @@ END:VCARD`;
                         <a
                             href={siteConfig.socials.instagram}
                             target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Seguir a Johanna en Instagram"
                             className="p-4 bg-white rounded-2xl text-pink-600 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all border border-gray-50"
                         >
                             <Instagram size={24} />
                         </a>
-                        <a
-                            href={siteConfig.domain}
+                        <Link
+                            href="/"
+                            aria-label="Visitar sitio web principal"
                             className="p-4 bg-white rounded-2xl text-amber-700 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all border border-gray-50"
                         >
                             <Globe size={24} />
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="mt-12 pt-8 border-t border-gray-100">
