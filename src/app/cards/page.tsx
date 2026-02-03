@@ -119,7 +119,7 @@ END:VCARD`;
                     {/* Social Links */}
                     <div className="mt-12 flex justify-center gap-6">
                         <a
-                            href="https://instagram.com/johannavarias"
+                            href={siteConfig.instagram}
                             target="_blank"
                             className="p-4 bg-white rounded-2xl text-pink-600 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all border border-gray-50"
                         >
