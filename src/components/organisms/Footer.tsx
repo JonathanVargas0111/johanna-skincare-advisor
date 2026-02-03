@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { siteConfig } from '../../config/site';
 
 const Footer = () => {
     return (
@@ -14,13 +15,13 @@ const Footer = () => {
                     {/* Brand Section */}
                     <div className="space-y-6">
                         <div className="text-3xl font-bold text-white font-playfair tracking-tighter transition-all hover:scale-105 inline-block">
-                            Johanna V. Arias
+                            {siteConfig.name}
                         </div>
                         <p className="text-[9px] uppercase tracking-[0.25em] text-pink-400 font-black mb-4">
                             Experta en Transformación de Piel
                         </p>
                         <p className="max-w-xs mx-auto md:mx-0 text-gray-400 font-light leading-relaxed text-sm">
-                            Especialista en transformación de piel usando el <span className="text-pink-400 font-medium">Método Johanna</span>: la sinergia entre botica natural y tecnología cosmética avanzada. Soluciones personalizadas para el clima tropical colombiano con <span className="text-pink-400">envíos a todo el país</span>.
+                            {siteConfig.description} Soluciones para el clima tropical colombiano con <span className="text-pink-400">envíos a todo el país</span>.
                         </p>
                     </div>
 
@@ -53,7 +54,7 @@ const Footer = () => {
                 </div>
 
                 <div className="pt-16 mt-16 text-center text-gray-500 border-t border-white/5 space-y-4">
-                    <p className="text-[10px] font-black uppercase tracking-[0.2em]">&copy; 2025 Johanna V. Arias - Todos los derechos reservados</p>
+                    <p className="text-[10px] font-black uppercase tracking-[0.2em]">&copy; 2025 {siteConfig.name} - Todos los derechos reservados</p>
                     <p className="text-xs font-light tracking-wide text-gray-600 italic">
                         Desarrollado con pasión para una piel radiante por <a href="https://nandark.com/" target="_blank" rel="noopener noreferrer" className="text-pink-700 hover:text-pink-500 transition-all duration-300 ease-in-out underline decoration-pink-900/40 underline-offset-4">nandark.com</a>
                     </p>

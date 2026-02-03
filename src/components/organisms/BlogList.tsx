@@ -1,6 +1,7 @@
 import React from 'react';
 import { BlogCard } from '../molecules/BlogCard';
 import { getAllPosts } from '../../lib/posts';
+import { siteConfig } from '../../config/site';
 
 export const BlogList: React.FC = () => {
     const posts = getAllPosts();

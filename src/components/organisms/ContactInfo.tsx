@@ -1,4 +1,5 @@
 import { ContactCard } from '../molecules/ContactCard';
+import { siteConfig } from '../../config/site';
 
 export const ContactInfo: React.FC = () => {
     return (
@@ -19,14 +20,14 @@ export const ContactInfo: React.FC = () => {
                             </div>
                         }
                         title="Canal Digital"
-                        content="contacto@johannavarias.com"
+                        content={siteConfig.email}
                         subtitle="Respondo en 24 horas"
                     />
                 </div>
 
                 {/* Phone */}
                 <a
-                    href="https://wa.me/573001234567?text=Hola%20Johanna,%20quisiera%20hacerte%20una%20consulta"
+                    href={`${siteConfig.whatsappLink}?text=Hola%20Johanna,%20quisiera%20hacerte%20una%20consulta`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block group transition-all duration-300 ease-in-out hover:-translate-y-1 active:scale-95"
@@ -40,7 +41,7 @@ export const ContactInfo: React.FC = () => {
                             </div>
                         }
                         title="WhatsApp Directo"
-                        content="+57 300 123 4567"
+                        content={`+57 ${siteConfig.phone}`}
                         subtitle="Atención inmediata y personalizada"
                     />
                 </a>

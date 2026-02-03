@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { siteConfig } from '../../config/site';
 
 interface HeaderProps {
     currentPath?: string;
@@ -103,7 +104,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPath }) => {
                         {/* CTA Button - Desktop */}
                         <div className="hidden lg:block">
                             <a
-                                href="https://wa.me/573001234567?text=Hola%20Johanna,%20quiero%20agendar%20una%20sesión%20de%20skincare"
+                                href={`${siteConfig.whatsappLink}?text=Hola%20Johanna,%20quiero%20agendar%20una%20sesión%20de%20skincare`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center bg-gray-900 hover:bg-black text-white px-8 py-3 rounded-2xl font-bold text-[10px] uppercase tracking-[0.2em] transition-all duration-300 ease-in-out shadow-premium hover:shadow-2xl hover:-translate-y-0.5 active:scale-95 ring-1 ring-white/10"
@@ -191,7 +192,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPath }) => {
                     {/* Mobile CTA */}
                     <div className="p-6 border-t border-gray-200">
                         <a
-                            href="https://wa.me/573001234567?text=Hola%20Johanna,%20quiero%20agendar%20una%20sesión%20de%20skincare"
+                            href={`${siteConfig.whatsappLink}?text=Hola%20Johanna,%20quiero%20agendar%20una%20sesión%20de%20skincare`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-full bg-pink-500 hover:bg-pink-600 text-white px-6 py-4 rounded-full font-semibold text-base transition-colors duration-200 shadow-lg hover:shadow-xl inline-flex justify-center items-center"
@@ -203,7 +204,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPath }) => {
                         {/* Contact Info */}
                         <div className="mt-6 text-center">
                             <p className="text-sm text-gray-600 mb-2">¿Necesitas ayuda?</p>
-                            <p className="text-sm font-medium text-gray-900">contacto@johannavarias.com</p>
+                            <p className="text-sm font-medium text-gray-900">{siteConfig.email}</p>
                         </div>
                     </div>
                 </div>

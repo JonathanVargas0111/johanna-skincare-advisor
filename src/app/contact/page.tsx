@@ -2,34 +2,21 @@ import type { Metadata } from 'next';
 import { Header } from '../../components/organisms/Header';
 import { ContactForm } from '../../components/organisms/ContactForm';
 import { ContactInfo } from '../../components/organisms/ContactInfo';
+import { siteConfig } from '../../config/site';
 
 export const metadata: Metadata = {
-    title: 'Contacto - Johanna V. Arias',
-    description: 'Ponte en contacto con Johanna V. Arias para agendar tu consulta, hacer preguntas o saludar. ¡Tu piel radiante te espera!',
-    keywords: ['contacto', 'asesora piel', 'preguntas skincare', 'agendar consulta', 'Johanna V. Arias'],
+    title: `Contacto ${siteConfig.titleSuffix}`,
+    description: siteConfig.description,
+    keywords: ['contacto', 'asesora piel', 'preguntas skincare', 'agendar consulta', siteConfig.name],
     openGraph: {
-        title: 'Contacto - Johanna V. Arias',
-        description: 'Ponte en contacto con Johanna V. Arias para agendar tu consulta, hacer preguntas o saludar. ¡Tu piel radiante te espera!',
-        url: 'https://johannavarias.com/contact',
+        title: `Contacto ${siteConfig.titleSuffix}`,
+        description: siteConfig.description,
+        url: `${siteConfig.domain}/contact`,
         type: 'website',
-        images: [
-            {
-                url: '/og-image.jpg',
-                width: 1200,
-                height: 630,
-                alt: 'Contacto Johanna V. Arias',
-            },
-        ],
-    },
-    twitter: {
-        card: 'summary_large_image',
-        title: 'Contacto - Johanna V. Arias',
-        description: 'Ponte en contacto con Johanna V. Arias para agendar tu consulta, hacer preguntas o saludar. ¡Tu piel radiante te espera!',
-        images: ['/og-image.jpg'],
-        creator: '@johannavarias',
+        // ...
     },
     alternates: {
-        canonical: 'https://johannavarias.com/contact',
+        canonical: `${siteConfig.domain}/contact`,
     },
 };
 
@@ -37,29 +24,28 @@ export default function ContactPage() {
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "ContactPage",
-        "name": "Contacto - Johanna V. Arias",
-        "description": "Ponte en contacto con Johanna V. Arias para agendar tu consulta, hacer preguntas o saludar. ¡Tu piel radiante te espera!",
-        "url": "https://johannavarias.com/contact",
+        "name": `Contacto ${siteConfig.titleSuffix}`,
+        "description": siteConfig.description,
+        "url": `${siteConfig.domain}/contact`,
         "publisher": {
             "@type": "Person",
-            "name": "Johanna V. Arias"
+            "name": siteConfig.name
         },
         "potentialAction": {
             "@type": "CommunicateAction",
             "target": {
                 "@type": "EntryPoint",
                 "actionPlatform": [
-                    "http://schema.org/Website",
-                    "http://schema.org/MobileApplication"
+                    "http://schema.org/Website"
                 ]
             },
             "agent": {
                 "@type": "Person",
-                "name": "Johanna V. Arias"
+                "name": siteConfig.name
             },
             "recipient": {
                 "@type": "Person",
-                "name": "Johanna V. Arias"
+                "name": siteConfig.name
             }
         }
     };
@@ -91,29 +77,36 @@ export default function ContactPage() {
             </section>
 
             {/* Contact Section */}
-            <section className="py-16">
+            <section className="py-24">
                 <div className="px-4 mx-auto max-w-6xl sm:px-6 lg:px-8">
-                    <div className="grid gap-12 lg:grid-cols-2">
+                    <div className="grid gap-16 lg:grid-cols-2">
                         {/* Contact Form */}
-                        <div>
-                            <h2 className="mb-6 text-3xl font-bold text-gray-900">Envíame un Mensaje</h2>
-                            <p className="mb-8 text-lg text-gray-600">
-                                Ya sea que tengas una pregunta sobre mis servicios, quieras agendar tu consulta inicial, o simplemente quieras saludar, este es el lugar para hacerlo.
+                        <div className="reveal-up">
+                            <h2 className="mb-8 text-4xl font-bold text-gray-900 font-playfair tracking-tighter">Envíame un Mensaje</h2>
+                            <p className="mb-10 text-lg text-gray-500 font-light leading-relaxed">
+                                Ya sea que tengas una pregunta sobre el <span className="text-pink-600 font-medium">Método Johanna</span>, quieras agendar tu consulta inicial, o simplemente quieras saludar, este es el lugar para hacerlo.
                             </p>
-                            <ContactForm />
+                            <div className="glass-card p-8 md:p-12 rounded-[2.5rem] shadow-xl ring-1 ring-gray-100">
+                                <ContactForm />
+                            </div>
                         </div>
 
                         {/* Contact Info */}
-                        <div>
-                            <h2 className="mb-6 text-3xl font-bold text-gray-900">Información de Contacto</h2>
-                            <ContactInfo />
+                        <div className="reveal-up [animation-delay:200ms]">
+                            <h2 className="mb-8 text-4xl font-bold text-gray-900 font-playfair tracking-tighter">Conexión Directa</h2>
+                            <div className="space-y-12">
+                                <ContactInfo />
 
-                            {/* Additional Info */}
-                            <div className="mt-8 p-6 bg-pink-50 rounded-lg">
-                                <h3 className="text-lg font-semibold text-pink-800 mb-2">Tiempo de Respuesta</h3>
-                                <p className="text-pink-700">
-                                    Mi objetivo es responder a todos los mensajes en un plazo de 24 a 48 horas hábiles. ¡Gracias por tu paciencia!
-                                </p>
+                                {/* Additional Info */}
+                                <div className="p-8 bg-gray-900 rounded-[2.5rem] relative overflow-hidden shadow-premium ring-1 ring-white/10">
+                                    <div className="absolute inset-0 bg-linear-to-br from-pink-500/10 to-amber-500/10 opacity-30"></div>
+                                    <div className="relative z-10">
+                                        <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-pink-400 mb-4">Compromiso de Autor</h3>
+                                        <p className="text-gray-400 font-light leading-relaxed">
+                                            Analizo personalmente cada consulta detallada. Mi tiempo estimado de respuesta es de <span className="text-white font-medium">24 a 48 horas hábiles</span>.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

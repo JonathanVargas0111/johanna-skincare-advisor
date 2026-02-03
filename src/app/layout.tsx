@@ -14,27 +14,29 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+import { siteConfig } from "../config/site";
+
 export const metadata: Metadata = {
-  title: "Johanna Skincare | Experta en Transformación de Piel y Consultoría Facial en Colombia",
-  description: "Recupera tu confianza con el Método Johanna. Especialista en tratamiento de manchas y acné en Colombia usando la sinergia entre botica natural y alta tecnología cosmética.",
+  title: siteConfig.titleFull,
+  description: siteConfig.description,
   keywords: ["transformación de piel colombia", "tratamiento manchas colombia", "especialista acné", "consultoría facial bogotá", "método johanna", "skincare clima tropical", "experta en piel", "envíos colombia", "sheló nabel colombia", "mary kay colombia"],
-  authors: [{ name: "Johanna V. Arias" }],
-  creator: "Johanna V. Arias",
-  publisher: "Johanna V. Arias",
+  authors: [{ name: siteConfig.name }],
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://johannavarias.com'),
+  metadataBase: new URL(siteConfig.domain),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: "Johanna Skincare | Experta en Transformación de Piel y Consultoría Facial en Colombia",
-    description: "Recupera tu confianza con el Método Johanna. Especialista en tratamiento de manchas y acné en Colombia usando la sinergia entre botica natural y alta tecnología cosmética.",
-    url: "https://johannavarias.com",
-    siteName: "Johanna V. Arias",
+    title: siteConfig.titleFull,
+    description: siteConfig.description,
+    url: siteConfig.domain,
+    siteName: siteConfig.name,
     locale: "es_CO",
     type: "website",
     images: [
@@ -42,14 +44,14 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Johanna V. Arias - Experta en Transformación de Piel en Colombia",
+        alt: `${siteConfig.name} - Experta en Transformación de Piel en Colombia`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Johanna Skincare | Experta en Transformación de Piel y Consultoría Facial en Colombia",
-    description: "Recupera tu confianza con el Método Johanna. Especialista en tratamiento de manchas y acné en Colombia usando la sinergia entre botica natural y alta tecnología cosmética.",
+    title: siteConfig.titleFull,
+    description: siteConfig.description,
     images: ["/og-image.jpg"],
     creator: "@johannavarias",
   },

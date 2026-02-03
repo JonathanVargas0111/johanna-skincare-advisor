@@ -1,11 +1,11 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { siteConfig } from '../../config/site';
 
 const DuoPielPerfecta = () => {
-  const phoneNumber = '573133747275'; // Número de WhatsApp de Johanna
   const message = 'Hola Johanna, quiero el Dúo Piel Perfecta que elimina manchas y acné';
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  const whatsappUrl = `${siteConfig.whatsappLink}?text=${encodeURIComponent(message)}`;
 
   const producto1 = {
     nombre: 'Jabón de Carbón Activado',

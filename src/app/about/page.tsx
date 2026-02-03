@@ -1,33 +1,20 @@
 import type { Metadata } from 'next';
 import { Header } from '../../components/organisms/Header';
+import { siteConfig } from '../../config/site';
 
 export const metadata: Metadata = {
-    title: 'Sobre Mí - Johanna V. Arias',
-    description: 'Conoce a Johanna V. Arias, asesora certificada en cuidado de la piel con más de 10 años de experiencia. Descubre su filosofía holística y su enfoque personalizado para transformar tu piel.',
-    keywords: ['Johanna V. Arias', 'asesora piel', 'skincare experta', 'filosofía skincare', 'cuidado de la piel natural'],
+    title: `Sobre Mí ${siteConfig.titleSuffix}`,
+    description: siteConfig.description,
+    keywords: [siteConfig.name, 'asesora piel', 'skincare experta', 'filosofía skincare', 'cuidado de la piel natural', 'Método Johanna'],
     openGraph: {
-        title: 'Sobre Mí - Johanna V. Arias',
-        description: 'Conoce a Johanna V. Arias, asesora certificada en cuidado de la piel con más de 10 años de experiencia. Descubre su filosofía holística y su enfoque personalizado para transformar tu piel.',
-        url: 'https://johannavarias.com/about',
+        title: `Sobre Mí ${siteConfig.titleSuffix}`,
+        description: siteConfig.description,
+        url: `${siteConfig.domain}/about`,
         type: 'profile',
-        images: [
-            {
-                url: '/og-image.jpg',
-                width: 1200,
-                height: 630,
-                alt: 'Johanna V. Arias - Asesora en Cuidado de la Piel',
-            },
-        ],
-    },
-    twitter: {
-        card: 'summary_large_image',
-        title: 'Sobre Mí - Johanna V. Arias',
-        description: 'Conoce a Johanna V. Arias, asesora certificada en cuidado de la piel con más de 10 años de experiencia. Descubre su filosofía holística y su enfoque personalizado para transformar tu piel.',
-        images: ['/og-image.jpg'],
-        creator: '@johannavarias',
+        // ...
     },
     alternates: {
-        canonical: 'https://johannavarias.com/about',
+        canonical: `${siteConfig.domain}/about`,
     },
 };
 
@@ -35,11 +22,11 @@ export default function AboutPage() {
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "Person",
-        "name": "Johanna V. Arias",
+        "name": siteConfig.name,
         "jobTitle": "Asesora Certificada en Cuidado de la Piel",
-        "description": "Asesora certificada en cuidado natural de la piel con más de 10 años de experiencia. Especialista en soluciones personalizadas y naturales para cada tipo de piel.",
-        "url": "https://johannavarias.com/about",
-        "image": "/og-image.jpg",
+        "description": siteConfig.description,
+        "url": `${siteConfig.domain}/about`,
+        "image": `${siteConfig.domain}/og-image.jpg`,
         "sameAs": [
             "https://www.instagram.com/johannavarias",
             "https://www.facebook.com/johannavarias"
@@ -48,7 +35,8 @@ export default function AboutPage() {
             "Cuidado de la piel natural",
             "Skincare personalizado",
             "Ingredientes naturales",
-            "Análisis de piel con IA"
+            "Análisis de piel con IA",
+            "Método Johanna"
         ]
     };
 
@@ -62,91 +50,92 @@ export default function AboutPage() {
             <Header />
 
             {/* Hero Section */}
-            <section className="pt-24 pb-16 bg-linear-to-br from-rose-50 via-pink-50 to-white">
+            <section className="pt-32 pb-24 bg-linear-to-br from-rose-50 via-white to-amber-50 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-pink-100/30 rounded-full blur-3xl -z-10 animate-pulse"></div>
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div className="text-center">
-                        <div className="inline-block px-4 py-2 mb-6 text-sm font-medium text-pink-700 bg-pink-100 rounded-full">
-                            Sobre Mí
+                    <div className="text-center reveal-up">
+                        <div className="inline-block px-4 py-1.5 mb-8 text-[10px] font-black tracking-[0.3em] text-pink-700 bg-white/50 backdrop-blur-md border border-white/20 rounded-full uppercase shadow-sm">
+                            Identidad de Marca
                         </div>
-                        <h1 className="mb-6 text-4xl font-bold leading-tight text-gray-900 md:text-6xl">
-                            Mi Misión: Tu Piel, Mi Pasión
+                        <h1 className="mb-10 text-5xl font-bold leading-tight text-gray-900 md:text-8xl font-playfair tracking-tighter">
+                            Mi Misión: Tu Piel,<br />Mi Obra Maestra
                         </h1>
-                        <p className="max-w-3xl mx-auto text-xl leading-relaxed text-gray-600">
-                            Hola, soy Johanna V. Arias. Mi misión es simple: ayudarte a sentirte increíble en tu propia piel.
+                        <p className="max-w-3xl mx-auto text-xl font-light leading-relaxed text-gray-500 font-roboto">
+                            Hola, soy <span className="text-gray-900 font-medium">{siteConfig.name}</span>. Mi propósito es elevar tu ritual diario a través de la ciencia botánica y la consultoría de autor.
                         </p>
                     </div>
                 </div>
             </section>
 
             {/* Content Sections */}
-            <section className="py-16">
+            <section className="py-24">
                 <div className="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
-                    <div className="grid gap-12 lg:grid-cols-2">
+                    <div className="grid gap-16 lg:grid-cols-2">
                         {/* Story Section */}
-                        <div>
-                            <h2 className="mb-6 text-3xl font-bold text-gray-900">Mi Historia</h2>
-                            <p className="mb-6 text-lg text-gray-600">
-                                Como muchas de ustedes, mi viaje en el mundo del skincare comenzó con una frustración personal. Durante años, luché con mi propia piel, probando innumerables productos y siguiendo consejos contradictorios.
+                        <div className="reveal-up">
+                            <h2 className="mb-8 text-4xl font-bold text-gray-900 font-playfair tracking-tight">Mi Trayectoria</h2>
+                            <p className="mb-6 text-lg text-gray-500 font-light leading-relaxed">
+                                Mi viaje en la cosmética comenzó con una búsqueda personal de soluciones reales. Lo que inició como una fascinación técnica se transformó en una trayectoria de más de 10 años descodificando las necesidades de la piel latina.
                             </p>
-                            <p className="text-lg text-gray-600">
-                                Esa frustración se transformó en una fascinación que me ha llevado a dedicar más de 10 años a entender las complejidades de la piel. Ahora, mi mayor alegría es compartir ese conocimiento contigo.
+                            <p className="text-lg text-gray-500 font-light leading-relaxed">
+                                Hoy, como experta en el <span className="text-pink-600 font-medium">Método Johanna</span>, mi mayor orgullo es ver la transformación de confianza que ocurre cuando una piel recupera su salud y luminosidad natural.
                             </p>
                         </div>
 
                         {/* Philosophy Section */}
-                        <div>
-                            <h2 className="mb-6 text-3xl font-bold text-gray-900">Mi Filosofía</h2>
-                            <p className="mb-6 text-lg text-gray-600">
-                                No creo en las soluciones mágicas ni en las tendencias pasajeras. Mi filosofía se basa en tres pilares fundamentales:
-                            </p>
-                            <ul className="space-y-4 text-lg text-gray-600">
-                                <li className="flex items-start">
-                                    <span className="flex-shrink-0 w-2 h-2 mt-3 mr-3 bg-pink-500 rounded-full"></span>
-                                    <span><strong>Cuidado Basado en la Ciencia:</strong> Utilizo mi conocimiento técnico para analizar tu piel y recomendar ingredientes y rutinas que tienen un respaldo científico.</span>
+                        <div className="reveal-up [animation-delay:200ms] glass-card p-10 md:p-12 rounded-[2.5rem] shadow-xl ring-1 ring-gray-100">
+                            <h2 className="mb-8 text-4xl font-bold text-gray-900 font-playfair tracking-tight">Filosofía de Autor</h2>
+                            <ul className="space-y-8">
+                                <li className="flex items-start gap-5">
+                                    <div className="w-10 h-10 rounded-2xl bg-pink-50 flex items-center justify-center shrink-0 text-pink-600 font-bold">01</div>
+                                    <div>
+                                        <h3 className="font-bold text-gray-900 mb-1">Cuidado Científico</h3>
+                                        <p className="text-gray-500 font-light text-sm">Protocolos basados en química cosmética avanzada y resultados clínicos.</p>
+                                    </div>
                                 </li>
-                                <li className="flex items-start">
-                                    <span className="flex-shrink-0 w-2 h-2 mt-3 mr-3 bg-pink-500 rounded-full"></span>
-                                    <span><strong>El Poder de lo Natural:</strong> Priorizo los ingredientes naturales y sostenibles que trabajan en armonía con tu piel.</span>
-                                </li>
-                                <li className="flex items-start">
-                                    <span className="flex-shrink-0 w-2 h-2 mt-3 mr-3 bg-pink-500 rounded-full"></span>
-                                    <span><strong>Bienestar Integral:</strong> Tu piel es un reflejo de tu estilo de vida. Por eso, mis asesorías van más allá de los productos.</span>
+                                <li className="flex items-start gap-5">
+                                    <div className="w-10 h-10 rounded-2xl bg-amber-50 flex items-center justify-center shrink-0 text-amber-700 font-bold">02</div>
+                                    <div>
+                                        <h3 className="font-bold text-gray-900 mb-1">Sinergia Botánica</h3>
+                                        <p className="text-gray-500 font-light text-sm">Seleccionamos los extractos naturales más puros de Sheló Nabel para preparar el terreno.</p>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
                     {/* Credentials Section */}
-                    <div className="mt-16">
-                        <h2 className="mb-8 text-3xl font-bold text-center text-gray-900">Mis Credenciales</h2>
-                        <div className="grid gap-6 md:grid-cols-3">
-                            <div className="p-6 rounded-lg bg-pink-50">
-                                <h3 className="mb-3 text-xl font-semibold text-pink-800">10+ Años de Experiencia</h3>
-                                <p className="text-pink-700">Dedicación completa al estudio y práctica del cuidado de la piel natural.</p>
+                    <div className="mt-32 reveal-up">
+                        <h2 className="mb-16 text-4xl font-bold text-center text-gray-900 font-playfair tracking-tight">Autoridad Certificada</h2>
+                        <div className="grid gap-8 md:grid-cols-3">
+                            <div className="p-10 rounded-[2.5rem] bg-gray-900 text-white shadow-premium ring-1 ring-white/10 hover-glow transition-all">
+                                <h3 className="mb-4 text-2xl font-bold font-playfair">10+ Años</h3>
+                                <p className="text-gray-400 font-light text-sm">Dedicación a la consultoría en cuidado de la piel en Colombia.</p>
                             </div>
-                            <div className="p-6 rounded-lg bg-pink-50">
-                                <h3 className="mb-3 text-xl font-semibold text-pink-800">Especialista Certificada</h3>
-                                <p className="text-pink-700">Formación continua en ingredientes naturales y técnicas avanzadas de skincare.</p>
+                            <div className="p-10 rounded-[2.5rem] bg-white border border-gray-100 shadow-xl hover:-translate-y-2 transition-all">
+                                <h3 className="mb-4 text-2xl font-bold font-playfair text-gray-900">Estratega Híbrida</h3>
+                                <p className="text-gray-500 font-light text-sm">Expertiz en combinar botica natural y tecnología de alta gama.</p>
                             </div>
-                            <div className="p-6 rounded-lg bg-pink-50">
-                                <h3 className="mb-3 text-xl font-semibold text-pink-800">Tecnología IA</h3>
-                                <p className="text-pink-700">Utilizo herramientas de inteligencia artificial para diagnósticos precisos.</p>
+                            <div className="p-10 rounded-[2.5rem] bg-pink-50 border border-pink-100 shadow-xl hover:-translate-y-2 transition-all">
+                                <h3 className="mb-4 text-2xl font-bold font-playfair text-pink-900">IA Skincare</h3>
+                                <p className="text-pink-800 font-light text-sm">Integración de análisis predictivo para diagnósticos de precisión.</p>
                             </div>
                         </div>
                     </div>
 
                     {/* CTA Section */}
-                    <div className="mt-16 text-center">
-                        <div className="p-8 bg-gradient-to-r from-pink-100 to-rose-100 rounded-2xl">
-                            <h2 className="mb-4 text-3xl font-bold text-gray-900">¿Lista para Empezar tu Viaje?</h2>
-                            <p className="mb-6 text-xl text-gray-600">
-                                Si estás lista para dejar de adivinar y empezar a ver resultados reales y duraderos, estoy aquí para guiarte.
+                    <div className="mt-32 text-center reveal-up">
+                        <div className="p-16 bg-linear-to-br from-rose-50 to-amber-50 rounded-[3rem] border border-white/50 shadow-inner relative overflow-hidden">
+                            <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-pink-100/50 rounded-full blur-3xl"></div>
+                            <h2 className="mb-6 text-4xl font-bold text-gray-900 font-playfair tracking-tighter">¿Lista para tu Transformación?</h2>
+                            <p className="mb-10 text-xl text-gray-500 font-light max-w-2xl mx-auto">
+                                Permite que una experta diseñe el camino hacia tu mejor versión.
                             </p>
                             <a
                                 href="/contact"
-                                className="inline-block px-8 py-4 text-lg font-semibold text-white transition-colors bg-pink-500 rounded-full hover:bg-pink-600"
+                                className="inline-block px-12 py-6 text-xs font-black uppercase tracking-[0.3em] text-white bg-gray-900 rounded-2xl hover:bg-black transition-all shadow-premium active:scale-95"
                             >
-                                Agenda tu Sesión Gratuita
+                                Inicia tu Consulta de Autor
                             </a>
                         </div>
                     </div>

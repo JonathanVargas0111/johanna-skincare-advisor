@@ -1,4 +1,5 @@
 import React from 'react';
+import { siteConfig } from '../../config/site';
 
 const MasterSolutions = () => {
     return (
@@ -31,7 +32,7 @@ const MasterSolutions = () => {
                                 </li>
                             </ul>
                             <a
-                                href="https://wa.me/573124567890?text=Hola%20Johanna,%20me%20interesa%20el%20Dúo%20Detox%20&%20Renovación%20Total"
+                                href={`${siteConfig.whatsappLink}?text=Hola%20Johanna,%20me%20interesa%20el%20Dúo%20Detox%20&%20Renovación%20Total`}
                                 className="inline-flex items-center gap-3 text-[11px] font-black uppercase tracking-[0.2em] text-amber-900 transition-all duration-300 ease-in-out hover:gap-5"
                             >
                                 Solicitar Protocolo
@@ -56,7 +57,7 @@ const MasterSolutions = () => {
                                 </li>
                             </ul>
                             <a
-                                href="https://wa.me/573124567890?text=Hola%20Johanna,%20me%20interesa%20el%20Kit%20Adiós%20Manchas%20Rebeldes"
+                                href={`${siteConfig.whatsappLink}?text=Hola%20Johanna,%20me%20interesa%20el%20Kit%20Adiós%20Manchas%20Rebeldes`}
                                 className="inline-flex items-center gap-3 text-[11px] font-black uppercase tracking-[0.2em] text-pink-900 transition-all duration-300 ease-in-out hover:gap-5"
                             >
                                 Solicitar Protocolo

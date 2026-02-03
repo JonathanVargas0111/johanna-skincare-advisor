@@ -83,7 +83,7 @@ export const ContactForm: React.FC = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-pink-500 focus:bg-white focus:border-transparent transition-all duration-300 ease-in-out outline-none text-gray-800 placeholder-gray-300 font-light"
-                        placeholder="+57 300 123 4567"
+                        placeholder="+57 313 374 7275"
                     />
                 </div>
 

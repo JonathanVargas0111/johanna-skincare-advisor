@@ -7,6 +7,7 @@ import SmartRecommender from '../components/SmartRecommender';
 import MasterSolutions from '../components/organisms/MasterSolutions';
 import fs from 'fs/promises';
 import path from 'path';
+import { siteConfig } from '../config/site';
 
 interface Producto {
   nombre: string;
@@ -30,18 +31,18 @@ export default async function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Johanna V. Arias - Asesora de Piel",
-            "url": "https://johannavarias.com",
-            "logo": "https://johannavarias.com/logo.png",
-            "description": "Asesora certificada en cuidado natural de la piel con más de 10 años de experiencia. Soluciones personalizadas y naturales para cada tipo de piel.",
+            "name": `${siteConfig.name} - Asesora de Piel`,
+            "url": siteConfig.domain,
+            "logo": `${siteConfig.domain}/logo.png`,
+            "description": siteConfig.description,
             "founder": {
               "@type": "Person",
-              "name": "Johanna V. Arias",
+              "name": siteConfig.name,
               "jobTitle": "Asesora Certificada en Cuidado de la Piel"
             },
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+57-XXX-XXX-XXXX",
+              "telephone": `+57-${siteConfig.phone}`,
               "contactType": "customer service",
               "availableLanguage": "Spanish"
             },
@@ -82,13 +83,13 @@ export default async function Home() {
 
           <div className="flex flex-col justify-center gap-8 mb-24 sm:flex-row reveal-up [animation-delay:600ms]">
             <a
-              href="https://wa.me/573124567890?text=Hola%20Johanna,%20quiero%20conocer%20la%20Línea%20Natural%20de%20Sheló%20Nabel"
+              href={`${siteConfig.whatsappLink}?text=Hola%20Johanna,%20quiero%20conocer%20la%20Línea%20Natural%20de%20Sheló%20Nabel`}
               className="group flex items-center justify-center gap-3 px-10 py-6 text-xs font-bold uppercase tracking-widest text-white transition-all bg-amber-800 rounded-2xl hover:bg-amber-900 shadow-premium hover:shadow-2xl hover:-translate-y-1"
             >
               <span>Línea Natural (Sheló)</span>
             </a>
             <a
-              href="https://wa.me/573124567890?text=Hola%20Johanna,%20quiero%20conocer%20la%20Alta%20Tecnología%20de%20Mary%20Kay"
+              href={`${siteConfig.whatsappLink}?text=Hola%20Johanna,%20quiero%20conocer%20la%20Alta%20Tecnología%20de%20Mary%20Kay`}
               className="group flex items-center justify-center gap-3 px-10 py-6 text-xs font-bold uppercase tracking-widest text-pink-600 transition-all bg-white border border-pink-100 rounded-2xl hover:bg-rose-50 shadow-premium hover:shadow-2xl hover:-translate-y-1"
             >
               <span>Alta Cosmética (Mary Kay)</span>
@@ -184,7 +185,7 @@ export default async function Home() {
             Tu piel merece el cuidado de un experto. Agendemos una sesión hoy mismo.
           </p>
           <a
-            href="https://wa.me/573001234567?text=Hola%20Johanna,%20vi%20tu%20web%20y%20quiero%20empezar%20mi%20transformación"
+            href={`${siteConfig.whatsappLink}?text=Hola%20Johanna,%20vi%20tu%20web%20y%20quiero%20empezar%20mi%20transformación`}
             className="inline-flex items-center justify-center px-12 py-6 text-xs font-black uppercase tracking-[0.3em] text-white bg-pink-600 rounded-2xl hover:bg-pink-700 transition-all shadow-premium hover:shadow-2xl hover:-translate-y-1"
           >
             Agenda tu Sesión

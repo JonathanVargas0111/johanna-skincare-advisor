@@ -1,33 +1,20 @@
 import type { Metadata } from 'next';
 import { Header } from '../../components/organisms/Header';
+import { siteConfig } from '../../config/site';
 
 export const metadata: Metadata = {
-    title: 'Mis Servicios - Johanna V. Arias',
-    description: 'Descubre los servicios personalizados de Johanna V. Arias: consulta inicial, paquetes premium y seguimiento mensual para una piel radiante y saludable.',
-    keywords: ['servicios skincare', 'asesoría piel personalizada', 'consultas belleza', 'rutinas a medida', 'tratamientos naturales'],
+    title: `Servicios de Autor ${siteConfig.titleSuffix}`,
+    description: siteConfig.description,
+    keywords: ['servicios skincare', 'asesoría piel personalizada', 'consultas belleza', 'rutinas a medida', 'tratamientos naturales', 'Método Johanna'],
     openGraph: {
-        title: 'Mis Servicios - Johanna V. Arias',
-        description: 'Descubre los servicios personalizados de Johanna V. Arias: consulta inicial, paquetes premium y seguimiento mensual para una piel radiante y saludable.',
-        url: 'https://johannavarias.com/services',
+        title: `Servicios de Autor ${siteConfig.titleSuffix}`,
+        description: siteConfig.description,
+        url: `${siteConfig.domain}/services`,
         type: 'website',
-        images: [
-            {
-                url: '/og-image.jpg',
-                width: 1200,
-                height: 630,
-                alt: 'Mis Servicios de Skincare',
-            },
-        ],
-    },
-    twitter: {
-        card: 'summary_large_image',
-        title: 'Mis Servicios - Johanna V. Arias',
-        description: 'Descubre los servicios personalizados de Johanna V. Arias: consulta inicial, paquetes premium y seguimiento mensual para una piel radiante y saludable.',
-        images: ['/og-image.jpg'],
-        creator: '@johannavarias',
+        // ...
     },
     alternates: {
-        canonical: 'https://johannavarias.com/services',
+        canonical: `${siteConfig.domain}/services`,
     },
 };
 
@@ -35,17 +22,17 @@ export default function ServicesPage() {
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "ServicePage",
-        "name": "Mis Servicios - Johanna V. Arias",
-        "description": "Descubre los servicios personalizados de Johanna V. Arias: consulta inicial, paquetes premium y seguimiento mensual para una piel radiante y saludable.",
-        "url": "https://johannavarias.com/services",
+        "name": `Servicios de Autor ${siteConfig.titleSuffix}`,
+        "description": siteConfig.description,
+        "url": `${siteConfig.domain}/services`,
         "provider": {
             "@type": "Person",
-            "name": "Johanna V. Arias"
+            "name": siteConfig.name
         },
         "serviceType": [
             "Consulta Inicial de Skincare",
-            "Paquete Premium de Skincare",
-            "Seguimiento Mensual de Skincare"
+            "Protocolo Premium de Transformación",
+            "Seguimiento Mensual de Autor"
         ]
     };
 
@@ -59,17 +46,18 @@ export default function ServicesPage() {
             <Header />
 
             {/* Hero Section */}
-            <section className="pt-24 pb-16 bg-linear-to-br from-rose-50 via-pink-50 to-white">
+            <section className="pt-32 pb-24 bg-linear-to-br from-rose-50 via-white to-amber-50 relative overflow-hidden">
+                <div className="absolute top-20 left-10 w-[600px] h-[600px] bg-pink-100/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div className="text-center">
-                        <div className="inline-block px-4 py-2 mb-6 text-sm font-medium text-pink-700 bg-pink-100 rounded-full">
-                            Mis Servicios
+                    <div className="text-center reveal-up">
+                        <div className="inline-block px-4 py-1.5 mb-8 text-[10px] font-black tracking-[0.3em] text-pink-700 bg-white/50 backdrop-blur-md border border-white/20 rounded-full uppercase shadow-sm">
+                            Portafolio de Autor
                         </div>
-                        <h1 className="mb-6 text-4xl font-bold leading-tight text-gray-900 md:text-6xl">
-                            Servicios Personalizados para tu Piel
+                        <h1 className="mb-10 text-5xl font-bold leading-tight text-gray-900 md:text-8xl font-playfair tracking-tighter">
+                            Protocolos que<br />Transforman Vidas
                         </h1>
-                        <p className="max-w-3xl mx-auto text-xl leading-relaxed text-gray-600">
-                            Cada piel es única. Descubre cómo puedo ayudarte a lograr la piel radiante que mereces con mis servicios personalizados.
+                        <p className="max-w-3xl mx-auto text-xl font-light leading-relaxed text-gray-500 font-roboto">
+                            Cada piel es un ecosistema único. Mis servicios están diseñados para decodificar tus necesidades y entregar resultados visibles mediante el <span className="text-gray-900 font-medium">Método Johanna</span>.
                         </p>
                     </div>
                 </div>
@@ -190,15 +178,15 @@ export default function ServicesPage() {
                     </div>
 
                     {/* CTA Section */}
-                    <div className="mt-16 text-center">
-                        <div className="p-8 bg-linear-to-r from-pink-100 to-rose-100 rounded-2xl">
-                            <h2 className="mb-4 text-3xl font-bold text-gray-900">¿No estás segura por dónde empezar?</h2>
-                            <p className="mb-6 text-xl text-gray-600">
-                                La Consulta Inicial es el punto de partida perfecto. Si después decides el Paquete Premium, el costo se descontará del precio total.
+                    <div className="mt-32 text-center reveal-up">
+                        <div className="p-16 bg-linear-to-br from-rose-50 to-amber-50 rounded-[3rem] border border-white/50 shadow-inner relative overflow-hidden">
+                            <h2 className="mb-6 text-4xl font-bold text-gray-900 font-playfair tracking-tighter">¿No estás segura por dónde empezar?</h2>
+                            <p className="mb-10 text-xl text-gray-500 font-light max-w-2xl mx-auto leading-relaxed">
+                                La <span className="text-gray-900 font-medium">Consulta Inicial</span> es el punto de partida perfecto. Si después decides el Protocolo Premium, el costo se descontará del valor total.
                             </p>
                             <a
                                 href="/contact"
-                                className="inline-block px-8 py-4 text-lg font-semibold text-white transition-colors bg-pink-500 rounded-full hover:bg-pink-600"
+                                className="inline-block px-12 py-6 text-xs font-black uppercase tracking-[0.3em] text-white bg-gray-900 rounded-2xl hover:bg-black transition-all shadow-premium active:scale-95"
                             >
                                 Empezar con Consulta Inicial
                             </a>
