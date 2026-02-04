@@ -7,6 +7,8 @@ export const siteConfig = {
     phone: "3133747275",
     whatsappLink: "https://wa.me/573133747275",
     email: "contacto@johannavarias.com",
+    logo: "/og-image-premium.png",
+    ogImage: "/og-image-premium.png",
     location: "Bogotá, Colombia",
     socials: {
         instagram: "https://www.instagram.com/johannavargasmk/",

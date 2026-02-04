@@ -44,7 +44,7 @@ const DuoPielPerfecta = () => {
                 {/* Producto 1 */}
                 <div className="group space-y-6 transition-all duration-300 ease-in-out hover:-translate-y-1">
                   <div className="relative w-full aspect-square bg-gray-50 rounded-2xl overflow-hidden flex items-center justify-center border border-gray-100">
-                    <Image src={producto1.imagen} alt={producto1.nombre} width={120} height={120} className="transition-transform duration-500 group-hover:scale-110 opacity-40 grayscale" />
+                    <Image src={producto1.imagen && producto1.imagen !== '/logo.svg' ? producto1.imagen : '/nano-banana-placeholder.png'} alt={producto1.nombre} width={250} height={250} className="transition-transform duration-500 group-hover:scale-110 object-cover w-full h-full" />
                     <div className="absolute top-4 left-4 px-3 py-1 bg-white/80 backdrop-blur-md rounded-full text-[9px] font-black uppercase tracking-widest text-amber-800 border border-amber-100">Botanical</div>
                   </div>
                   <div>
@@ -57,7 +57,7 @@ const DuoPielPerfecta = () => {
                 {/* Producto 2 */}
                 <div className="group space-y-6 transition-all duration-300 ease-in-out hover:-translate-y-1">
                   <div className="relative w-full aspect-square bg-gray-50 rounded-2xl overflow-hidden flex items-center justify-center border border-gray-100">
-                    <Image src={producto2.imagen} alt={producto2.nombre} width={120} height={120} className="transition-transform duration-500 group-hover:scale-110 opacity-40 grayscale" />
+                    <Image src={producto2.imagen && producto2.imagen !== '/logo.svg' ? producto2.imagen : '/nano-banana-placeholder.png'} alt={producto2.nombre} width={250} height={250} className="transition-transform duration-500 group-hover:scale-110 object-cover w-full h-full" />
                     <div className="absolute top-4 left-4 px-3 py-1 bg-white/80 backdrop-blur-md rounded-full text-[9px] font-black uppercase tracking-widest text-pink-700 border border-pink-100">Regenerative</div>
                   </div>
                   <div>

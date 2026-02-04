@@ -8,7 +8,7 @@ import { siteConfig } from '../config/site';
 export function constructMetadata({
     title = siteConfig.titleFull,
     description = siteConfig.description,
-    image = '/og-image.jpg',
+    image = '/og-image-premium.png',
     icons = '/favicon.ico',
     noIndex = false,
     canonicalUrl = '/',

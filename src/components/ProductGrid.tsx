@@ -35,7 +35,7 @@ const ProductGrid: React.FC<ProductGridProps> = ({ productos }) => {
             return (
               <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 transform transition-transform hover:-translate-y-2 flex flex-col">
                 <div className="relative h-48 w-full">
-                  <Image src={producto.imagen || '/logo.svg'} alt={producto.nombre} layout="fill" objectFit="cover" />
+                  <Image src={producto.imagen || '/nano-banana-placeholder.png'} alt={producto.nombre} layout="fill" objectFit="cover" className="transition-transform duration-500 hover:scale-110" />
                 </div>
                 <div className="p-5 flex flex-col flex-grow">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2 truncate">{producto.nombre}</h3>
