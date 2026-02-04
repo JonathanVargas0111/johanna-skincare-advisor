@@ -66,11 +66,11 @@ export default function ContactPage() {
                         <div className="inline-block px-4 py-2 mb-6 text-sm font-medium text-pink-700 bg-pink-100 rounded-full">
                             Hablemos
                         </div>
-                        <h1 className="mb-6 text-4xl font-bold leading-tight text-gray-900 md:text-6xl">
-                            ¿Lista para Empezar?
+                        <h1 className="mb-6 text-4xl font-bold leading-tight text-gray-900 md:text-7xl font-playfair tracking-tighter">
+                            ¿Lista para tu Propio<br /><span className="italic text-pink-600">Protocolo de Autor</span>?
                         </h1>
-                        <p className="max-w-3xl mx-auto text-xl leading-relaxed text-gray-600">
-                            Me encantaría escucharte. Completa el formulario y me pondré en contacto contigo lo antes posible.
+                        <p className="max-w-3xl mx-auto text-xl leading-relaxed text-gray-500 font-light font-roboto">
+                            Permíteme escucharte. Cada transformación comienza con una conversación honesta sobre tu piel.
                         </p>
                     </div>
                 </div>

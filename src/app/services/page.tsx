@@ -66,112 +66,100 @@ export default function ServicesPage() {
             {/* Services Section */}
             <section className="py-16">
                 <div className="px-4 mx-auto max-w-6xl sm:px-6 lg:px-8">
-                    <div className="grid gap-8 md:grid-cols-3">
-                        {/* Consulta Inicial */}
-                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-pink-100">
-                            <div className="p-8">
-                                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-6">
-                                    <span className="text-2xl">💬</span>
-                                </div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4">Consulta Inicial</h3>
-                                <p className="text-gray-600 mb-6">
-                                    Una sesión de 60 minutos donde nos conocemos, analizo tu piel y te doy las primeras recomendaciones personalizadas.
-                                </p>
-                                <div className="text-3xl font-bold text-pink-600 mb-6">$80 USD</div>
-                                <ul className="space-y-3 mb-8">
-                                    <li className="flex items-start">
-                                        <span className="shrink-0 w-2 h-2 mt-3 mr-3 bg-pink-500 rounded-full"></span>
-                                        <span className="text-gray-600">Análisis completo de tu piel</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="shrink-0 w-2 h-2 mt-3 mr-3 bg-pink-500 rounded-full"></span>
-                                        <span className="text-gray-600">Revisión de rutina actual</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="shrink-0 w-2 h-2 mt-3 mr-3 bg-pink-500 rounded-full"></span>
-                                        <span className="text-gray-600">Recomendaciones iniciales</span>
-                                    </li>
-                                </ul>
-                                <a
-                                    href="/contact"
-                                    className="block w-full text-center px-6 py-3 bg-pink-500 text-white font-semibold rounded-full hover:bg-pink-600 transition-colors"
-                                >
-                                    Agendar Consulta
-                                </a>
-                            </div>
-                        </div>
-
-                        {/* Paquete Premium */}
-                        <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl shadow-lg overflow-hidden border border-pink-200 relative">
-                            <div className="absolute top-4 right-4 bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-                                Más Popular
-                            </div>
-                            <div className="p-8">
-                                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-6">
+                    <div className="grid gap-12 md:grid-cols-3">
+                        {/* Diagnóstico de Autor */}
+                        <div className="group relative glass-card p-1 transition-all duration-300 hover:-translate-y-2 rounded-[2.5rem] shadow-xl ring-1 ring-gray-100">
+                            <div className="p-10 bg-white rounded-[2.3rem] h-full flex flex-col">
+                                <div className="w-14 h-14 bg-pink-50 rounded-2xl flex items-center justify-center mb-8 text-pink-600">
                                     <span className="text-2xl">✨</span>
                                 </div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4">Paquete Premium</h3>
-                                <p className="text-gray-600 mb-6">
-                                    Transformación completa con rutina personalizada, guía de ingredientes y sesión de seguimiento incluida.
+                                <h3 className="text-3xl font-bold text-gray-900 mb-6 font-playfair tracking-tight">Diagnóstico de Autor</h3>
+                                <p className="text-gray-500 font-light font-roboto leading-relaxed mb-8 flex-1">
+                                    Sesión exclusiva de 60 minutos (presencial u online) para decodificar tu biotipo cutáneo y diseñar tu primer mapa de ruta hacia la piel ideal.
                                 </p>
-                                <div className="text-3xl font-bold text-pink-600 mb-6">$250 USD</div>
-                                <ul className="space-y-3 mb-8">
-                                    <li className="flex items-start">
-                                        <span className="shrink-0 w-2 h-2 mt-3 mr-3 bg-pink-500 rounded-full"></span>
-                                        <span className="text-gray-600">Todo lo de Consulta Inicial</span>
+                                <div className="text-4xl font-black text-gray-900 mb-8 font-playfair">$120.000 <span className="text-xs font-light text-gray-400">COP</span></div>
+                                <ul className="space-y-4 mb-10">
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-1.5 h-1.5 bg-pink-500 rounded-full mt-2 shrink-0"></span>
+                                        <span className="text-sm text-gray-600 font-light">Análisis de poros, manchas y textura</span>
                                     </li>
-                                    <li className="flex items-start">
-                                        <span className="shrink-0 w-2 h-2 mt-3 mr-3 bg-pink-500 rounded-full"></span>
-                                        <span className="text-gray-600">Rutina personalizada completa</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="shrink-0 w-2 h-2 mt-3 mr-3 bg-pink-500 rounded-full"></span>
-                                        <span className="text-gray-600">Guía de ingredientes clave</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="shrink-0 w-2 h-2 mt-3 mr-3 bg-pink-500 rounded-full"></span>
-                                        <span className="text-gray-600">Sesión de seguimiento (30 min)</span>
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-1.5 h-1.5 bg-pink-500 rounded-full mt-2 shrink-0"></span>
+                                        <span className="text-sm text-gray-600 font-light">Depuración de rutina actual</span>
                                     </li>
                                 </ul>
                                 <a
                                     href="/contact"
-                                    className="block w-full text-center px-6 py-3 bg-pink-500 text-white font-semibold rounded-full hover:bg-pink-600 transition-colors"
+                                    className="block w-full text-center px-8 py-4 bg-gray-900 text-white font-bold text-[10px] uppercase tracking-[0.2em] rounded-2xl hover:bg-black transition-all shadow-premium"
                                 >
-                                    Elegir Paquete Premium
+                                    Agendar Mapa de Ruta
                                 </a>
                             </div>
                         </div>
 
-                        {/* Seguimiento Mensual */}
-                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-pink-100">
-                            <div className="p-8">
-                                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-6">
-                                    <span className="text-2xl">🔄</span>
+                        {/* Protocolo de Transformación Híbrida */}
+                        <div className="group relative glass-card p-1 transition-all duration-300 hover:-translate-y-2 rounded-[2.5rem] shadow-2xl ring-1 ring-pink-100/50 scale-105 z-10">
+                            <div className="absolute top-6 right-6 bg-pink-600 text-white px-4 py-1.5 rounded-full text-[9px] font-black uppercase tracking-widest shadow-lg">
+                                Elite Choice
+                            </div>
+                            <div className="p-10 bg-linear-to-br from-white to-rose-50/50 rounded-[2.3rem] h-full flex flex-col border border-white">
+                                <div className="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center mb-8 text-pink-700">
+                                    <span className="text-2xl">💎</span>
                                 </div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4">Seguimiento Mensual</h3>
-                                <p className="text-gray-600 mb-6">
-                                    Acompañamiento continuo para mantener y optimizar tus resultados a largo plazo.
+                                <h3 className="text-3xl font-bold text-gray-900 mb-6 font-playfair tracking-tight leading-tight">Protocolo Híbrido Integral</h3>
+                                <p className="text-gray-500 font-light font-roboto leading-relaxed mb-8 flex-1">
+                                    Transformación total en 90 días. Diseño estratégico de sinergias botánicas y tecnológicas con seguimiento bi semanal de autor.
                                 </p>
-                                <div className="text-3xl font-bold text-pink-600 mb-6">$50 USD/mes</div>
-                                <ul className="space-y-3 mb-8">
-                                    <li className="flex items-start">
-                                        <span className="shrink-0 w-2 h-2 mt-3 mr-3 bg-pink-500 rounded-full"></span>
-                                        <span className="text-gray-600">Check-in mensual (30 min)</span>
+                                <div className="text-4xl font-black text-pink-600 mb-8 font-playfair">$450.000 <span className="text-xs font-light text-gray-400">COP</span></div>
+                                <ul className="space-y-4 mb-10">
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-1.5 h-1.5 bg-pink-600 rounded-full mt-2 shrink-0"></span>
+                                        <span className="text-sm text-gray-900 font-medium italic">Todo lo del Diagnóstico</span>
                                     </li>
-                                    <li className="flex items-start">
-                                        <span className="shrink-0 w-2 h-2 mt-3 mr-3 bg-pink-500 rounded-full"></span>
-                                        <span className="text-gray-600">Soporte por email prioritario</span>
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-1.5 h-1.5 bg-pink-600 rounded-full mt-2 shrink-0"></span>
+                                        <span className="text-sm text-gray-600 font-light">Guía de Insumos & Sinergias (v2025)</span>
                                     </li>
-                                    <li className="flex items-start">
-                                        <span className="shrink-0 w-2 h-2 mt-3 mr-3 bg-pink-500 rounded-full"></span>
-                                        <span className="text-gray-600">Descuentos en productos</span>
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-1.5 h-1.5 bg-pink-600 rounded-full mt-2 shrink-0"></span>
+                                        <span className="text-sm text-gray-600 font-light">2 Sesiones de Ajuste (45 min)</span>
                                     </li>
                                 </ul>
                                 <a
                                     href="/contact"
-                                    className="block w-full text-center px-6 py-3 bg-pink-500 text-white font-semibold rounded-full hover:bg-pink-600 transition-colors"
+                                    className="block w-full text-center px-8 py-5 bg-pink-600 text-white font-bold text-[10px] uppercase tracking-[0.2em] rounded-2xl hover:bg-pink-700 transition-all shadow-premium"
                                 >
-                                    Suscribirme
+                                    Elegir Protocolo Integral
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* Concierge de Mantenimiento */}
+                        <div className="group relative glass-card p-1 transition-all duration-300 hover:-translate-y-2 rounded-[2.5rem] shadow-xl ring-1 ring-gray-100">
+                            <div className="p-10 bg-white rounded-[2.3rem] h-full flex flex-col">
+                                <div className="w-14 h-14 bg-amber-50 rounded-2xl flex items-center justify-center mb-8 text-amber-700">
+                                    <span className="text-2xl">⚜️</span>
+                                </div>
+                                <h3 className="text-3xl font-bold text-gray-900 mb-6 font-playfair tracking-tight">Concierge Mensual</h3>
+                                <p className="text-gray-500 font-light font-roboto leading-relaxed mb-8 flex-1">
+                                    Acompañamiento vitalicio para asegurar que tu piel mantenga los resultados obtenidos. Optimización constante según el clima.
+                                </p>
+                                <div className="text-4xl font-black text-gray-900 mb-8 font-playfair">$180.000 <span className="text-xs font-light text-gray-400">COP</span></div>
+                                <ul className="space-y-4 mb-10">
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-1.5 h-1.5 bg-amber-600 rounded-full mt-2 shrink-0"></span>
+                                        <span className="text-sm text-gray-600 font-light">Check-in mensual de 40 min</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="w-1.5 h-1.5 bg-amber-600 rounded-full mt-2 shrink-0"></span>
+                                        <span className="text-sm text-gray-600 font-light">Prioridad en lanzamientos</span>
+                                    </li>
+                                </ul>
+                                <a
+                                    href="/contact"
+                                    className="block w-full text-center px-8 py-4 bg-gray-900 text-white font-bold text-[10px] uppercase tracking-[0.2em] rounded-2xl hover:bg-black transition-all shadow-premium"
+                                >
+                                    Suscribirme al Concierge
                                 </a>
                             </div>
                         </div>

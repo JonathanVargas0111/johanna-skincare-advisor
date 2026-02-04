@@ -28,8 +28,8 @@ export default function AboutPage() {
         "url": `${siteConfig.domain}/about`,
         "image": `${siteConfig.domain}/og-image.jpg`,
         "sameAs": [
-            "https://www.instagram.com/johannavarias",
-            "https://www.facebook.com/johannavarias"
+            siteConfig.socials.instagram,
+            siteConfig.socials.facebook
         ],
         "knowsAbout": [
             "Cuidado de la piel natural",
