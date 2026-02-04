@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
             card: 'summary_large_image',
             title: post.title,
             description: post.excerpt || post.content.substring(0, 160).replace(/[#*`]/g, ''),
-            images: ['/og-image.jpg'],
+            images: ['/og-image-premium.png'],
         },
         alternates: {
             canonical: postUrl,
@@ -78,24 +78,31 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
     return (
         <div className="min-h-screen bg-white">
-            {/* JSON-LD Structured Data for SEO */}
+            {/* BlogPosting Schema for Rich Snippets */}
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
-                        "@type": "Article",
+                        "@type": "BlogPosting",
                         "headline": post.title,
                         "description": post.excerpt || post.content.substring(0, 160).replace(/[#*`]/g, ''),
+                        "articleBody": post.content.substring(0, 500).replace(/[#*`]/g, ''),
                         "author": {
                             "@type": "Person",
+                            "@id": `${baseUrl}/about`,
                             "name": "Johanna V. Arias",
-                            "jobTitle": "Asesora Certificada en Cuidado de la Piel"
+                            "jobTitle": "Experta en Transformación de Piel",
+                            "url": `${baseUrl}/about`
                         },
                         "publisher": {
                             "@type": "Organization",
-                            "name": "Johanna V. Arias",
-                            "url": baseUrl
+                            "name": "Johanna V. Arias | Experta en Skincare",
+                            "url": baseUrl,
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": `${baseUrl}/og-image-premium.png`
+                            }
                         },
                         "datePublished": post.date,
                         "dateModified": post.date,
@@ -105,11 +112,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                         },
                         "image": {
                             "@type": "ImageObject",
-                            "url": `${baseUrl}/og-image.jpg`,
+                            "url": `${baseUrl}/og-image-premium.png`,
                             "width": 1200,
                             "height": 630
                         },
-                        "keywords": "skincare, cuidado piel, belleza natural, tratamientos naturales"
+                        "keywords": ["skincare", "cuidado piel", "belleza natural", "tratamientos naturales", post.title.toLowerCase()].join(", "),
+                        "inLanguage": "es-CO",
+                        "isAccessibleForFree": true
                     })
                 }}
             />

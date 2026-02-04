@@ -46,6 +46,83 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* Organization Schema - Priority for Sitelinks */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Johanna V. Arias | Experta en Skincare",
+              "alternateName": "Johanna Skincare",
+              "url": siteConfig.domain,
+              "logo": `${siteConfig.domain}/og-image-premium.png`,
+              "image": `${siteConfig.domain}/og-image-premium.png`,
+              "description": siteConfig.description,
+              "email": siteConfig.email,
+              "telephone": `+57-${siteConfig.phone}`,
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bogotá",
+                "addressRegion": "Cundinamarca",
+                "addressCountry": "CO"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "Colombia"
+              },
+              "sameAs": [
+                siteConfig.socials.instagram,
+                siteConfig.socials.facebook,
+                siteConfig.whatsappLink
+              ].filter(Boolean),
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": `+57-${siteConfig.phone}`,
+                "contactType": "customer service",
+                "areaServed": "CO",
+                "availableLanguage": ["Spanish"],
+                "contactOption": "TollFree"
+              },
+              "founder": {
+                "@type": "Person",
+                "name": siteConfig.name,
+                "jobTitle": "Experta en Transformación de Piel",
+                "sameAs": [siteConfig.socials.instagram, siteConfig.whatsappLink].filter(Boolean)
+              }
+            })
+          }}
+        />
+
+        {/* WebSite Schema - Enables SearchBox in Google */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Johanna Skincare | Experta en Transformación de Piel",
+              "url": siteConfig.domain,
+              "description": siteConfig.description,
+              "publisher": {
+                "@type": "Organization",
+                "name": "Johanna V. Arias | Experta en Skincare",
+                "logo": `${siteConfig.domain}/og-image-premium.png`
+              },
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": `${siteConfig.domain}/blog?q={search_term_string}`
+                },
+                "query-input": "required name=search_term_string"
+              },
+              "inLanguage": "es-CO"
+            })
+          }}
+        />
+
+        {/* Person Schema - Author/Professional */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -55,10 +132,8 @@ export default function RootLayout({
               "name": siteConfig.name,
               "jobTitle": "Experta en Transformación de Piel",
               "description": siteConfig.description,
-              "areaServed": {
-                "@type": "Country",
-                "name": "Colombia"
-              },
+              "url": siteConfig.domain,
+              "image": `${siteConfig.domain}/og-image-premium.png`,
               "serviceType": ["Consultoría Facial", "Tratamiento de Manchas", "Tratamiento de Acné", "Transformación de Piel", "Skincare Personalizado"],
               "knowsAbout": ["Skincare", "Tratamiento de Manchas", "Acné", "Consultoría Facial", "Botica Natural", "Cosmética Avanzada", "Método Johanna"],
               "address": {
@@ -66,8 +141,10 @@ export default function RootLayout({
                 "addressLocality": "Bogotá",
                 "addressCountry": "CO"
               },
-              "url": siteConfig.domain,
-              "image": `${siteConfig.domain}/og-image.jpg`,
+              "areaServed": {
+                "@type": "Country",
+                "name": "Colombia"
+              },
               "sameAs": [
                 siteConfig.whatsappLink,
                 siteConfig.socials?.instagram
