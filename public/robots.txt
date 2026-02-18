@@ -19,7 +19,7 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-# Sitemap
+# Sitemap (dominio oficial)
 Sitemap: https://johannaskincare.com/sitemap.xml
 
 # AI Discovery Files
