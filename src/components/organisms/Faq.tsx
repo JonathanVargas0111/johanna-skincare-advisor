@@ -4,16 +4,36 @@ import React, { useState } from 'react';
 
 const faqData = [
   {
+    question: '¿En qué consiste la asesoría de Johanna Skincare?',
+    answer: 'Ofrezco una Consultoría de Belleza Híbrida gratuita por WhatsApp, donde analizo tu piel y tus objetivos personales. Utilizo herramientas de Inteligencia Artificial para realizar un análisis remoto y recomendarte una rutina personalizada que combine naturaleza y ciencia.'
+  },
+  {
+    question: '¿Cuál es la diferencia entre Sheló Nabel y Mary Kay?',
+    answer: 'Sheló Nabel es la "Botica Natural" que prepara y desintoxica tu piel con extractos puros a precios muy accesibles. Mary Kay aporta la "Alta Tecnología Cosmética" con activos como retinol y péptidos para corregir y revertir problemas específicos.'
+  },
+  {
+    question: '¿En cuánto tiempo veré resultados en mi piel?',
+    answer: 'Gracias a mis protocolos híbridos, puedes empezar a notar cambios visibles en un periodo de 15 días. Rutinas específicas como el Set TimeWise® prometen una piel más firme y luminosa en tan solo 2 semanas.'
+  },
+  {
     question: '¿Hacen envíos a toda Colombia?',
-    answer: '¡Sí! Realizamos envíos a todos los rincones de Colombia. Queremos que disfrutes de nuestros productos sin importar dónde te encuentres. El costo y tiempo de envío pueden variar según tu ubicación.'
+    answer: 'Sí, puedes realizar tus compras y recibir los productos directamente en la puerta de tu casa en cualquier ciudad del país. Gestionamos envíos rápidos para que inicies tu transformación sin demoras.'
   },
   {
-    question: '¿Qué es el Método Johanna?',
-    answer: 'El Método Johanna es mi consultoría híbrida exclusiva que combina lo mejor de dos mundos: la botica natural de Sheló para preparar y detoxificar tu piel, y la alta tecnología de Mary Kay para corregir y revertir signos específicos. Diseño protocolos personalizados para manchas, acné y rejuvenecimiento, maximizando tu presupuesto con resultados visibles en 15 días. No vendo productos aislados, creo soluciones sinérgicas adaptadas al clima tropical colombiano.'
+    question: '¿Tienen garantía los productos?',
+    answer: 'Sí, Mary Kay ofrece una Garantía de Satisfacción del 100%, lo que significa que el producto puede ser reemplazado o cambiado si no estás satisfecha. Tu inversión y la salud de tu piel están siempre protegidas.'
   },
   {
-    question: '¿Los productos son naturales?',
-    answer: 'Absolutamente. Creemos en el poder de la naturaleza. La mayoría de los productos de Sheló Nabel están formulados con extractos de frutas, plantas y otros ingredientes naturales. Nos enfocamos en ofrecerte soluciones efectivas y amigables con tu piel y el medio ambiente.'
+    question: '¿Cómo elijo mi tono de base sin probarla?',
+    answer: 'Utilizamos tecnología IntelliMatch™ e Inteligencia Artificial que escanea tu rostro mediante una foto con luz natural. El sistema encuentra tu tono perfecto en segundos, sin necesidad de probar físicamente.'
+  },
+  {
+    question: '¿Qué formas de pago aceptan?',
+    answer: 'Puedes pagar en línea a través de la plataforma oficial de Mary Kay. También coordino otros medios de pago directamente vía WhatsApp para tu comodidad.'
+  },
+  {
+    question: '¿Tienen productos para todo tipo de piel y edad?',
+    answer: 'Absolutamente, cuento con portafolios para pieles jóvenes, maduras, grasas o con tendencia al acné. Diseñamos soluciones que se adaptan tanto a tu presupuesto como a las necesidades climáticas de tu ciudad en Colombia.'
   }
 ];
 
