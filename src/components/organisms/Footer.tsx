@@ -29,10 +29,16 @@ const Footer = () => {
                     <div className="space-y-6">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-500">Navegación</h4>
                         <ul className="space-y-4">
-                            {['Inicio', 'Sinergias', 'Concierge', 'Blog', 'Contacto'].map((item) => (
-                                <li key={item}>
-                                    <Link href={`#${item.toLowerCase()}`} className="text-gray-400 hover:text-white transition-all duration-300 ease-in-out text-sm font-medium">
-                                        {item}
+                            {[
+                                { label: 'Inicio', href: '/' },
+                                { label: 'Servicios', href: '/services' },
+                                { label: 'Blog', href: '/blog' },
+                                { label: 'Sobre Mí', href: '/about' },
+                                { label: 'Contacto', href: '/contact' },
+                            ].map((item) => (
+                                <li key={item.label}>
+                                    <Link href={item.href} className="text-gray-400 hover:text-white transition-all duration-300 ease-in-out text-sm font-medium">
+                                        {item.label}
                                     </Link>
                                 </li>
                             ))}
@@ -54,7 +60,7 @@ const Footer = () => {
                 </div>
 
                 <div className="pt-16 mt-16 text-center text-gray-500 border-t border-white/5 space-y-4">
-                    <p className="text-[10px] font-black uppercase tracking-[0.2em]">&copy; 2025 {siteConfig.name} - Todos los derechos reservados</p>
+                    <p className="text-[10px] font-black uppercase tracking-[0.2em]">&copy; {new Date().getFullYear()} {siteConfig.name} - Todos los derechos reservados</p>
                     <p className="text-xs font-light tracking-wide text-gray-600 italic">
                         Desarrollado con pasión para una piel radiante por <a href="https://nandark.com/" target="_blank" rel="noopener noreferrer" className="text-pink-700 hover:text-pink-500 transition-all duration-300 ease-in-out underline decoration-pink-900/40 underline-offset-4">nandark.com</a>
                     </p>

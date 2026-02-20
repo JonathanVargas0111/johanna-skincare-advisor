@@ -23,7 +23,7 @@ Mi enfoque no es venderte un catálogo. Es una **consultoría de belleza híbrid
 
 ### El Ejemplo de la Sinergia Ganadora
 
-Si luchas con manchas intensas, mi protocolo no se limita a un producto. Combinamos la **Crema de Concha Nácar de Sheló** ($32.000 COP) para aclarar suavemente, con el **Suero de Vitamina C + E TimeWise® de Mary Kay** ($124.900 COP) para frenar la producción de pigmentación desde la raíz.
+Si luchas con manchas intensas, lee el detalle completo en mi [Protocolo Antimanchas](/blog/protocolo-antimanchas-hibrido). Combinamos la **Crema de Concha Nácar de Sheló** ($32.000 COP) para aclarar suavemente, con el **Suero de Vitamina C + E TimeWise® de Mary Kay** ($124.900 COP) para frenar la producción de pigmentación desde la raíz. Y si tu problema es el acné hormonal, revisa mi [Protocolo para Acné Hormonal](/blog/guia-acne-adulto-hormonal).
 
 ## ¿Qué obtienes en tu Consulta Personalizada?
 
@@ -35,7 +35,15 @@ Al agendar conmigo, adquieres un **Protocolo de Autor** diseñado para ti:
 
 ---
 
-### ¡Transforma tu Piel Hoy mismo
+## También te puede interesar
+
+- [Protocolo Antimanchas Híbrido](/blog/protocolo-antimanchas-hibrido): El dúo Concha Nácar + Vitamina C para manchas.
+- [Acné Adulto Hormonal](/blog/guia-acne-adulto-hormonal): Protocolo de choque para brotes hormonales.
+- [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
+
+---
+
+### ¡Transforma tu Piel Hoy mismo!
 
 No esperes más para tener la piel radiante que mereces. Si estás lista para dejar la frustración atrás y empezar un viaje real, hablemos.
 

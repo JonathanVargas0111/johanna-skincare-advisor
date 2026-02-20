@@ -4,14 +4,14 @@ import { siteConfig } from '../../config/site';
 
 export const metadata: Metadata = {
     title: `Sobre Mí ${siteConfig.titleSuffix}`,
-    description: siteConfig.description,
-    keywords: [siteConfig.name, 'asesora piel', 'skincare experta', 'filosofía skincare', 'cuidado de la piel natural', 'Método Johanna'],
+    description: 'Soy Johanna V. Arias, asesora de skincare con más de 10 años de experiencia en Colombia. Asesoría GRATIS por WhatsApp para manchas, acné y piel madura.',
+    keywords: [siteConfig.name, 'asesora piel colombia', 'skincare experta bogota', 'filosofía skincare', 'cuidado de la piel natural', 'Método Johanna'],
     openGraph: {
         title: `Sobre Mí ${siteConfig.titleSuffix}`,
-        description: siteConfig.description,
+        description: 'Soy Johanna V. Arias, asesora de skincare con más de 10 años de experiencia en Colombia. Asesoría GRATIS por WhatsApp.',
         url: `${siteConfig.domain}/about`,
         type: 'profile',
-        // ...
+        images: [{ url: `${siteConfig.domain}/og-image-premium.png`, width: 1200, height: 630, alt: 'Johanna V. Arias - Asesora de Skincare' }],
     },
     alternates: {
         canonical: `${siteConfig.domain}/about`,
@@ -26,7 +26,7 @@ export default function AboutPage() {
         "jobTitle": "Asesora Certificada en Cuidado de la Piel",
         "description": siteConfig.description,
         "url": `${siteConfig.domain}/about`,
-        "image": `${siteConfig.domain}/og-image.jpg`,
+        "image": `${siteConfig.domain}/og-image-premium.png`,
         "sameAs": [
             siteConfig.socials.instagram,
             siteConfig.socials.facebook
@@ -132,10 +132,12 @@ export default function AboutPage() {
                                 Permite que una experta diseñe el camino hacia tu mejor versión.
                             </p>
                             <a
-                                href="/contact"
+                                href={`${siteConfig.whatsappLink}?text=Hola%20Johanna,%20vi%20tu%20página%20y%20quiero%20una%20asesoría%20personalizada`}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="inline-block px-12 py-6 text-xs font-black uppercase tracking-[0.3em] text-white bg-gray-900 rounded-2xl hover:bg-black transition-all shadow-premium active:scale-95"
                             >
-                                Inicia tu Consulta de Autor
+                                Quiero mi Asesoría Gratis
                             </a>
                         </div>
                     </div>

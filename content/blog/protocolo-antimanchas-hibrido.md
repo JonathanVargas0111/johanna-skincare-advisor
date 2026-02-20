@@ -30,7 +30,17 @@ Para ver resultados reales en 15 días, sigue este orden:
 
 ## Resultados que notarás en el espejo
 
-En mis 10 años de experiencia, he visto cómo este dúo reduce drásticamente la intensidad de las manchas en las primeras 4 semanas. Tu piel no solo se verá más clara, sino con esa textura "divina" y saludable que todas buscamos.
+En mis 10 años de experiencia, he visto cómo este dúo reduce drásticamente la intensidad de las manchas en las primeras 4 semanas. Tu piel no solo se verá más clara, sino con esa textura saludable que todas buscamos. Si además de las manchas quieres trabajar la firmeza, lee mi [Guía para Piel Madura](/blog/guia-cuidado-piel-madura).
+
+Conoce por qué [la Botica Sheló es mi aliada #1](/blog/productos-piel-naturales) en todos mis protocolos.
+
+---
+
+## También te puede interesar
+
+- [Guía de Rejuvenecimiento para Piel Madura](/blog/guia-cuidado-piel-madura): La vitamina C de este protocolo también es clave para la firmeza.
+- [El Poder de los Productos Naturales Sheló](/blog/productos-piel-naturales): Conoce a fondo los ingredientes botánicos que usamos.
+- [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
 
 ---
 

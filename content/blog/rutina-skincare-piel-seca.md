@@ -32,6 +32,16 @@ La piel seca no solo necesita agua; necesita lípidos y una barrera infranqueabl
 * **Duchas hirviendo:** Están barriendo tus aceites naturales protectores.
 * **Saltarse el protector solar:** El sol colombiano deshidrata la piel a niveles críticos, rompiendo el colágeno.
 
+Una vez por semana, complementa tu rutina con mi [Spa de Autor en Casa](/blog/tratamientos-faciales-casa) para una hidratación profunda.
+
+---
+
+## También te puede interesar
+
+- [Spa de Autor en Casa](/blog/tratamientos-faciales-casa): Ritual semanal de hidratación profunda para potenciar tu protocolo.
+- [Piel Radiante: Nutrición + Alta Cosmética](/blog/skincare-natural-piel-radiante): Cómo la nutrición interna complementa tu hidratación externa.
+- [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
+
 ---
 
 ### ¿Lista para que tu piel brille y se sienta suave otra vez?

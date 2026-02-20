@@ -28,7 +28,17 @@ La noche es cuando ocurre el milagro de la regeneración. Un protocolo que inici
 
 ## Mi Consejo de Experta
 
-No persigas cada tendencia efímera que veas. La piel madura es sabia pero delicada; requiere productos con respaldo científico serio y una guía experta que ajuste el tratamiento según cómo evolucione tu rostro mese a mes.
+No persigas cada tendencia efímera que veas. La piel madura es sabia pero delicada; requiere productos con respaldo científico serio y una guía experta que ajuste el tratamiento según cómo evolucione tu rostro mes a mes.
+
+Para potenciar la luminosidad, lee mi [Guía de Piel Radiante](/blog/skincare-natural-piel-radiante). El Suero C+E que usamos aquí también es la estrella de mi [Protocolo Antimanchas](/blog/protocolo-antimanchas-hibrido).
+
+---
+
+## También te puede interesar
+
+- [Piel Radiante: Nutrición + Alta Cosmética](/blog/skincare-natural-piel-radiante): Potencia la luminosidad natural de tu piel.
+- [Protocolo Antimanchas Híbrido](/blog/protocolo-antimanchas-hibrido): El Suero C+E en acción contra las manchas.
+- [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
 
 ---
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getPostBySlug, getAllPosts } from '../../../lib/posts';
+import { getPostBySlug, getAllPosts, getRelatedPosts } from '../../../lib/posts';
 import type { Metadata } from 'next';
 import { siteConfig } from '../../../config/site';
 
@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
             authors: ['Johanna V. Arias'],
             images: [
                 {
-                    url: '/og-image.jpg',
+                    url: '/og-image-premium.png',
                     width: 1200,
                     height: 630,
                     alt: post.title,
@@ -75,6 +75,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
     const baseUrl = siteConfig.domain;
     const postUrl = `${baseUrl}/blog/${slug}`;
+    const relatedPosts = getRelatedPosts(slug, 3);
 
     return (
         <div className="min-h-screen bg-white">
@@ -249,7 +250,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                                         </p>
 
                                         <a
-                                            href="https://wa.me/573133747275?text=Hola%20Johanna,%20leí%20tu%20artículo%20sobre%20piel%20madura%20y%20quiero%20empezar%20mi%20transformación"
+                                            href={`${siteConfig.whatsappLink}?text=${encodeURIComponent(`Hola Johanna, leí tu artículo "${post.title}" y quiero empezar mi transformación`)}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="group relative inline-flex items-center justify-center px-10 py-5 overflow-hidden font-bold transition-all duration-300 bg-gray-900 rounded-2xl hover:bg-black shadow-2xl hover:-translate-y-1 active:scale-95"
                                         >
                                             <span className="relative z-10 text-[11px] uppercase tracking-[0.3em] text-white flex items-center gap-3">
@@ -264,6 +267,29 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                         </div>
                     </div>
                 </div>
+
+                {/* Related Posts Section */}
+                {relatedPosts.length > 0 && (
+                    <div className="mt-20 pt-16 border-t border-gray-100">
+                        <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 mb-10 text-center">También te puede interesar</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            {relatedPosts.map((related) => (
+                                <Link
+                                    key={related.slug}
+                                    href={`/blog/${related.slug}`}
+                                    className="group p-8 rounded-[2rem] border border-gray-100 hover:border-pink-100 hover:bg-rose-50/30 transition-all duration-300"
+                                >
+                                    <h4 className="text-lg font-bold text-gray-900 font-playfair tracking-tight group-hover:text-pink-600 transition-colors mb-3 line-clamp-2">
+                                        {related.title}
+                                    </h4>
+                                    <p className="text-sm text-gray-400 font-light line-clamp-2">
+                                        {related.excerpt}
+                                    </p>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                )}
             </main>
         </div>
     );

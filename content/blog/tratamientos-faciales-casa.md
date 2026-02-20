@@ -10,7 +10,7 @@ tags: ["skincare colombia", "spa en casa", "facial casero", "tratamientos facial
 
 A veces, tu piel necesita más que la rutina diaria. Necesita una **intervención profunda**. No necesitas salir de casa para recibir un tratamiento de lujo; con los productos correctos y mi guía de autor, puedes resetear tu piel en solo 45 minutos.
 
-> "I use the best of Mexican nature (Sheló) with American science (Mary Kay) so you don't overspend and see changes." — Johanna V. Arias
+> "Uso lo mejor de la naturaleza mexicana (Sheló) con la ciencia americana (Mary Kay) para que no gastes de más y veas cambios reales." — Johanna V. Arias
 
 ## Paso 1: El Detox con Botica Pura
 
@@ -39,6 +39,16 @@ Finalizamos con el producto estrella para relajar el rostro y sellar la hidratac
 ## El Consejo Johanna
 
 Realiza este ritual los domingos por la noche. No solo prepararás tu piel para la semana, sino que le otorgarás a tu mente un momento de paz necesario. Una piel hermosa empieza con una mente tranquila.
+
+Conoce todos los [productos naturales de Sheló](/blog/productos-piel-naturales) que uso en mis tratamientos. Y el Suero C+E del Paso 3 es el paso clave de mi [Protocolo Antimanchas](/blog/protocolo-antimanchas-hibrido) también.
+
+---
+
+## También te puede interesar
+
+- [El Poder de los Productos Naturales Sheló](/blog/productos-piel-naturales): Todo sobre los ingredientes botánicos de este ritual.
+- [Protocolo Antimanchas Híbrido](/blog/protocolo-antimanchas-hibrido): El Suero C+E en acción contra las manchas.
+- [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
 
 ---
 

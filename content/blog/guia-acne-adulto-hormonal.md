@@ -12,7 +12,7 @@ Si pensabas que el acné era solo cosa de adolescentes, te enfrentas a una reali
 
 Como experta, te digo con total franqueza: **no intentes secarlos con alcohol o remedios caseros agresivos**. Eso solo inflamará más tu piel y dejará manchas (hiperpigmentación post-inflamatoria) que serán mil veces más difíciles de tratar.
 
-> "I don't sell you a jar; I teach you how to heal your skin." — Johanna V. Arias
+> "No te vendo un tarro; te enseño a sanar tu piel desde la raíz." — Johanna V. Arias
 
 ## La Sinergia Ganadora: Botica + Ciencia
 
@@ -30,6 +30,16 @@ Para el acné hormonal, en mi consulta proponemos una estrategia de "choque" que
 ## Resultados Reales en Tiempo Récord
 
 Con el **Método Johanna**, no solo tratamos el granito, tratamos la salud integral de tu piel. Mi objetivo es que en 10 días veas una reducción notable de la inflamación y que en 3 semanas tu piel recupere su equilibrio natural.
+
+Para tratar esas manchas que deja el acné (hiperpigmentación post-inflamatoria), lee mi [Protocolo Antimanchas](/blog/protocolo-antimanchas-hibrido). Y complementa tu rutina con mi [Spa de Autor en Casa](/blog/tratamientos-faciales-casa) cada semana.
+
+---
+
+## También te puede interesar
+
+- [Protocolo Antimanchas Híbrido](/blog/protocolo-antimanchas-hibrido): Para tratar las manchas post-acné con Concha Nácar + Vitamina C.
+- [Spa de Autor en Casa](/blog/tratamientos-faciales-casa): Ritual semanal para potenciar la recuperación de tu piel.
+- [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
 
 ---
 

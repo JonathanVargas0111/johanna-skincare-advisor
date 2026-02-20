@@ -25,12 +25,22 @@ Antes de inyectar la potencia de la alta tecnología cosmética, tu piel debe es
 Muchas personas creen que deben elegir bando. Yo te digo: **usa la inteligencia híbrida**.
 La botica natural (Sheló) prepara y nutre el lienzo, mientras que la ingeniería cosmética de alta gama (Mary Kay) corrige y transforma los problemas más difíciles.
 
-### Tu Dúo Imbatible del 2025
+### Tu Dúo Imbatible del 2026
 
 1. **Limpias** con la Botica Natural.
 2. **Corriges** con el **Suero de Vitamina C + E TimeWise® de Mary Kay** ($124.900 COP).
 
 Esta combinación es lo que en mis asesorías llamamos "Alta Costura para la Piel" a un precio justo y honesto.
+
+Ve cómo uso la Concha Nácar en mi [Protocolo Antimanchas híbrido](/blog/protocolo-antimanchas-hibrido). Y el Jabón de Carbón Activado es el primer paso de mi [Protocolo Antiacné](/blog/guia-acne-adulto-hormonal).
+
+---
+
+## También te puede interesar
+
+- [Protocolo Antimanchas Híbrido](/blog/protocolo-antimanchas-hibrido): Ve la Concha Nácar en acción contra manchas y melasma.
+- [Acné Adulto Hormonal](/blog/guia-acne-adulto-hormonal): El Carbón Activado como base del protocolo antiacné.
+- [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
 
 ---
 

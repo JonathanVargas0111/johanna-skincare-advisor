@@ -24,75 +24,46 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* JSON-LD Structured Data for Organization */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": `${siteConfig.name} - Asesora de Piel`,
-            "url": siteConfig.domain,
-            "logo": `${siteConfig.domain}/logo.png`,
-            "description": siteConfig.description,
-            "founder": {
-              "@type": "Person",
-              "name": siteConfig.name,
-              "jobTitle": "Asesora Certificada en Cuidado de la Piel"
-            },
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": `+57-${siteConfig.phone}`,
-              "contactType": "customer service",
-              "availableLanguage": "Spanish"
-            },
-            "sameAs": [
-              "https://www.instagram.com/johannavarias",
-              "https://www.facebook.com/johannavarias"
-            ],
-            "serviceType": "Asesoría en Cuidado de la Piel",
-            "areaServed": "Colombia"
-          })
-        }}
-      />
+      {/* Organization schema is in layout.tsx - no duplicate needed here */}
 
       <Header />
 
-      {/* Hero Section */}
+      {/* Hero Section - PASTOR: Pain point + GRATIS offer front and center */}
       <section id="home" className="flex items-center justify-center min-h-screen bg-linear-to-br from-rose-50 via-white to-amber-50 relative overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute top-20 left-10 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-[120px] opacity-40 animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-amber-100 rounded-full mix-blend-multiply filter blur-[120px] opacity-40 animate-pulse delay-1000"></div>
 
         <div className="max-w-6xl px-4 mx-auto text-center relative z-10 py-32">
-          <div className="inline-block px-5 py-2 mb-10 text-[10px] font-black tracking-[0.3em] uppercase text-pink-700 bg-white/40 backdrop-blur-md border border-white/20 rounded-full shadow-premium reveal-up">
+          <div className="inline-block px-5 py-2 mb-10 text-[10px] font-black tracking-[0.3em] uppercase text-green-700 bg-green-50/60 backdrop-blur-md border border-green-200/30 rounded-full shadow-premium reveal-up">
             <span className="flex items-center gap-3">
-              <span className="w-2 h-2 bg-pink-500 rounded-full animate-ping"></span>
-              Consultoría de Belleza Híbrida de Autor
+              <span className="w-2 h-2 bg-green-500 rounded-full animate-ping"></span>
+              Asesoría GRATIS por WhatsApp &middot; Envíos a toda Colombia
             </span>
           </div>
 
-          <h1 className="mb-10 text-6xl font-extrabold tracking-tighter text-gray-900 md:text-8xl lg:text-9xl font-playfair reveal-up [animation-delay:200ms]">
-            La unión perfecta entre la <span className="text-gradient-gold">botica natural</span> y la <span className="text-pink-600">alta tecnología</span>
+          <h1 className="mb-10 text-5xl font-extrabold tracking-tighter text-gray-900 md:text-7xl lg:text-8xl font-playfair reveal-up [animation-delay:200ms]">
+            ¿Manchas, acné o <span className="text-pink-600">piel apagada</span>? Transformo tu piel en <span className="text-gradient-gold">15 días</span>
           </h1>
 
           <p className="max-w-3xl mx-auto mb-16 text-xl leading-relaxed text-gray-500 md:text-2xl font-light reveal-up [animation-delay:400ms]">
-            Johanna V. Arias eleva tu ritual de cuidado combinando la pureza de <strong>Sheló Nabel</strong> con la ingeniería de <strong>Mary Kay</strong>.
-            Protocolos exclusivos con <strong>envíos a toda Colombia</strong> para una transformación real.
+            Soy <strong>Johanna</strong>, asesora con 10+ años de experiencia. Te diseño una rutina personalizada <strong>GRATIS</strong> combinando lo mejor de <strong>Sheló Nabel</strong> y <strong>Mary Kay</strong>, con envíos a toda Colombia.
           </p>
 
-          <div className="flex flex-col justify-center gap-8 mb-24 sm:flex-row reveal-up [animation-delay:600ms]">
+          <div className="flex flex-col justify-center gap-6 mb-24 sm:flex-row reveal-up [animation-delay:600ms]">
             <a
-              href={`${siteConfig.whatsappLink}?text=Hola%20Johanna,%20quiero%20conocer%20la%20Línea%20Natural%20de%20Sheló%20Nabel`}
-              className="group flex items-center justify-center gap-3 px-10 py-6 text-xs font-bold uppercase tracking-widest text-white transition-all bg-amber-800 rounded-2xl hover:bg-amber-900 shadow-premium hover:shadow-2xl hover:-translate-y-1"
+              href={`${siteConfig.whatsappLink}?text=Hola%20Johanna,%20vi%20tu%20web%20y%20quiero%20mi%20asesoría%20GRATIS`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-center gap-3 px-12 py-6 text-xs font-black uppercase tracking-[0.2em] text-white transition-all bg-green-600 rounded-2xl hover:bg-green-700 shadow-premium hover:shadow-2xl hover:-translate-y-1"
             >
-              <span>Línea Natural (Sheló)</span>
+              <span>Quiero mi Asesoría GRATIS</span>
             </a>
             <a
-              href={`${siteConfig.whatsappLink}?text=Hola%20Johanna,%20quiero%20conocer%20la%20Alta%20Tecnología%20de%20Mary%20Kay`}
-              className="group flex items-center justify-center gap-3 px-10 py-6 text-xs font-bold uppercase tracking-widest text-pink-600 transition-all bg-white border border-pink-100 rounded-2xl hover:bg-rose-50 shadow-premium hover:shadow-2xl hover:-translate-y-1"
+              href="/services"
+              className="group flex items-center justify-center gap-3 px-10 py-6 text-xs font-bold uppercase tracking-widest text-gray-700 transition-all bg-white border border-gray-200 rounded-2xl hover:bg-gray-50 shadow-premium hover:shadow-2xl hover:-translate-y-1"
             >
-              <span>Alta Cosmética (Mary Kay)</span>
+              <span>Ver cómo funciona</span>
             </a>
           </div>
 

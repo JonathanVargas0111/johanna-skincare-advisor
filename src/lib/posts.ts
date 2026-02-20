@@ -10,6 +10,7 @@ export interface BlogPost {
     excerpt: string;
     content: string; // HTML content
     date: string;
+    tags: string[];
 }
 
 // Get all posts from content/blog directory
@@ -37,6 +38,7 @@ export function getAllPosts(): BlogPost[] {
                 excerpt: matterResult.data.excerpt || matterResult.data.description || '',
                 content: contentHtml,
                 date: matterResult.data.date || new Date().toISOString().split('T')[0],
+                tags: matterResult.data.tags || [],
             };
         })
         .sort((a, b) => (a.date < b.date ? 1 : -1)); // Sort by date descending
@@ -48,4 +50,22 @@ export function getAllPosts(): BlogPost[] {
 export function getPostBySlug(slug: string): BlogPost | undefined {
     const posts = getAllPosts();
     return posts.find((post) => post.slug === slug);
+}
+
+// Get related posts by matching tags
+export function getRelatedPosts(currentSlug: string, limit: number = 3): BlogPost[] {
+    const posts = getAllPosts();
+    const current = posts.find((p) => p.slug === currentSlug);
+    if (!current) return [];
+
+    const scored = posts
+        .filter((p) => p.slug !== currentSlug)
+        .map((p) => {
+            const shared = p.tags.filter((t) => current.tags.includes(t)).length;
+            return { post: p, score: shared };
+        })
+        .filter((s) => s.score > 0)
+        .sort((a, b) => b.score - a.score);
+
+    return scored.slice(0, limit).map((s) => s.post);
 }

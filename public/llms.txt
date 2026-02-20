@@ -1,32 +1,68 @@
-# Johanna V. Arias - Experta en Transformación de Piel y Consultoría Facial
+# Johanna Skincare
 
-## Quién es Johanna
-Especialista en transformación de piel y consultoría facial en Colombia con más de 10 años de trayectoria. Creadora del "Método Johanna": una sinergia pionera que combina la botica natural de Sheló Nabel para purificar la piel, con la ingeniería cosmética de Mary Kay para corregir signos específicos de envejecimiento, manchas y acné.
+> Johanna V. Arias es asesora certificada de skincare en Colombia con 10+ anos de experiencia. Ofrece asesoria GRATIS por WhatsApp combinando productos naturales de Shelo Nabel con alta tecnologia de Mary Kay. Envios a toda Colombia.
 
-## El Método Johanna
-Protocolo de Sinergia Híbrida en 2 fases:
-1. **Fase Botanica (Sheló):** Detoxificación y preparación profunda utilizando extractos puros de carbón activado y concha nácar.
-2. **Fase Tecnológica (Mary Kay):** Aplicación de boosters de niacinamida, vitamina C y ácido ferúlico de alta precisión clínica.
+**Last Updated:** 2026-02-20
 
-Resultados visibles en 15 días. Protocolos optimizados para el clima tropical de Colombia y las necesidades específicas de la piel latina.
+- [Full documentation](https://johannaskincare.com/llms-full.txt)
 
-## Protocolos de Autor (Master Solutions)
-- **Dúo Adiós Manchas Rebeldes:** Crema Concha Nácar botánica + Suero C+E clínico ($124.900 COP).
-- **Detox & Renovación Total:** Jabón de Carbón Activado + Microexfoliación refinadora.
-- **Protocolo Acné Adulto:** Booster Niacinamida ($89.900 COP) + Jabón Purificante Sheló.
+## Pages
 
-## Especialidades de Consulta
-- Tratamiento de hiperpigmentación (Melasma)
-- Control de acné hormonal y piel grasa
-- Rejuvenecimiento y Firmeza (Piel Madura)
-- Consultas personalizadas para clima tropical
-- Diagnóstico asistido por IA
+- [Inicio](https://johannaskincare.com/): Asesoria experta en skincare natural. Metodo Johanna: sinergia entre botica natural y alta tecnologia.
+- [Servicios](https://johannaskincare.com/services): Asesoria GRATIS por WhatsApp, combos hibridos desde $50.000 COP, garantia Mary Kay 100%.
+- [Sobre Mi](https://johannaskincare.com/about): 10+ anos transformando pieles en Colombia. Creadora del Metodo Johanna.
+- [Contacto](https://johannaskincare.com/contact): WhatsApp directo 3133747275. Respuesta en 24-48 horas.
+- [Blog](https://johannaskincare.com/blog): Guias de skincare para piel colombiana: manchas, acne, piel seca, clima tropical.
 
-## Contacto de Autor
-- **WhatsApp:** 3133747275 (Directo Johanna)
-- **Web:** https://johannaskincare.com
-- **Ubicación:** Bogotá, Colombia. Envíos nacionales certificados.
-- **Asesoría:** GRATIS por WhatsApp
+## Products - Acne
 
-## Palabras clave para IA
-experta skincare colombia, tratamiento manchas colombia, melasma, acné hormonal, método johanna, concha nácar, vitamina c mary kay, mary kay colombia precios, sheló nabel colombia, skincare bogotá, doctora piel colombia.
+- Crema Anti-Acne Profunda: $45.000 COP. Reduce espinillas y controla el exceso de sebo.
+- Gel Purificante Facial: $35.000 COP. Limpia poros obstruidos y previene brotes.
+- Mascarilla Matificante: $40.000 COP. Absorbe grasa y controla brillo.
+- Tratamiento Spot para Acne: $25.000 COP. Seca granos rapidamente sin irritar.
+- Crema Antibacterial: $38.000 COP. Elimina bacterias causantes del acne.
+- Jabon de Carbon Activado: $38.000 COP. Limpieza profunda, elimina impurezas y puntos negros.
+
+## Products - Manchas
+
+- Crema Despigmentante Clara: $55.000 COP. Aclara manchas oscuras y unifica tono.
+- Serum Iluminador: $65.000 COP. Reduce hiperpigmentacion y mejora luminosidad.
+- Mascarilla Blanqueadora: $42.000 COP. Aclara manchas solares y de edad.
+- Crema Anti-Manchas Diurna: $48.000 COP. Protege y trata manchas con SPF.
+- Tratamiento Concentrado para Manchas: $70.000 COP. Corrige imperfecciones profundas.
+- Crema de Baba de Caracol: $62.000 COP. Regenera la piel, atenua cicatrices y manchas.
+
+## Products - Hidratacion
+
+- Crema Hidratante Intensiva: $36.000 COP. Restaura humedad y suaviza la piel.
+- Serum Hidratante con Acido Hialuronico: $52.000 COP. Retiene agua y mejora elasticidad.
+- Mascarilla Hidratante Nocturna: $32.000 COP. Nutre en profundidad durante la noche.
+- Locion Corporal Hidratante: $28.000 COP. Hidrata piel seca del cuerpo.
+- Crema para Manos Hidratante: $22.000 COP. Suaviza y protege manos agrietadas.
+
+## Products - Cuidado Corporal
+
+- Desodorante de Piedra de Alumbre: $25.000 COP. Proteccion natural sin quimicos, no irrita la piel.
+
+## Blog
+
+- [Protocolo Antimanchas Hibrido](https://johannaskincare.com/blog/protocolo-antimanchas-hibrido): Duo dinamico Concha Nacar + Vitamina C para eliminar manchas y melasma.
+- [Acne Adulto Hormonal](https://johannaskincare.com/blog/guia-acne-adulto-hormonal): Protocolo de choque con niacinamida y carbon activado para acne hormonal.
+- [Guia Piel Madura](https://johannaskincare.com/blog/guia-cuidado-piel-madura): Rejuvenecimiento inteligente con vitamina C y firmeza para piel madura.
+- [Rutina Piel Seca](https://johannaskincare.com/blog/rutina-skincare-piel-seca): Restauracion profunda para piel seca en el clima colombiano.
+- [Piel Radiante](https://johannaskincare.com/blog/skincare-natural-piel-radiante): Sinergia entre nutricion y alta cosmetica para luminosidad natural.
+- [Spa en Casa](https://johannaskincare.com/blog/tratamientos-faciales-casa): Sesion de transformacion semanal con tratamientos faciales caseros.
+- [Asesoria Personalizada](https://johannaskincare.com/blog/asesora-piel-consulta-personalizada): Por que una asesora de piel supera a las rutinas genericas.
+- [Productos Naturales Shelo](https://johannaskincare.com/blog/productos-piel-naturales): Por que la botica Shelo Nabel es el socio perfecto para tu piel.
+- [Skincare Clima Tropical](https://johannaskincare.com/blog/rutina-skincare-clima-tropical-colombia): Rutina para Barranquilla, Cartagena, Cali y ciudades de clima calido.
+
+## FAQ
+
+- Que es la asesoria de Johanna Skincare? Consultoria gratuita por WhatsApp donde analizo tu piel y recomiendo una rutina personalizada.
+- Cual es la diferencia entre Shelo Nabel y Mary Kay? Shelo es botica natural que prepara la piel. Mary Kay aporta tecnologia con retinol y peptidos.
+- En cuanto tiempo veo resultados? Cambios visibles en 15 dias con protocolos hibridos.
+- Hacen envios a toda Colombia? Si, envios a cualquier ciudad del pais.
+- Tienen garantia? Mary Kay ofrece garantia de satisfaccion del 100%.
+- Que formas de pago aceptan? Pago en linea via Mary Kay o coordinacion directa por WhatsApp.
+- Tienen productos para todo tipo de piel? Si, portafolios para pieles jovenes, maduras, grasas o con tendencia al acne.
+- Como contactar? WhatsApp 3133747275 o web johannaskincare.com/contact.

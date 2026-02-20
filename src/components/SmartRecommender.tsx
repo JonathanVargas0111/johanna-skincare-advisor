@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Sparkles, Send, MessageSquare, ShieldCheck } from 'lucide-react';
+import { siteConfig } from '../config/site';
 
 const SmartRecommender = () => {
     const [query, setQuery] = useState('');
@@ -82,7 +83,7 @@ const SmartRecommender = () => {
                                     <p className="text-xl text-gray-700 leading-relaxed font-light mb-8 italic">&ldquo;{result}&rdquo;</p>
                                     <div className="flex flex-wrap gap-4">
                                         <a
-                                            href="https://wa.me/573124567890?text=Hola%20Johanna,%20vengo%20del%20Concierge%20Inteligente.%20Protocolo:%20"
+                                            href={`${siteConfig.whatsappLink}?text=Hola%20Johanna,%20vengo%20del%20Concierge%20Inteligente.%20Protocolo:%20`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="inline-flex items-center gap-3 px-8 py-4 bg-pink-50 text-pink-700 rounded-xl font-bold text-xs uppercase tracking-widest transition-all hover:bg-pink-100"

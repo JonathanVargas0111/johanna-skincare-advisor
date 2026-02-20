@@ -4,14 +4,14 @@ import { siteConfig } from '../../config/site';
 
 export const metadata: Metadata = {
     title: `Servicios de Autor ${siteConfig.titleSuffix}`,
-    description: siteConfig.description,
-    keywords: ['servicios skincare', 'asesoría piel personalizada', 'consultas belleza', 'rutinas a medida', 'tratamientos naturales', 'Método Johanna'],
+    description: 'Asesoría de skincare GRATIS por WhatsApp. Combos híbridos desde $50.000 COP con Sheló Nabel y Mary Kay. Envíos a toda Colombia.',
+    keywords: ['servicios skincare colombia', 'asesoría piel personalizada gratis', 'consultas belleza whatsapp', 'rutinas a medida', 'tratamientos naturales colombia', 'Método Johanna'],
     openGraph: {
         title: `Servicios de Autor ${siteConfig.titleSuffix}`,
-        description: siteConfig.description,
+        description: 'Asesoría de skincare GRATIS por WhatsApp. Combos híbridos desde $50.000 COP. Envíos a toda Colombia.',
         url: `${siteConfig.domain}/services`,
         type: 'website',
-        // ...
+        images: [{ url: `${siteConfig.domain}/og-image-premium.png`, width: 1200, height: 630, alt: 'Servicios de Skincare - Johanna V. Arias' }],
     },
     alternates: {
         canonical: `${siteConfig.domain}/services`,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
     const jsonLd = {
         "@context": "https://schema.org",
-        "@type": "ServicePage",
+        "@type": "Service",
         "name": `Servicios de Autor ${siteConfig.titleSuffix}`,
         "description": siteConfig.description,
         "url": `${siteConfig.domain}/services`,

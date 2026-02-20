@@ -1,9 +1,9 @@
 ---
 title: "Rutina de Skincare para Clima Tropical: Guía para Barranquilla, Cartagena y Cali"
-publishDate: "2025-02-18"
+publishDate: "2026-02-18"
 author: "Johanna V. Arias"
 description: "Descubre cómo cuidar tu piel en el clima caliente y húmedo de Colombia. Productos recomendados de Sheló Nabel y Mary Kay para controlar el brillo, combatir manchas y mantener tu piel radiante."
-tags: ["skincare", "clima tropical", "piel grasa", "Colombia", "Barranquilla", "Cartagena", "Cali"]
+tags: ["skincare colombia", "clima tropical", "piel grasa", "Colombia", "Barranquilla", "Cartagena", "Cali", "método johanna"]
 ---
 
 ### Vivir en el trópico colombiano es un sueño, pero para nuestra piel puede ser un desafío constante.
@@ -65,8 +65,22 @@ No adivines qué necesita tu piel. Usa nuestra **Herramienta de Inteligencia Art
 
 ---
 
+Para un tratamiento completo de manchas solares, lee mi [Protocolo Antimanchas](/blog/protocolo-antimanchas-hibrido). Si tienes brotes frecuentes por el calor, revisa mi [Guía de Acné Hormonal](/blog/guia-acne-adulto-hormonal).
+
+---
+
+## También te puede interesar
+
+- [Protocolo Antimanchas Híbrido](/blog/protocolo-antimanchas-hibrido): Tratamiento completo para manchas del sol tropical.
+- [Acné Adulto Hormonal](/blog/guia-acne-adulto-hormonal): Si el calor y la humedad causan brotes en tu piel.
+- [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
+
+---
+
 ## ¿Lista para transformar tu piel?
 
 No dejes que el clima controle tu belleza. **Escríbeme por WhatsApp** para una asesoría gratuita y armemos juntas tu combo híbrido de naturaleza y ciencia.
 
-¡Tu piel se sentirá divina y los resultados se notarán en 15 días!
+[Hola Johanna, vivo en clima tropical y quiero mi rutina personalizada](https://wa.me/573133747275?text=Hola%20Johanna,%20vivo%20en%20clima%20tropical%20y%20quiero%20mi%20rutina%20personalizada)
+
+¡Tu piel se sentirá radiante y los resultados se notarán en 15 días!

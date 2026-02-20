@@ -6,14 +6,14 @@ import { siteConfig } from '../../config/site';
 
 export const metadata: Metadata = {
     title: `Contacto ${siteConfig.titleSuffix}`,
-    description: siteConfig.description,
-    keywords: ['contacto', 'asesora piel', 'preguntas skincare', 'agendar consulta', siteConfig.name],
+    description: 'Contacta a Johanna V. Arias por WhatsApp para asesoría GRATIS de skincare. Respuesta en 24-48 horas. Envíos a toda Colombia.',
+    keywords: ['contacto johanna skincare', 'asesora piel colombia', 'whatsapp skincare', 'agendar consulta gratis', siteConfig.name],
     openGraph: {
         title: `Contacto ${siteConfig.titleSuffix}`,
-        description: siteConfig.description,
+        description: 'Contacta a Johanna V. Arias por WhatsApp para asesoría GRATIS de skincare. Respuesta en 24-48 horas.',
         url: `${siteConfig.domain}/contact`,
         type: 'website',
-        // ...
+        images: [{ url: `${siteConfig.domain}/og-image-premium.png`, width: 1200, height: 630, alt: 'Contacto - Johanna Skincare' }],
     },
     alternates: {
         canonical: `${siteConfig.domain}/contact`,
