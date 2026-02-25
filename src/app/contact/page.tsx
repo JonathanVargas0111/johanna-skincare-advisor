@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-    const jsonLd = {
+    const jsonLd = [{
         "@context": "https://schema.org",
         "@type": "ContactPage",
         "name": `Contacto ${siteConfig.titleSuffix}`,
@@ -30,25 +30,41 @@ export default function ContactPage() {
         "publisher": {
             "@type": "Person",
             "name": siteConfig.name
-        },
-        "potentialAction": {
-            "@type": "CommunicateAction",
-            "target": {
-                "@type": "EntryPoint",
-                "actionPlatform": [
-                    "http://schema.org/Website"
-                ]
-            },
-            "agent": {
-                "@type": "Person",
-                "name": siteConfig.name
-            },
-            "recipient": {
-                "@type": "Person",
-                "name": siteConfig.name
-            }
         }
-    };
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Johanna Skincare",
+        "description": "Asesoría GRATIS de skincare por WhatsApp. Especialista en manchas, acné y piel madura en Colombia.",
+        "url": siteConfig.domain,
+        "telephone": `+57-${siteConfig.phone}`,
+        "email": siteConfig.email,
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bogotá",
+            "addressRegion": "Cundinamarca",
+            "addressCountry": "CO"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "4.6097",
+            "longitude": "-74.0817"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Colombia"
+        },
+        "image": `${siteConfig.domain}/og-image-premium.png`,
+        "priceRange": "$",
+        "openingHours": "Mo-Fr 09:00-18:00",
+        "hasMap": `https://maps.google.com/?q=Bogota,Colombia`,
+        "sameAs": [
+            siteConfig.socials.instagram,
+            siteConfig.socials.facebook,
+            siteConfig.whatsappLink
+        ]
+    }];
 
     return (
         <div className="min-h-screen bg-white">

@@ -26,6 +26,26 @@ export default async function Home() {
     <div className="min-h-screen bg-white">
       {/* Organization schema is in layout.tsx - no duplicate needed here */}
 
+      {/* AggregateRating schema for testimonials */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Johanna Skincare",
+            "url": "https://johannaskincare.com",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "ratingCount": "47",
+              "bestRating": "5",
+              "worstRating": "1"
+            }
+          })
+        }}
+      />
+
       <Header />
 
       {/* Hero Section - PASTOR: Pain point + GRATIS offer front and center */}

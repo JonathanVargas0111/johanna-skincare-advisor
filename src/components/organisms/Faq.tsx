@@ -34,6 +34,14 @@ const faqData = [
   {
     question: '¿Tienen productos para todo tipo de piel y edad?',
     answer: 'Absolutamente, cuento con portafolios para pieles jóvenes, maduras, grasas o con tendencia al acné. Diseñamos soluciones que se adaptan tanto a tu presupuesto como a las necesidades climáticas de tu ciudad en Colombia.'
+  },
+  {
+    question: '¿Es esto un MLM o venta multinivel?',
+    answer: 'No en el sentido tradicional. Soy distribuidora independiente de Sheló Nabel y Mary Kay, lo que me permite ofrecerte precios al consumidor y asesoría personalizada sin intermediarios. Mi enfoque es 100% en tu piel y tus resultados, no en reclutarte. La asesoría es siempre gratis y sin compromiso de compra.'
+  },
+  {
+    question: '¿Por qué trabajas con dos marcas diferentes?',
+    answer: 'Porque ninguna marca tiene todo. Sheló Nabel es mi "botica natural" con extractos botánicos puros a precios accesibles —perfecta para preparar y desintoxicar tu piel. Mary Kay aporta la tecnología con activos correctivos como retinol, péptidos y vitamina C. Juntas, dan resultados en 15 días que ninguna lograría sola. Es el Método Johanna.'
   }
 ];
 
