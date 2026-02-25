@@ -26,23 +26,23 @@ const DuoPielPerfecta = () => {
   return (
     <section id="perfect-duo" className="py-24 bg-linear-to-b from-rose-50/50 to-white overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 reveal-up">
-          <span className="inline-block px-4 py-1.5 mb-6 text-[10px] font-extrabold tracking-[0.2em] text-pink-700 bg-pink-50 rounded-full uppercase">Protocolo Estrella</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tighter font-playfair">
+        <div className="text-center mb-16">
+          <span className="inline-block px-4 py-1.5 mb-6 text-[10px] font-extrabold tracking-[0.2em] text-pink-700 bg-pink-50 rounded-full uppercase reveal-up">Protocolo Estrella</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tighter font-playfair reveal-up [animation-delay:200ms]">
             El Dúo Piel Perfecta
           </h2>
-          <p className="mt-6 max-w-2xl mx-auto text-xl text-gray-500 font-light leading-relaxed font-roboto">
+          <p className="mt-6 max-w-2xl mx-auto text-xl text-gray-500 font-light leading-relaxed font-roboto reveal-up [animation-delay:400ms]">
             La alquimia precisa entre limpieza profunda y regeneración total para una piel sin imperfecciones.
           </p>
         </div>
 
-        <div className="relative glass-card p-1 md:p-2 rounded-[3rem] reveal-up [animation-delay:200ms] shadow-xl ring-1 ring-gray-100/50">
+        <div className="relative glass-card p-1 md:p-2 rounded-[3rem] shadow-xl ring-1 ring-gray-100/50 reveal-up [animation-delay:600ms]">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-0 overflow-hidden rounded-[2.8rem] bg-white">
             {/* Columna de Productos */}
             <div className="lg:col-span-3 p-8 md:p-12 space-y-10">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 {/* Producto 1 */}
-                <div className="group space-y-6 transition-all duration-300 ease-in-out hover:-translate-y-1">
+                <div className="group space-y-6 transition-all duration-300 ease-in-out hover:-translate-y-1 scale-up-bounce [animation-delay:1200ms]">
                   <div className="relative w-full aspect-square bg-gray-50 rounded-2xl overflow-hidden flex items-center justify-center border border-gray-100">
                     <Image src={producto1.imagen && producto1.imagen !== '/logo.svg' ? producto1.imagen : '/nano-banana-placeholder.png'} alt={producto1.nombre} width={250} height={250} className="transition-transform duration-500 group-hover:scale-110 object-cover w-full h-full" />
                     <div className="absolute top-4 left-4 px-3 py-1 bg-white/80 backdrop-blur-md rounded-full text-[9px] font-black uppercase tracking-widest text-amber-800 border border-amber-100">Botanical</div>
@@ -55,7 +55,7 @@ const DuoPielPerfecta = () => {
                 </div>
 
                 {/* Producto 2 */}
-                <div className="group space-y-6 transition-all duration-300 ease-in-out hover:-translate-y-1">
+                <div className="group space-y-6 transition-all duration-300 ease-in-out hover:-translate-y-1 scale-up-bounce [animation-delay:1500ms]">
                   <div className="relative w-full aspect-square bg-gray-50 rounded-2xl overflow-hidden flex items-center justify-center border border-gray-100">
                     <Image src={producto2.imagen && producto2.imagen !== '/logo.svg' ? producto2.imagen : '/nano-banana-placeholder.png'} alt={producto2.nombre} width={250} height={250} className="transition-transform duration-500 group-hover:scale-110 object-cover w-full h-full" />
                     <div className="absolute top-4 left-4 px-3 py-1 bg-white/80 backdrop-blur-md rounded-full text-[9px] font-black uppercase tracking-widest text-pink-700 border border-pink-100">Regenerative</div>
@@ -74,8 +74,8 @@ const DuoPielPerfecta = () => {
               <div className="absolute inset-0 bg-linear-to-br from-pink-500/10 to-amber-500/10 opacity-50"></div>
 
               <div className="relative z-10 space-y-8">
-                <p className="text-xs font-black uppercase tracking-[0.4em] text-gray-400">Inversión en tu Piel</p>
-                <div>
+                <p className="text-xs font-black uppercase tracking-[0.4em] text-gray-400 reveal-up [animation-delay:2000ms]">Inversión en tu Piel</p>
+                <div className="reveal-up [animation-delay:2200ms]">
                   <p className="text-5xl md:text-6xl font-black text-white font-playfair tracking-tighter">
                     ${precioTotal.toLocaleString('es-CO')}
                   </p>
@@ -84,15 +84,18 @@ const DuoPielPerfecta = () => {
                   </p>
                 </div>
 
-                <a
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center w-full bg-pink-600 text-white px-10 py-5 rounded-2xl font-bold text-xs uppercase tracking-[0.2em] transition-all duration-300 ease-in-out hover:bg-pink-700 hover:-translate-y-1 shadow-2xl hover:shadow-pink-500/20 active:scale-95 ring-1 ring-white/10"
-                >
-                  Adquirir Protocolo
-                </a>
-                <p className="text-[10px] font-medium text-gray-500 tracking-widest uppercase">Asesoría personalizada incluida</p>
+                <div className="w-full reveal-up [animation-delay:2500ms]">
+                  <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative overflow-hidden inline-flex items-center justify-center w-full bg-pink-600 text-white px-10 py-5 rounded-2xl font-bold text-xs uppercase tracking-[0.2em] transition-all duration-300 ease-in-out hover:bg-pink-700 hover:-translate-y-1 shadow-2xl hover:shadow-pink-500/20 active:scale-95 ring-1 ring-white/10 group/btn"
+                  >
+                    <span className="relative z-10">Adquirir Protocolo</span>
+                    <div className="absolute inset-0 shimmer opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500"></div>
+                  </a>
+                </div>
+                <p className="text-[10px] font-medium text-gray-500 tracking-widest uppercase reveal-up [animation-delay:2800ms]">Asesoría personalizada incluida</p>
               </div>
             </div>
           </div>
