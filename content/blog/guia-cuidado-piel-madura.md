@@ -47,3 +47,19 @@ Para potenciar la luminosidad, lee mi [Guía de Piel Radiante](/blog/skincare-na
 Diseñemos juntas tu Protocolo Rejuvenecedor hoy mismo.
 
 [Hola Johanna, leí tu artículo sobre piel madura y quiero empezar mi transformación](https://wa.me/573133747275?text=Hola%20Johanna,%20leí%20tu%20artículo%20sobre%20piel%20madura%20y%20quiero%20empezar%20mi%20transformación)
+
+---
+
+## Preguntas Frecuentes sobre Piel Madura
+
+**¿A qué edad se considera que la piel es "madura"?**
+La piel madura generalmente se clasifica a partir de los 35-40 años, cuando los niveles de colágeno y elastina comienzan a descender de forma notable. Sin embargo, factores como la exposición solar intensa (muy común en Colombia), el estrés y el tabaco pueden acelerar este proceso una década antes.
+
+**¿El colágeno en polvo realmente funciona?**
+Sí, el colágeno hidrolizado (péptidos de colágeno) tiene respaldo científico cuando se toma consistentemente por 8-12 semanas. Los estudios muestran mejora en la elasticidad y la hidratación de la piel. El de Sheló Nabel tiene una alta biodisponibilidad, lo que significa que tu cuerpo lo absorbe de forma eficiente.
+
+**¿Puedo usar retinol si ya tengo piel seca y madura?**
+Sí, pero con cautela. Empieza con una concentración baja (0.025-0.05%) 2-3 veces por semana y siempre en la noche. Combínalo con un buen hidratante. Si ves descamación excesiva, reduce la frecuencia. En mi protocolo, recomiendo introducirlo de forma gradual y siempre con seguimiento.
+
+**¿El TimeWise Repair® funciona para toda la piel madura o hay contraindicaciones?**
+El set TimeWise Repair® es apto para la mayoría de tipos de piel madura. Para pieles muy reactivas o con rosácea activa, primero trabajamos la barrera cutánea con el protocolo botánico y luego incorporamos los activos de Mary Kay. Nunca inicio con activos fuertes sin antes preparar el terreno.

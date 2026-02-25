@@ -46,9 +46,9 @@ Conoce todos los [productos naturales de Sheló](/blog/productos-piel-naturales)
 
 ## También te puede interesar
 
-- [El Poder de los Productos Naturales Sheló](/blog/productos-piel-naturales): Todo sobre los ingredientes botánicos de este ritual.
-- [Protocolo Antimanchas Híbrido](/blog/protocolo-antimanchas-hibrido): El Suero C+E en acción contra las manchas.
-- [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
+* [El Poder de los Productos Naturales Sheló](/blog/productos-piel-naturales): Todo sobre los ingredientes botánicos de este ritual.
+* [Protocolo Antimanchas Híbrido](/blog/protocolo-antimanchas-hibrido): El Suero C+E en acción contra las manchas.
+* [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
 
 ---
 
@@ -57,3 +57,19 @@ Conoce todos los [productos naturales de Sheló](/blog/productos-piel-naturales)
 Escríbeme ahora y diseñemos juntas tu sesión de transformación en casa.
 
 [Hola Johanna, leí tu artículo sobre el SPA en casa y quiero mi ritual personalizado](https://wa.me/573133747275?text=Hola%20Johanna,%20leí%20tu%20artículo%20sobre%20el%20SPA%20en%20casa%20y%20quiero%20mi%20ritual%20personalizado)
+
+---
+
+## Preguntas Frecuentes sobre el Ritual de Spa en Casa
+
+**¿Con qué frecuencia debo hacer este ritual?**
+1 vez por semana es lo ideal para la mayoría de pieles. Pieles muy grasas o con acné activos pueden beneficiarse de 2 veces por semana (especialmente el paso de carbón activado). Pieles muy secas o sensibles, cada 10-14 días para no sobre-estimular la barrera cutánea.
+
+**¿Puedo hacer el ritual si tengo acné activo?**
+Sí, con adaptaciones. Si tienes granos activos: evita la exfoliación mecánica en esas zonas (úsala solo en zonas limpias), no frotes, aplica el suero con golpecitos suaves. El Carbón Activado sí es seguro sobre los granos. El objetivo es purificar, no irritar.
+
+**¿El Suero de Vitamina C puede aplicarse de día también?**
+Sí, de hecho es ideal en la mañana porque protege contra el estrés oxidativo del sol. Si lo aplicas de día, SIEMPRE acompáñalo de protector solar FPS 30+. De noche, complementa con retinol o baba de caracol para regeneración.
+
+**¿Cuánto tiempo debería dejar la mascarilla de Sheló?**
+Entre 10-20 minutos es suficiente. Más tiempo no mejora el resultado y en algunas pieles puede resecar. Mientras esperas, puedes hacer las manos, cuello, o simplemente relajarte con los pies en alto — ¡parte del spa eres tú!

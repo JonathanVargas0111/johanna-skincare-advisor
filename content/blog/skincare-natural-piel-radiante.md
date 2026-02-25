@@ -33,9 +33,9 @@ El estrés eleva el cortisol, y el cortisol es el enemigo #1 de la luz en tu ros
 
 ## También te puede interesar
 
-- [El Poder de los Productos Naturales Sheló](/blog/productos-piel-naturales): Conoce los ingredientes botánicos que complementan tu rutina.
-- [Protocolo Antimanchas Híbrido](/blog/protocolo-antimanchas-hibrido): El Suero C+E que usas aquí también combate manchas.
-- [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
+* [El Poder de los Productos Naturales Sheló](/blog/productos-piel-naturales): Conoce los ingredientes botánicos que complementan tu rutina.
+* [Protocolo Antimanchas Híbrido](/blog/protocolo-antimanchas-hibrido): El Suero C+E que usas aquí también combate manchas.
+* [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
 
 ---
 
@@ -44,3 +44,19 @@ El estrés eleva el cortisol, y el cortisol es el enemigo #1 de la luz en tu ros
 Recuperemos tu luz natural con mi Protocolo Radiante personalizado. Escríbeme ahora.
 
 [Hola Johanna, leí tu artículo sobre piel radiante y quiero empezar mi transformación](https://wa.me/573133747275?text=Hola%20Johanna,%20leí%20tu%20artículo%20sobre%20piel%20radiante%20y%20quiero%20empezar%20mi%20transformación)
+
+---
+
+## Preguntas Frecuentes sobre Piel Radiante
+
+**¿Por qué mi piel se ve opaca aunque me hidrate todos los días?**
+La opacidad puede tener varias causas: acumulación de células muertas (necesitas exfoliación), estrés oxidativo por el sol (necesitas vitamina C), o deshidratación interna (poca agua). En Colombia, la radiación UV es especialmente agresiva y es el principal causante de opacidad, por eso el Suero C+E es fundamental en mi protocolo.
+
+**¿La Vitamina C irritará mi piel sensible?**
+No necesariamente. La clave está en la formulación. El Suero C+E de Mary Kay usa vitamina C estabilizada que es mucho menos irritante que el ácido ascórbico puro. Para pieles muy sensibles, recomiendo empezar aplicándolo solo 3 veces por semana en la noche y aumentar gradualmente.
+
+**¿Cuánto tiempo tarda en verse el efecto iluminador?**
+Con el Suero C+E verás una mejora en la luminosidad desde la primera semana. Para ver reducción real en manchas y tono parejo uniforme, necesitas 4-8 semanas de uso consistente. La consistencia es el secreto más subestimado del skincare.
+
+**¿El colágeno en polvo da resultados visibles en la piel?**
+Sí, con uso consistente de 8-12 semanas. Los estudios en péptidos de colágeno hidrolizado muestran mejoras en elasticidad, hidratación y reducción de arrugas finas. El efecto es más evidente en pieles maduras (35+). Combínalo con vitamina C tópica para resultados 2x más rápidos.

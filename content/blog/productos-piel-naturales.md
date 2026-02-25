@@ -38,9 +38,9 @@ Ve cómo uso la Concha Nácar en mi [Protocolo Antimanchas híbrido](/blog/proto
 
 ## También te puede interesar
 
-- [Protocolo Antimanchas Híbrido](/blog/protocolo-antimanchas-hibrido): Ve la Concha Nácar en acción contra manchas y melasma.
-- [Acné Adulto Hormonal](/blog/guia-acne-adulto-hormonal): El Carbón Activado como base del protocolo antiacné.
-- [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
+* [Protocolo Antimanchas Híbrido](/blog/protocolo-antimanchas-hibrido): Ve la Concha Nácar en acción contra manchas y melasma.
+* [Acné Adulto Hormonal](/blog/guia-acne-adulto-hormonal): El Carbón Activado como base del protocolo antiacné.
+* [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
 
 ---
 
@@ -49,3 +49,19 @@ Ve cómo uso la Concha Nácar en mi [Protocolo Antimanchas híbrido](/blog/proto
 No todos los extractos son iguales. Escríbeme y diseñemos tu rutina botánica ideal basada en lo que tu piel realmente necesita hoy.
 
 [Hola Johanna, quiero conocer más sobre tus productos naturales y cómo combinarlos](https://wa.me/573133747275?text=Hola%20Johanna,%20quiero%20conocer%20más%20sobre%20tus%20productos%20naturales%20y%20cómo%20combinarlos)
+
+---
+
+## Preguntas Frecuentes sobre Productos Naturales
+
+**¿Son seguros los productos Sheló Nabel para pieles sensibles?**
+Sí. Sheló Nabel formula sus productos con extractos de alta pureza y sin ingredientes irritantes comunes como parabenos o sulfatos agresivos. Para pieles muy reactivas, siempre recomiendo hacer un patch test 48 horas antes de incorporar cualquier producto nuevo, incluso los más suaves.
+
+**¿Los productos naturales son menos efectivos que los de laboratorio?**
+No necesariamente. Ingredientes como la Concha Nácar (inhibidor de melanina), la Baba de Caracol (regeneradora celular) y el Carbón Activado (absorbente de toxinas) tienen evidencia científica sólida. La clave está en la calidad de la concentración y en cómo se combinan. Por eso el Método Johanna usa ambos mundos.
+
+**¿Puedo usar los productos Sheló durante el embarazo?**
+La mayoría de los productos botánicos de Sheló son seguros durante el embarazo, pero siempre recomiendo consultar con su médico antes de iniciar cualquier tratamiento nuevo. Específicamente, evito recomendar Vitamina A (retinol) en embarazadas y ajusto el protocolo según el trimestre.
+
+**¿Dónde puedo comprar los productos Sheló Nabel y Mary Kay?**
+A través de mi asesoría directa. No los vendo en plataformas de terceros porque no puedo garantizar la autenticidad del producto ni darte seguimiento. Escríbeme por WhatsApp, hacemos tu diagnóstico GRATIS y coordinamos tu pedido con envío a toda Colombia.

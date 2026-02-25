@@ -37,14 +37,30 @@ Al agendar conmigo, adquieres un **Protocolo de Autor** diseñado para ti:
 
 ## También te puede interesar
 
-- [Protocolo Antimanchas Híbrido](/blog/protocolo-antimanchas-hibrido): El dúo Concha Nácar + Vitamina C para manchas.
-- [Acné Adulto Hormonal](/blog/guia-acne-adulto-hormonal): Protocolo de choque para brotes hormonales.
-- [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
+* [Protocolo Antimanchas Híbrido](/blog/protocolo-antimanchas-hibrido): El dúo Concha Nácar + Vitamina C para manchas.
+* [Acné Adulto Hormonal](/blog/guia-acne-adulto-hormonal): Protocolo de choque para brotes hormonales.
+* [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
 
 ---
 
-### ¡Transforma tu Piel Hoy mismo!
+### ¡Transforma tu Piel Hoy mismo
 
 No esperes más para tener la piel radiante que mereces. Si estás lista para dejar la frustración atrás y empezar un viaje real, hablemos.
 
 [Hola Johanna, leí tu blog y quiero una asesoría personalizada hoy](https://wa.me/573133747275?text=Hola%20Johanna,%20leí%20tu%20blog%20y%20quiero%20una%20asesoría%20personalizada%20hoy)
+
+---
+
+## Preguntas Frecuentes sobre la Asesoría Personalizada
+
+**¿La asesoría inicial es realmente gratis?**
+Sí, completamente. No hay costo oculto ni truco. Analizo tu piel, tus objetivos y tu presupuesto sin compromiso. Solo pagas si decides comprar los productos que te recomiendo, y siempre con la opción de hacer tu pedido directamente en las plataformas oficiales.
+
+**¿Cómo funciona la asesoría si no puedes verme en persona?**
+La asesoría es 100% virtual por WhatsApp. Me envías fotos de tu piel con luz natural en diferentes ángulos (frente, perfil) y me cuentas tus preocupaciones principales. Con esa información y mi experiencia de 10+ años, puedo diseñar un protocolo muy preciso. La mayoría de mis clientas están en otras ciudades del país.
+
+**¿Necesito comprar productos de ambas marcas o solo una?**
+Depende de tu caso. Para problemas simples, a veces solo Sheló Nabel es suficiente. Para problemas complejos como manchas profundas o acné severo, los mejores resultados vienen con la sinergia de ambas. Siempre optimizo tu inversión; no te recomiendo lo que no necesitas.
+
+**¿Cuánto tiempo necesito para el seguimiento después de la asesoría?**
+Hago seguimiento gratuito a las 2 semanas de que inicias tu protocolo. Si hay algún ajuste necesario (una piel muy reactiva, por ejemplo), lo corregimos sin costo adicional. Mi objetivo es que veas resultados reales, no que compres y te olvides.

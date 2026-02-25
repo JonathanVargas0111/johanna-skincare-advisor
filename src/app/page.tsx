@@ -1,6 +1,7 @@
 import { BlogList } from '../components/organisms/BlogList';
 import { Header } from '../components/organisms/Header';
 import DuoPielPerfecta from '../components/organisms/DuoPielPerfecta';
+import HowItWorks from '../components/organisms/HowItWorks';
 import ProductGrid from '../components/ProductGrid';
 import Faq from '../components/organisms/Faq';
 import SmartRecommender from '../components/SmartRecommender';
@@ -98,6 +99,8 @@ export default async function Home() {
       </section>
 
       <MasterSolutions />
+
+      <HowItWorks />
 
       {/* Why Choose Me Section */}
       <section id="why-choose-me" className="py-32 bg-gray-50/30">

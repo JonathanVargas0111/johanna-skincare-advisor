@@ -38,9 +38,9 @@ Una vez por semana, complementa tu rutina con mi [Spa de Autor en Casa](/blog/tr
 
 ## También te puede interesar
 
-- [Spa de Autor en Casa](/blog/tratamientos-faciales-casa): Ritual semanal de hidratación profunda para potenciar tu protocolo.
-- [Piel Radiante: Nutrición + Alta Cosmética](/blog/skincare-natural-piel-radiante): Cómo la nutrición interna complementa tu hidratación externa.
-- [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
+* [Spa de Autor en Casa](/blog/tratamientos-faciales-casa): Ritual semanal de hidratación profunda para potenciar tu protocolo.
+* [Piel Radiante: Nutrición + Alta Cosmética](/blog/skincare-natural-piel-radiante): Cómo la nutrición interna complementa tu hidratación externa.
+* [Conoce todos mis servicios de skincare](/services): Asesoría GRATIS por WhatsApp y combos híbridos.
 
 ---
 
@@ -49,3 +49,19 @@ Una vez por semana, complementa tu rutina con mi [Spa de Autor en Casa](/blog/tr
 La consistencia es tu mejor aliada, y yo seré tu guía en cada paso. Escríbeme ahora.
 
 [Hola Johanna, tengo piel seca y necesito tu Protocolo de Restauración](https://wa.me/573133747275?text=Hola%20Johanna,%20tengo%20piel%20seca%20y%20necesito%20tu%20Protocolo%20de%20Restauración)
+
+---
+
+## Preguntas Frecuentes sobre Piel Seca
+
+**¿Cuál es la diferencia entre piel seca y piel deshidratada?**
+La piel seca es un tipo de piel genético con pocas glándulas sebáceas, siempre falta de aceites. La deshidratación es un estado temporal de falta de agua que puede afectar incluso a pieles grasas. La mayoría de las personas en Colombia tienen piel deshidratada por el sol y el aire acondicionado, no necesariamente seca. Un buen diagnóstico marca la diferencia del tratamiento.
+
+**¿El ácido hialurónico funciona para la piel seca?**
+Sí, pero tiene un truco: el ácido hialurónico atrae agua del ambiente hacia tu piel. Si el ambiente es muy seco (aire acondicionado todo el día), puede extraer agua de la propia piel. Por eso siempre recomiendo aplicarlo con la piel ligeramente húmeda y sellar con un hidratante cremoso encima.
+
+**¿Cuántas veces al día debo hidratarme si tengo piel seca?**
+Mínimo dos veces: en la mañana después de la limpieza y en la noche como paso final de rutina. En pieles muy secas, agrego una hidratación de mediodía con un producto liviano o un spray termal. La constancia diaria supera cualquier producto milagroso de uso ocasional.
+
+**¿Las pieles secas pueden usar exfoliantes?**
+Sí, pero con precaución. Prefiero exfoliantes químicos suaves (AHA al 5-8%) 1 vez por semana sobre los físicos que pueden irritar. Para pieles muy sensibles y secas, la Mascarilla Hidratante en Crema de Mary Kay también exfolia suavemente mientras nutre.
