@@ -22,10 +22,9 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-# Sitemap (dominio oficial)
-Sitemap: https://johannaskincare.com/sitemap.xml
-# Also include the Vercel preview/primary deployment sitemap to avoid
-# mismatches when the site is accessed via the vercel.app domain.
+# Sitemap — using the Vercel deployment as the current public site.
+# If/when the custom domain `johannaskincare.com` becomes primary,
+# revert this to point to the custom-domain sitemap instead.
 Sitemap: https://johanna-skincare.vercel.app/sitemap.xml
 
 # AI Discovery Files
