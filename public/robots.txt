@@ -24,6 +24,9 @@ Allow: /
 
 # Sitemap (dominio oficial)
 Sitemap: https://johannaskincare.com/sitemap.xml
+# Also include the Vercel preview/primary deployment sitemap to avoid
+# mismatches when the site is accessed via the vercel.app domain.
+Sitemap: https://johanna-skincare.vercel.app/sitemap.xml
 
 # AI Discovery Files
 Allow: /llms.txt
